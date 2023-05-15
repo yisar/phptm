@@ -1,104 +1,118 @@
-<?php defined('ACC')||exit('ACC Denied'); ?>
 <!DOCTYPE html>
-<html lang="zh-cn">
+<html lang="zh">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width" />
-    <title>登陆 - <?echo SITENAME;?></title>
-    <script src="http://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
-    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="view/default/css/login.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录</title>
+    <link rel="stylesheet" href="view/default/style.css">
 </head>
+
 <body>
-<div class="container">
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="navbar-inner">
-            <div class="container">
-                <div class="navbar-header">
-                    <a href="./" class="navbar-brand"><?php echo SITENAME;?></a>
-                    <button style="border:none" class="navbar-toggle" data-toggle="collapse" data-target="#userbar">
-                        <span class="glyphicon glyphicon-user" style="color:#fff"></span>
-                    </button>
-                </div>
-                <div id="userbar" class="navbar-collapse collapse">
-                    <ul class="navbar-nav nav navbar-right">
-                        <li><a href="./login.php">登陆</a></li>
-                        <li><a href="./login.php?tab=2">注册</a></li>
-                    </ul>
+    <style>
+        .tabmenu {
+            position: absolute;
+            top: 0;
+            margin: 0;
+        }
+
+        .tabmenu li {
+            display: inline-block;
+        }
+
+        .tabmenu li a {
+            display: block;
+            padding: 2px 10px;
+            margin: 10px;
+            background: #ea8;
+            color: #fff;
+            border-radius: 4px;
+            text-decoration: none;
+        }
+
+        .tablist {
+            position: relative;
+            margin: 50px auto;
+            width: 100%;
+        }
+
+        .tab_content {
+            position: absolute;
+            top: 50px;
+            width: 600px;
+            height: 300px;
+            padding: 10px;
+            background: #ffe;
+        }
+
+        /*使用css3(:target属性实现)，z-index控制元素层级*/
+        #register:target,
+        #login:target {
+            z-index: 1;
+        }
+
+        .editor {
+            width: auto;
+            justify-content: left;
+        }
+
+        .editor li:last-child {
+            height: auto;
+        }
+
+
+        main {
+            padding: 20px;
+        }
+    </style>
+    <main>
+        <div class="tablist">
+            <ul class="tabmenu">
+                <li><a href="#register">注册</a></li>
+                <li><a href="#login">登录</a></li>
+            </ul>
+            <div id="register" class="tab_content">
+                <h1>注册</h1>
+                <div class="editor">
+                    <form action="regAct.php" method="POST">
+                        <li>
+                            <h2>用户名:</h2>
+                            <input type="text" name="username" maxlength="30" placeholder="如 zhangsan">
+                        </li>
+                        <li>
+                            <h2>昵称:</h2>
+                            <input name="nickname" disabled placeholder="初始为无名氏">
+                            <input type="hidden" name="nickname" value="无名氏">
+                        </li>
+                        <li>
+                            <h2>密码:</h2>
+                            <input type="password" name="password" maxlength="30" placeholder="">
+                            <button>注册</button>
+                        </li>
+                    </form>
+
                 </div>
             </div>
-        </div>
-    </div>
-</div>
-<div class="container">
-    <h1><a href="./"><?echo SITENAME;?></a><sup>Sign in</sup></h1>
-    <div class="bar">
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <a href="javascript:void(0);" class="login-link active">快速登陆</a>
-                <a href="javascript:void(0);" class="reg-link">快速注册</a>
-            <div class="heading-line"></div>
-            </div>
-            <div class="panel-body">
-                <form class="login-form" action="loginAct.php" method="POST">
-                    <div class="form-group user">
-                        <div class="input-group">
-                            <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
-                            <input name="username" type="text" class="form-control" placeholder="输入用户名" maxlength="16">
-                        </div>
-                    </div>
-
-                    <div class="form-group pwd">
-                        <div class="input-group">
-                            <span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
-                            <input name="password" type="password" class="form-control" placeholder="输入密码" maxlength="16">
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <input type="submit" class="btn btn-primary btn-block" value="登陆">
-                    </div>
+        <div id="login" class="tab_content">
+            <h1>登录</h1>
+            <div class="editor">
+                <form action="loginAct.php" method="POST">
+                    <li>
+                        <h2>用户名:</h2>
+                        <input type="text" name="username" maxlength="30" placeholder="如 zhangsan">
+                    </li>
+                    <li>
+                        <h2>密码:</h2>
+                        <input type="password" name="password" maxlength="30" placeholder="">
+                        <button>登录</button>
+                    </li>
                 </form>
 
-                <form class="reg-form" action="regAct.php" method="POST" accept-charset="utf-8">
-                    <div class="form-group user">
-                        <div class="input-group">
-                            <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
-                            <input name="username" type="text" class="form-control input-sm username" placeholder="设置用户名，5-16位，以字母开头" maxlength="16">
-                        </div>
-                    </div>
-
-                    <div class="form-group nname">
-                        <div class="input-group">
-                            <span class="input-group-addon"><span class="glyphicon glyphicon-heart"></span></span>
-                            <input type="text" class="form-control input-sm nickname" placeholder="设置昵称，2-10位，不填默认为：&quot;匿名&quot;" maxlength="10">
-                            <input type="hidden" name="nickname" value="匿名">
-                        </div>
-                    </div>
-
-                    <div class="form-group pwd">
-                        <div class="input-group">
-                            <span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
-                            <input name="password" type="password" class="form-control input-sm password" placeholder="设置密码，5-16位" maxlength="16">
-                        </div>
-                    </div>
-
-                    <div class="form-group rpwd">
-                        <div class="input-group">
-                            <span class="input-group-addon"><span class="glyphicon glyphicon-ok-sign"></span></span>
-                            <input type="password" class="form-control input-sm repeat" placeholder="重复密码" maxlength="16">
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <input type="submit" class="btn btn-primary btn-block" value="确认信息并注册">
-                    </div>
-                </form>
             </div>
         </div>
-    </div>
-</div>
-<script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-<script src="view/default/js/login.js"></script>
+        </div>
+    </main>
 </body>
+
 </html>
