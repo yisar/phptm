@@ -15,6 +15,7 @@
     <?php require(ROOT . 'view/default/header.php'); ?>
     <main class="ucenter">
         <div class="info">
+            <img src="<?php echo 'https://cdn.sep.cc/avatar/' . md5($_SESSION['email']) ?>" alt="">
             <h1>
                 <?php echo $_SESSION['username'] ?>
             </h1>
@@ -37,6 +38,7 @@
             ?>
         </div>
     </main>
+    <?php require(ROOT . 'view/default/footer.php'); ?>
 </body>
 
 </html>

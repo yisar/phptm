@@ -45,12 +45,12 @@ class userModel extends model {
 		return $db->getOne($sql);
 	}
 
-	public function login($user, $pass){
+	public function login($email, $pass){
 		$isLogin = false;
-		$sql = 'select uid,type,username,nickname,email,password,regtime,lastlogin from '.$this->table.' where username=\''.$user.'\'';
+		$sql = 'select uid,type,username,nickname,email,password,regtime,lastlogin from '.$this->table.' where email=\''.$email.'\'';
 		$row = $this->db->getRow($sql);
 		if (count($row)>0) {
-			if ($row['username']===$user&&$row['password']===$pass) {
+			if ($row['email']===$email&&$row['password']===$pass) {
 				$isLogin = true;
 				$_SESSION = $row;
 				$_SESSION['nickname'] = htmlspecialchars($_SESSION['nickname']);

@@ -77,8 +77,8 @@
                 <div class="editor">
                     <form action="regAct.php" method="POST">
                         <li>
-                            <h2>用户名:</h2>
-                            <input type="text" name="username" maxlength="30" placeholder="如 zhangsan">
+                            <h2>邮箱:</h2>
+                            <input type="text" name="email" maxlength="30" placeholder="如 admin@clicli.us">
                         </li>
                         <li>
                             <h2>昵称:</h2>
@@ -94,23 +94,23 @@
 
                 </div>
             </div>
-        <div id="login" class="tab_content">
-            <h1>登录</h1>
-            <div class="editor">
-                <form action="loginAct.php" method="POST">
-                    <li>
-                        <h2>用户名:</h2>
-                        <input type="text" name="username" maxlength="30" placeholder="如 zhangsan">
-                    </li>
-                    <li>
-                        <h2>密码:</h2>
-                        <input type="password" name="password" maxlength="30" placeholder="">
-                        <button>登录</button>
-                    </li>
-                </form>
+            <div id="login" class="tab_content">
+                <h1>登录</h1>
+                <div class="editor">
+                    <form action="loginAct.php" method="POST">
+                        <li>
+                            <h2>邮箱:</h2>
+                            <input type="text" name="email" maxlength="30" placeholder="如 admin@clicli.us">
+                        </li>
+                        <li>
+                            <h2>密码:</h2>
+                            <input type="password" name="password" maxlength="30" placeholder="">
+                            <button>登录</button>
+                        </li>
+                    </form>
 
+                </div>
             </div>
-        </div>
         </div>
     </main>
 </body>

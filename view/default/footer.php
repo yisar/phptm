@@ -2,9 +2,10 @@
 $isLogin = userModel::isLogin(); ?>
 <footer>
 	<ul>
+		<a href="./">首页</a>
 		<?php if (!$isLogin) { ?>
-			<li><a href="./login.php">登陆</a></li>
-			<li><a href="./login.php?tab=2">注册</a></li>
+			<li><a href="./login.php#login">登陆</a></li>
+			<li><a href="./login.php#register">注册</a></li>
 		<?php } else { ?>
 			<li class="hidden-xs curr-login">当前登录:
 				<?php echo $_SESSION['nickname']; ?>
@@ -12,7 +13,7 @@ $isLogin = userModel::isLogin(); ?>
 			<li><a href="./ucenter.php">个人中心</a></li>
 			<li><a href="./logout.php">退出登陆</a></li>
 		<?php } ?>
-		<a href="./ucenter.php?cat=3">我的订阅</a>
+		<a href="./ucenter.php?cat=2">我的订阅</a>
 		<a href="./view.php?id=<?php echo $report_tid; ?>">违规内容举报</a>
 	</ul>
 </footer>

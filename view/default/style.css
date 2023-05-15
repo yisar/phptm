@@ -275,7 +275,7 @@ ol li {
     width: 100%;
 }
 
-.ucenter nav{
+.ucenter nav {
     display: flex;
     justify-content: center;
     margin-top: 20px;
@@ -289,6 +289,11 @@ ol li {
     padding: 5px 10px;
     color: #ea8;
     border-bottom: 2px solid #ea8;
+}
+
+.ucenter .info img {
+    border-radius: 50%;
+    
 }
 
 ::-webkit-scrollbar {
