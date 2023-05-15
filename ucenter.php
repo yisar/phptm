@@ -23,7 +23,7 @@ switch ($cat) {
 		}
 		break;
 	//我的历史回复 栏目
-	case 2:
+	case 0:
 		$msg = new msgModel;
 		//总页数
 		$all = ceil($msg->countUserReplies($_SESSION['uid'])/5);
@@ -36,7 +36,7 @@ switch ($cat) {
 		
 		break;
 	//我的订阅 栏目
-	case 3:
+	case 2:
 		$ss = new subscriptionModel();
 		//总页数
 		$all = ceil($ss->count()/5);
