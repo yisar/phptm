@@ -186,7 +186,7 @@ ol li {
     width: 1000px;
     padding: 10px;
     border-top: 1px solid var(--red-bg);
-    margin: 20px;
+    margin: 20px auto;
     justify-content: start !important;
 }
 

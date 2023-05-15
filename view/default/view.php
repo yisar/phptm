@@ -7,8 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
-        <?php echo $curr_cat['cat_name'], ' - ', SITENAME;
-        ; ?>
+        <?php echo 'RID.', $threads[0]['tid'], ' - ', SITENAME; ?>
     </title>
     <link rel="stylesheet" href="view/default/style.css">
     <link rel="stylesheet" href="https://at.alicdn.com/t/c/font_4066894_lfnqwuus5os.css">
@@ -20,10 +19,7 @@
     </header>
     <main>
         <div class="menu">
-            <div class="logo">
-                <a href="/">
-                </a>
-            </div>
+        <?php require(ROOT . 'view/default/header.php'); ?>
             <?php require(ROOT . 'view/default/menu.php'); ?>
         </div>
         <div class="body">
@@ -109,9 +105,10 @@
                         </li>
                         <li>
                             <h2>正文:</h2>
-                            <textarea id="content" name="content"><?php echo isset($_GET['reply'])?strip_tags($_GET['reply']):'';?></textarea>
+                            <textarea id="content"
+                                name="content"><?php echo isset($_GET['reply']) ? strip_tags($_GET['reply']) : ''; ?></textarea>
                         </li>
-                        <input type="hidden" name="cat" value="<?php echo $threads[0]['tid']; ?>">
+                        <input type="hidden" name="tid" value="<?php echo $threads[0]['tid']; ?>">
                     </form>
 
                 </div>
@@ -124,15 +121,7 @@
             </div>
         </div>
     </main>
-    <footer>
-        <ul><a href="">
-                <li>首页班规</li>
-            </a><a href="">
-                <li>用户系统</li>
-            </a><a href="">
-                <li>APP下载</li>
-            </a>
-            </div>
+    <?php require(ROOT . 'view/default/footer.php') ?>
 </body>
 
 </html>

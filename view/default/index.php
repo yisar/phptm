@@ -20,10 +20,7 @@
     </header>
     <main>
         <div class="menu">
-            <div class="logo">
-                <a href="/">
-                </a>
-            </div>
+            <?php require(ROOT . 'view/default/header.php'); ?>
             <?php require(ROOT . 'view/default/menu.php'); ?>
         </div>
         <div class="body">
@@ -132,15 +129,7 @@
             <?php require(ROOT . 'view/default/pagination.php') ?>
         </div>
     </main>
-    <footer>
-        <ul><a href="">
-                <li>首页班规</li>
-            </a><a href="">
-                <li>用户系统</li>
-            </a><a href="">
-                <li>APP下载</li>
-            </a>
-            </div>
+    <?php require(ROOT . 'view/default/footer.php') ?>
 </body>
 
 </html>

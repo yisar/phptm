@@ -1,13 +1,18 @@
-<div class="footer">
-	<div class="footer_bar">
-		<div id="footer_img_up"></div>
-		<span>功能：</span>
+<?php defined('ACC') || exit('ACC Denied');
+$isLogin = userModel::isLogin(); ?>
+<footer>
+	<ul>
+		<?php if (!$isLogin) { ?>
+			<li><a href="./login.php">登陆</a></li>
+			<li><a href="./login.php?tab=2">注册</a></li>
+		<?php } else { ?>
+			<li class="hidden-xs curr-login">当前登陆：
+				<?php echo $_SESSION['nickname']; ?>
+			</li>
+			<li><a href="./ucenter.php">个人中心</a></li>
+			<li><a href="./logout.php">退出登陆</a></li>
+		<?php } ?>
 		<a href="./ucenter.php?cat=3">我的订阅</a>
-	</div>
-	<div class="footer_bar">
-		<div id="footer_img_down"></div>
-		<span>常用串：</span>
-		<a href="./view.php?id=<?php echo $report_tid;?>">违规内容举报</a>
-	</div>
- 	
- </div>
+		<a href="./view.php?id=<?php echo $report_tid; ?>">违规内容举报</a>
+	</ul>
+</footer>
