@@ -1,0 +1,292 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #ffe;
+    font-size: 14px;
+    color: var(--oridge);
+    --red: #cc1105;
+    --red-bg: #f0e0d6;
+    --green: #117743;
+    --oridge: #800000;
+    --red-light: #ea8;
+}
+
+header {
+    height: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    flex: 1;
+    overflow: hidden;
+    display: flex;
+}
+
+main .menu {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    border-right: 1px solid #333;
+
+}
+
+main .menu .logo {
+    height: 80px;
+    width: 80px;
+    background: url(https://cdn-us.imgs.moe/2023/05/15/6461f45bd1ad9.png);
+    background-size: 100%;
+    margin: 10px auto;
+    border-radius: 10px;
+}
+
+.logo h1 {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+main .menu ul {
+    flex: 1;
+    overflow-y: scroll;
+}
+
+main .menu ul a {
+    display: block;
+    padding: 5px;
+}
+
+main .menu .active {
+    background: var(--red-light);
+    color: #fff;
+}
+
+.menu a li {
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.menu a div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu a h1 {
+    font-size: 14px;
+    color: var(--red);
+}
+
+
+main .body {
+    flex: 1;
+    overflow-y: scroll;
+    margin: 10px;
+}
+
+main .body .title {
+    text-align: center;
+    border-bottom: 1px solid var(--red-bg);
+    padding: 10px;
+}
+
+main .body h1 {
+    color: var(--oridge);
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    border-top: 1px solid #333;
+    font-size: 12px;
+    padding: 10px;
+}
+
+a {
+    color: #07d;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+li {
+    list-style: none;
+
+}
+
+footer li {
+    display: inline-block;
+}
+
+.editor {
+    width: 800px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+}
+
+.editor li {
+    display: flex;
+    /* align-items: center; */
+    margin: 2px;
+    padding: 2px;
+}
+
+.editor li h2 {
+    width: 100px;
+    background: #ea8;
+    color: var(--red);
+    font-size: 14px;
+    padding: 2px 10px;
+    height: 100%;
+    margin-right: 5px;
+}
+
+.editor li:last-child {
+    height: 100px;
+}
+
+.editor li input {
+    height: 18px;
+    width: 300px;
+}
+
+.editor li button {
+    margin: 0 10px;
+    padding: 1px 10px;
+}
+
+.editor li textarea {
+    width: 400px;
+    height: 100px;
+}
+
+.bangui {
+    display: flex;
+    justify-content: center;
+}
+
+ol li {
+    list-style: upper-roman;
+    color: var(--oridge);
+    padding: 2px;
+}
+
+.list {
+    width: 1000px;
+    padding: 10px;
+    border-top: 1px solid var(--red-bg);
+    margin: 20px;
+    justify-content: start !important;
+}
+
+.list .item {
+    padding-top: 10px;
+}
+
+.list .item span {
+    padding: 5px;
+}
+
+.list .item p {
+    padding: 10px;
+    font-size: 16px;
+}
+
+.list .indent {
+    margin: 2px 0 2px 20px;
+    background: var(--red-bg);
+    position: relative;
+    display: inline-block;
+    padding: 2px;
+}
+
+.list .indent::before {
+    content: "...";
+    position: absolute;
+    left: -11px;
+    top: 0px;
+}
+
+.list .item span:nth-child(1) {
+    font-weight: bold;
+    color: var(--red);
+}
+
+.list .item span:nth-child(2) {
+    font-weight: bold;
+    color: var(--green);
+}
+
+.iconfont {
+    color: var(--red);
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.pagination {
+    display: inline-block;
+    margin: 10px;
+}
+
+.pagination a {
+    color: var(--green);
+}
+
+.pagination li {
+    /* border-radius: 4px; */
+    display: inline-block;
+    padding: 5px;
+    line-height: 20px;
+    margin: 5px;
+}
+
+.pagination .active {
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    color: #fff;
+    background: var(--red);
+}
+
+.pagination .active a {
+    color: #fff;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--green);
+    padding: 0px 2px;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-button {
+    background-color: transparent;
+    height: 0px;
+    width: 0px
+}
+
+::-webkit-scrollbar-corner {
+    background-color: transparent;
+    height: 0px;
+    width: 0px;
+}
