@@ -264,6 +264,33 @@ ol li {
     color: #fff;
 }
 
+.ucenter {
+    width: 1000px;
+    margin: 20px auto;
+    display: block !important;
+}
+
+.ucenter .info {
+    text-align: center;
+    width: 100%;
+}
+
+.ucenter nav{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.ucenter nav li {
+    padding: 5px;
+}
+
+.ucenter nav li a {
+    padding: 5px 10px;
+    color: #ea8;
+    border-bottom: 2px solid #ea8;
+}
+
 ::-webkit-scrollbar {
     width: 5px;
     height: 5px;

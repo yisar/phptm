@@ -1,40 +1,42 @@
-<?php defined('ACC')||exit('ACC Denied');?>
+<?php defined('ACC') || exit('ACC Denied'); ?>
 <!DOCTYPE html>
 <html lang="zh-cn">
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width" />
-	<title><?php echo $_SESSION['username']?> 的用户中心</title>
-	<link rel="stylesheet" href="view/default/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width" />
+    <title>
+        <?php echo $_SESSION['username'] ?> 的用户中心
+    </title>
+    <link rel="stylesheet" href="view/default/style.css">
 </head>
+
 <body>
-<?php require(ROOT . 'view/default/header.php');?>
-<div class="quoteview"></div>
-<div class="container">
-	<div class="row">
-		<div class="lbar col-sm-3">
-			<div class="userinfo">
-				<p class=""><?php echo $_SESSION['username']?></p>
-				<p class="text-date">注册日期：<?php echo date('Y-m-d', $_SESSION['regtime']);?></p>
-				<p class="text-date">上次登录：<?php echo date('Y-m-d', $_SESSION['lastlogin']);?></p>
-			</div>
-			<div id="lmenu" class="navbar-collapse collapse" style="padding:0">
-				<ul class="nav nav-pills nav-stacked">
-					<li <?php echo $cat==1?'class="active" ':''?>><a href="./ucenter.php?cat=1">我发起的讨论</a></li>
-					<li <?php echo $cat==2?'class="active" ':''?>><a href="./ucenter.php?cat=2">我的历史回复</a></li>
-					<li <?php echo $cat==3?'class="active" ':''?>><a href="./ucenter.php?cat=3">我的订阅串</a></li>
-					<li <?php echo $cat==4?'class="active" ':''?>><a href="./ucenter.php?cat=4">信息设定</a></li>
-				</ul>
-				<hr class="visible-xs">
-			</div>
-		</div>
-		<div class="col-sm-9 main">
-			<?php
-				$arr = array('threads','replies','order','setting');
-				require(ROOT . 'view/default/ucenter_' . $arr[$cat-1] . '.php');
-			?>
-		</div>
-	</div>
-</div>
+    <?php require(ROOT . 'view/default/header.php'); ?>
+    <main class="ucenter">
+        <div class="info">
+            <h1>
+                <?php echo $_SESSION['username'] ?>
+            </h1>
+            <p>注册日期：
+                <?php echo date('Y-m-d', $_SESSION['regtime']); ?>
+            </p>
+            <p>上次登录：
+                <?php echo date('Y-m-d', $_SESSION['lastlogin']); ?>
+            </p>
+        </div>
+        <nav>
+            <li <?php echo $cat == 1 ? 'class="active" ' : '' ?>><a href="./ucenter.php?cat=1">讨论串</a></li>
+            <li <?php echo $cat == 2 ? 'class="active" ' : '' ?>><a href="./ucenter.php?cat=2">订阅串</a></li>
+            <li <?php echo $cat == 3 ? 'class="active" ' : '' ?>><a href="./ucenter.php?cat=3">信息设定</a></li>
+        </nav>
+        <div class="list wrap">
+            <?php
+            $arr = array('threads', 'order', 'setting');
+            require(ROOT . 'view/default/ucenter_' . $arr[$cat - 1] . '.php');
+            ?>
+        </div>
+    </main>
 </body>
+
 </html>
