@@ -10,9 +10,9 @@ $user_re = '/^[a-zA-Z][\w]{4,15}$/';
 //$email_re = '/^[\\w-]+(\\.\\w+)*@[\\w-]+((\\.\\w{2,3}){1,3})$/';
 $UM = new userModel();
 
-$email = $_POST['emial'];
+$email = $_POST['email'];
 
-if ($UM->exists_email($emial)) {
+if ($UM->exists_email($email)) {
 	showMsg('邮箱已存在！');
 }
 

@@ -2,7 +2,7 @@
 define('ACC', true);
 require('init.php');
 
-if(empty($_POST['username'])||empty($_POST['password'])) {
+if(empty($_POST['email'])||empty($_POST['password'])) {
 	exit('ACC Denied');
 }
 userModel::isLogin()&&showMsg('已经处于登陆状态！', true, './');

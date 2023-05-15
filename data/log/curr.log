@@ -7389,3 +7389,83 @@
 2023-05-15 21:22:13 mysql query: select count(*) from reply where tid=46
 2023-05-15 21:22:13 mysql query: select count(*) from reply where tid=42
 2023-05-15 21:29:34 mysql query: select count(*) from user where email=''
+2023-05-15 21:32:35 mysql query: select uid,type,username,nickname,email,password,regtime,lastlogin from user where email='admin'
+2023-05-15 21:33:44 mysql query: select uid,type,username,nickname,email,password,regtime,lastlogin from user where email='1533540012@qq.com'
+2023-05-15 21:33:44 mysql query: update user set lastip='::1',lastlogin='1684157624' where uid=2
+2023-05-15 21:33:46 mysql query: select id,cat_name,parent_id from category
+2023-05-15 21:33:46 mysql query: select cat_name,intro from category where id=1
+2023-05-15 21:33:46 mysql query: select count(*) from thread where cat in (1,2,3)
+2023-05-15 21:33:46 mysql query: select * from thread where cat in (1,2,3) order by lastreptime desc limit 0,10
+2023-05-15 21:33:46 mysql query: select * from reply where tid=61 order by rid desc limit 0,5
+2023-05-15 21:33:46 mysql query: select * from reply where tid=57 order by rid desc limit 0,5
+2023-05-15 21:33:46 mysql query: select * from reply where tid=53 order by rid desc limit 0,5
+2023-05-15 21:33:46 mysql query: select * from reply where tid=54 order by rid desc limit 0,5
+2023-05-15 21:33:46 mysql query: select * from reply where tid=52 order by rid desc limit 0,5
+2023-05-15 21:33:46 mysql query: select * from reply where tid=51 order by rid desc limit 0,5
+2023-05-15 21:33:46 mysql query: select * from reply where tid=49 order by rid desc limit 0,5
+2023-05-15 21:33:46 mysql query: select * from reply where tid=48 order by rid desc limit 0,5
+2023-05-15 21:33:46 mysql query: select * from reply where tid=46 order by rid desc limit 0,5
+2023-05-15 21:33:46 mysql query: select * from reply where tid=42 order by rid desc limit 0,5
+2023-05-15 21:33:46 mysql query: select username from user where uid=2
+2023-05-15 21:33:46 mysql query: select count(*) from subscription where uid=2 and tid=61
+2023-05-15 21:33:46 mysql query: select count(*) from reply where tid=61
+2023-05-15 21:33:46 mysql query: select username from user where uid=2
+2023-05-15 21:33:46 mysql query: select count(*) from subscription where uid=2 and tid=57
+2023-05-15 21:33:46 mysql query: select count(*) from reply where tid=57
+2023-05-15 21:33:46 mysql query: select username from user where uid=2
+2023-05-15 21:33:46 mysql query: select count(*) from subscription where uid=2 and tid=53
+2023-05-15 21:33:46 mysql query: select count(*) from reply where tid=53
+2023-05-15 21:33:46 mysql query: select count(*) from subscription where uid=2 and tid=54
+2023-05-15 21:33:46 mysql query: select count(*) from reply where tid=54
+2023-05-15 21:33:46 mysql query: select username from user where uid=2
+2023-05-15 21:33:46 mysql query: select count(*) from subscription where uid=2 and tid=52
+2023-05-15 21:33:46 mysql query: select count(*) from reply where tid=52
+2023-05-15 21:33:46 mysql query: select username from user where uid=2
+2023-05-15 21:33:46 mysql query: select count(*) from subscription where uid=2 and tid=51
+2023-05-15 21:33:46 mysql query: select count(*) from reply where tid=51
+2023-05-15 21:33:46 mysql query: select username from user where uid=2
+2023-05-15 21:33:46 mysql query: select count(*) from subscription where uid=2 and tid=49
+2023-05-15 21:33:46 mysql query: select count(*) from reply where tid=49
+2023-05-15 21:33:46 mysql query: select username from user where uid=2
+2023-05-15 21:33:46 mysql query: select count(*) from subscription where uid=2 and tid=48
+2023-05-15 21:33:46 mysql query: select count(*) from reply where tid=48
+2023-05-15 21:33:46 mysql query: select username from user where uid=2
+2023-05-15 21:33:46 mysql query: select count(*) from subscription where uid=2 and tid=46
+2023-05-15 21:33:46 mysql query: select count(*) from reply where tid=46
+2023-05-15 21:33:46 mysql query: select count(*) from subscription where uid=2 and tid=42
+2023-05-15 21:33:46 mysql query: select count(*) from reply where tid=42
+2023-05-15 21:33:51 mysql query: select id,cat_name,parent_id from category
+2023-05-15 21:33:51 mysql query: select cat_name,intro from category where id=1
+2023-05-15 21:33:51 mysql query: select count(*) from thread where cat in (1,2,3)
+2023-05-15 21:33:51 mysql query: select * from thread where cat in (1,2,3) order by lastreptime desc limit 0,10
+2023-05-15 21:33:51 mysql query: select * from reply where tid=61 order by rid desc limit 0,5
+2023-05-15 21:33:51 mysql query: select * from reply where tid=57 order by rid desc limit 0,5
+2023-05-15 21:33:51 mysql query: select * from reply where tid=53 order by rid desc limit 0,5
+2023-05-15 21:33:51 mysql query: select * from reply where tid=54 order by rid desc limit 0,5
+2023-05-15 21:33:51 mysql query: select * from reply where tid=52 order by rid desc limit 0,5
+2023-05-15 21:33:51 mysql query: select * from reply where tid=51 order by rid desc limit 0,5
+2023-05-15 21:33:51 mysql query: select * from reply where tid=49 order by rid desc limit 0,5
+2023-05-15 21:33:51 mysql query: select * from reply where tid=48 order by rid desc limit 0,5
+2023-05-15 21:33:51 mysql query: select * from reply where tid=46 order by rid desc limit 0,5
+2023-05-15 21:33:51 mysql query: select * from reply where tid=42 order by rid desc limit 0,5
+2023-05-15 21:33:51 mysql query: select username from user where uid=2
+2023-05-15 21:33:51 mysql query: select count(*) from reply where tid=61
+2023-05-15 21:33:51 mysql query: select username from user where uid=2
+2023-05-15 21:33:51 mysql query: select count(*) from reply where tid=57
+2023-05-15 21:33:51 mysql query: select username from user where uid=2
+2023-05-15 21:33:51 mysql query: select count(*) from reply where tid=53
+2023-05-15 21:33:51 mysql query: select count(*) from reply where tid=54
+2023-05-15 21:33:51 mysql query: select username from user where uid=2
+2023-05-15 21:33:51 mysql query: select count(*) from reply where tid=52
+2023-05-15 21:33:51 mysql query: select username from user where uid=2
+2023-05-15 21:33:51 mysql query: select count(*) from reply where tid=51
+2023-05-15 21:33:51 mysql query: select username from user where uid=2
+2023-05-15 21:33:51 mysql query: select count(*) from reply where tid=49
+2023-05-15 21:33:51 mysql query: select username from user where uid=2
+2023-05-15 21:33:51 mysql query: select count(*) from reply where tid=48
+2023-05-15 21:33:51 mysql query: select username from user where uid=2
+2023-05-15 21:33:51 mysql query: select count(*) from reply where tid=46
+2023-05-15 21:33:51 mysql query: select count(*) from reply where tid=42
+2023-05-15 21:34:14 mysql query: select count(*) from user where email=''
+2023-05-15 21:35:22 mysql query: select uid,type,username,nickname,email,password,regtime,lastlogin from user where email='admin@clicli.us'
+2023-05-15 21:39:50 mysql query: select uid,type,username,nickname,email,password,regtime,lastlogin from user where email='admin@clicli.us'
