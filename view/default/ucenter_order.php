@@ -1,11 +1,6 @@
 <?php defined('ACC')||exit('ACC Denied');?>
 
 <?php
-	if (count($threads)==0) {
-		echo '<div class="title"><div style="display:inline-block;width:45%" class="hidden-xs"></div>订阅为空。</div>';
-	} else {
-		echo '<div class="title"><div style="display:inline-block;width:45%" class="hidden-xs"></div><span class="glyphicon glyphicon-star"></span> 我的订阅<p>显示你订阅的串，按照最新回复时间进行排序。</p></div><hr>';
-	}
 	foreach ($threads as $k => $t) {
 ?>
 <div class="discussion" tid="<?php echo $t['tid'];?>">

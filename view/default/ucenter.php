@@ -5,10 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width" />
 	<title><?php echo $_SESSION['username']?> 的用户中心</title>
-	<script src="http://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
-	<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
-	<link rel="stylesheet" href="view/default/css/main.css">
-	<link rel="stylesheet" href="view/default/css/ucenter.css">
+	<link rel="stylesheet" href="view/default/style.css">
 </head>
 <body>
 <?php require(ROOT . 'view/default/header.php');?>
@@ -39,7 +36,5 @@
 		</div>
 	</div>
 </div>
-<script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="./view/default/js/u_setting.js"></script>
 </body>
 </html>
