@@ -10,7 +10,7 @@ $email = $_POST['email'];
 $pass = md5('acgzone.clicli' . md5($_POST['password']));
 
 $UM = new userModel();
-if ($UM->login($email, $pass)) {
+if ($UM->login($email, md5('acgzone.clicli' . md5($password)))) {
 	showMsg('登陆成功！即将跳转到主页！', true, './');
 } else {
 	showMsg('用户名或密码错误！<br />');

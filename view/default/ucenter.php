@@ -22,7 +22,7 @@
             <p>注册日期：
                 <?php echo date('Y-m-d', $_SESSION['regtime']); ?>
             </p>
-            <p>上次登录：
+            <p>上次登陆：
                 <?php echo date('Y-m-d', $_SESSION['lastlogin']); ?>
             </p>
         </div>
