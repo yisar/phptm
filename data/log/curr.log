@@ -1,0 +1,47 @@
+2023-05-16 17:15:35 mysql connect error: Access denied for user 'root'@'127.0.0.1' (using password: YES)
+2023-05-16 17:20:01 mysql connect error: Access denied for user 'root'@'127.0.0.1' (using password: YES)
+2023-05-16 17:20:15 mysql connect error: Access denied for user 'root'@'127.0.0.1' (using password: YES)
+2023-05-16 17:20:19 mysql connect error: Access denied for user 'root'@'127.0.0.1' (using password: YES)
+2023-05-16 17:21:13 mysql connect error: Access denied for user 'root'@'127.0.0.1' (using password: YES)
+2023-05-16 17:21:34 mysql query: select id,cat_name,parent_id from category
+2023-05-16 17:21:34 mysql query: select cat_name,intro from category where id=1
+2023-05-16 17:21:34 mysql query: select count(*) from thread where cat in (1,2,3)
+2023-05-16 17:21:34 mysql query: select * from thread where cat in (1,2,3) order by lastreptime desc limit 0,10
+2023-05-16 17:21:34 mysql query: select * from reply where tid=65 order by rid desc limit 0,5
+2023-05-16 17:21:34 mysql query: select * from reply where tid=61 order by rid desc limit 0,5
+2023-05-16 17:21:34 mysql query: select * from reply where tid=57 order by rid desc limit 0,5
+2023-05-16 17:21:34 mysql query: select * from reply where tid=53 order by rid desc limit 0,5
+2023-05-16 17:21:34 mysql query: select * from reply where tid=54 order by rid desc limit 0,5
+2023-05-16 17:21:34 mysql query: select * from reply where tid=52 order by rid desc limit 0,5
+2023-05-16 17:21:34 mysql query: select * from reply where tid=51 order by rid desc limit 0,5
+2023-05-16 17:21:34 mysql query: select * from reply where tid=49 order by rid desc limit 0,5
+2023-05-16 17:21:34 mysql query: select * from reply where tid=48 order by rid desc limit 0,5
+2023-05-16 17:21:34 mysql query: select * from reply where tid=46 order by rid desc limit 0,5
+2023-05-16 17:21:34 mysql query: select count(*) from subscription where uid=21 and tid=65
+2023-05-16 17:21:34 mysql query: select count(*) from reply where tid=65
+2023-05-16 17:21:34 mysql query: select username from user where uid=2
+2023-05-16 17:21:34 mysql query: select count(*) from subscription where uid=21 and tid=61
+2023-05-16 17:21:34 mysql query: select count(*) from reply where tid=61
+2023-05-16 17:21:34 mysql query: select username from user where uid=2
+2023-05-16 17:21:34 mysql query: select count(*) from subscription where uid=21 and tid=57
+2023-05-16 17:21:34 mysql query: select count(*) from reply where tid=57
+2023-05-16 17:21:34 mysql query: select username from user where uid=2
+2023-05-16 17:21:34 mysql query: select count(*) from subscription where uid=21 and tid=53
+2023-05-16 17:21:34 mysql query: select count(*) from reply where tid=53
+2023-05-16 17:21:34 mysql query: select count(*) from subscription where uid=21 and tid=54
+2023-05-16 17:21:34 mysql query: select count(*) from reply where tid=54
+2023-05-16 17:21:34 mysql query: select username from user where uid=2
+2023-05-16 17:21:34 mysql query: select count(*) from subscription where uid=21 and tid=52
+2023-05-16 17:21:34 mysql query: select count(*) from reply where tid=52
+2023-05-16 17:21:34 mysql query: select username from user where uid=2
+2023-05-16 17:21:34 mysql query: select count(*) from subscription where uid=21 and tid=51
+2023-05-16 17:21:34 mysql query: select count(*) from reply where tid=51
+2023-05-16 17:21:34 mysql query: select username from user where uid=2
+2023-05-16 17:21:34 mysql query: select count(*) from subscription where uid=21 and tid=49
+2023-05-16 17:21:34 mysql query: select count(*) from reply where tid=49
+2023-05-16 17:21:34 mysql query: select username from user where uid=2
+2023-05-16 17:21:34 mysql query: select count(*) from subscription where uid=21 and tid=48
+2023-05-16 17:21:34 mysql query: select count(*) from reply where tid=48
+2023-05-16 17:21:34 mysql query: select username from user where uid=2
+2023-05-16 17:21:34 mysql query: select count(*) from subscription where uid=21 and tid=46
+2023-05-16 17:21:34 mysql query: select count(*) from reply where tid=46

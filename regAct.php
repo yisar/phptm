@@ -24,11 +24,7 @@ if (mb_strlen($nickname, 'UTF8') < 2 || mb_strlen($nickname, 'UTF8') > 10) {
 	showMsg('昵称输入错误！');
 }
 
-<<<<<<< HEAD
 if ($UM->add('', $nickname, $password, $email, 0)) {
-=======
-if ($UM->add('', $nickname, md5('acgzone.clicli' . md5($password)), $email, 0)) {
->>>>>>> 62f867f7bc83b47e44f07ed0b91ac881012f2f5a
 	showMsg('注册成功！将去往主页！', true, './');
 } else {
 	showMsg('添加用户失败！');

@@ -93,7 +93,7 @@
                                 <?php echo $value['uid'] == $t['uid'] ? '<span class="text-po">(PO主)</span>' : ''; ?>
                                 <span>[<a
                                         href="view.php?id=<?php echo $t['tid']; ?>&reply=%3e%3e<?php echo $t['tid'], '%3e', $value['floor']; ?>#reply">回应</a>]</span>
-                                <article class="content" content="<?php echo $t['content']; ?>"></article>
+                                <article class="content" content="<?php echo $value['content']; ?>"></article>
                             </div>
                         </div>
                     <?php } ?>

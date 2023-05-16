@@ -9,8 +9,6 @@ class msgModel extends model {
 	//过滤用户提交正文
 	protected function filterCout($cont) {
 		$cont = htmlspecialchars($cont);
-		$cont = preg_replace('/(\r\n|\r|\n)/', '<br />', $cont);
-		$cont = preg_replace('/&gt;&gt;\d+(&gt;\d+)?/', '<span class=\"quote\">$0</span>', $cont);
 		return $cont;
 	}
 
