@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>登录</title>
+    <title>登陆</title>
     <link rel="stylesheet" href="view/default/style.css">
 </head>
 
@@ -70,7 +70,7 @@
         <div class="tablist">
             <ul class="tabmenu">
                 <li><a href="#register">注册</a></li>
-                <li><a href="#login">登录</a></li>
+                <li><a href="#login">登陆</a></li>
             </ul>
             <div id="register" class="tab_content">
                 <h1>注册</h1>
@@ -95,7 +95,7 @@
                 </div>
             </div>
             <div id="login" class="tab_content">
-                <h1>登录</h1>
+                <h1>登陆</h1>
                 <div class="editor">
                     <form action="loginAct.php" method="POST">
                         <li>
@@ -105,7 +105,7 @@
                         <li>
                             <h2>密码:</h2>
                             <input type="password" name="password" maxlength="30" placeholder="">
-                            <button>登录</button>
+                            <button>登陆</button>
                         </li>
                     </form>
 

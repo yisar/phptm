@@ -7,7 +7,7 @@ $isLogin = userModel::isLogin(); ?>
 			<li><a href="./login.php#login">登陆</a></li>
 			<li><a href="./login.php#register">注册</a></li>
 		<?php } else { ?>
-			<li class="hidden-xs curr-login">当前登录:
+			<li class="hidden-xs curr-login">当前登陆:
 				<?php echo $_SESSION['nickname']; ?>
 			</li>
 			<li><a href="./ucenter.php">个人中心</a></li>

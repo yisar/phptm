@@ -19,7 +19,7 @@ class userModel extends model {
 		$arr['type'] = $type;
 		$re = $this->db->autoExecute($this->table, $arr);
 		if ($re) {
-			$this->login($username, $password);
+			$this->login($email, $password);
 		}
 		return $re;
 	}
