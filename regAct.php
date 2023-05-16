@@ -11,7 +11,8 @@ $user_re = '/^[a-zA-Z][\w]{4,15}$/';
 $UM = new userModel();
 
 $email = $_POST['email'];
-$password = $_POST['password'];
+$password = md5('acgzone.clicli' . md5($_POST['password']));
+
 
 if ($UM->exists_email($email)) {
 	showMsg('邮箱已存在！');
@@ -22,7 +23,7 @@ if (mb_strlen($nickname, 'UTF8') < 2 || mb_strlen($nickname, 'UTF8') > 10) {
 	showMsg('昵称输入错误！');
 }
 
-if ($UM->add('', $nickname, md5('acgzone.clicli' . md5($password)), $email, 0)) {
+if ($UM->add('', $nickname, $password, $email, 0)) {
 	showMsg('注册成功！将去往主页！', true, './');
 } else {
 	showMsg('添加用户失败！');

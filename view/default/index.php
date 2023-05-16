@@ -12,6 +12,16 @@
     </title>
     <link rel="stylesheet" href="view/default/style.css">
     <link rel="stylesheet" href="https://at.alicdn.com/t/c/font_4066894_lfnqwuus5os.css">
+    <script src="https://npm.elemecdn.com/snarkdown@2.0.0/dist/snarkdown.umd.js"></script>
+    <script>
+        setTimeout(() => {
+            document.querySelectorAll('.content').forEach(item => {
+                console.log(item)
+                const c = item.getAttribute('content')
+                item.innerHTML = snarkdown(c);
+            })
+        }, 20)
+    </script>
 </head>
 
 <body>
@@ -44,7 +54,7 @@
                     </li>
                     <li>
                         <h2>正文:</h2>
-                        <textarea id="content" name="content"></textarea>
+                        <textarea id="content" name="content" placeholder="支持markdown语法"></textarea>
                     </li>
                     <input type="hidden" name="cat" value="<?php echo $curr_cat_id; ?>">
                 </form>
@@ -90,9 +100,7 @@
                                     href="delete.php?tid=<?php echo $t['tid'] ?>">删除</a>]</span>
                         <?php } ?>
                         <span>[<a target="_blank" href="view.php?id=<?php echo $t['tid']; ?>">回应</a>]</span>
-                        <p>
-                            <?php echo $t['content']; ?>
-                        </p>
+                        <article class="content" content="<?php echo $t['content']; ?>"></article>
                         <?php echo $t['SAGE'] == 0 ? '' : '<p><i class="iconfont icon-cai"></i> 本串已经被SAGE（<abbr  title="该串不会因为新回应而被顶到页首">?</abbr>）</p>' ?>
                         <?php
                         $reply_num = $msg->countReplies($t['tid']);
@@ -118,9 +126,7 @@
                                 <?php echo $value['uid'] == $t['uid'] ? '<span class="text-po">(PO主)</span>' : ''; ?>
                                 <span>[<a
                                         href="view.php?id=<?php echo $t['tid']; ?>&reply=%3e%3e<?php echo $t['tid'], '%3e', $value['floor']; ?>#reply">回应</a>]</span>
-                                <p>
-                                    <?php echo $value['content']; ?>
-                                </p>
+                                <article class="content" content="<?php echo $t['content']; ?>"></article>
                             </div>
                         </div>
                     <?php } ?>

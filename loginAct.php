@@ -7,9 +7,10 @@ if(empty($_POST['email'])||empty($_POST['password'])) {
 }
 userModel::isLogin()&&showMsg('已经处于登陆状态！', true, './');
 $email = $_POST['email'];
-$pass = $_POST['password'];
+$pass = md5('acgzone.clicli' . md5($_POST['password']));
+
 $UM = new userModel();
-if ($UM->login($email, md5('acgzone.clicli' . md5($password)))) {
+if ($UM->login($email, $pass)) {
 	showMsg('登陆成功！即将跳转到主页！', true, './');
 } else {
 	showMsg('用户名或密码错误！<br />');

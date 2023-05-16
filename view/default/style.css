@@ -42,17 +42,18 @@ main .menu {
 }
 
 main .menu .logo {
-    height: 80px;
+    /* height: 80px;
     width: 80px;
     background: url(https://cdn-us.imgs.moe/2023/05/15/6461f45bd1ad9.png);
-    background-size: 100%;
-    margin: 10px auto;
-    border-radius: 10px;
+    background-size: 100%; */
+    /* margin: 10px auto;
+    border-radius: 10px; */
 }
 
 .logo h1 {
-    font-size: 16px;
-    font-weight: normal;
+    font-size: 40px;
+    text-align: center;
+    padding: 20px;
 }
 
 main .menu ul {
@@ -81,7 +82,7 @@ main .menu .active {
 }
 
 .menu a h1 {
-    font-size: 14px;
+    font-size: 24px;
     color: var(--red);
 }
 
@@ -291,9 +292,18 @@ ol li {
     border-bottom: 2px solid #ea8;
 }
 
+article {
+    padding: 5px;
+}
+
+article img {
+    max-width: 600px;
+    max-height: 900px;
+}
+
 .ucenter .info img {
     border-radius: 50%;
-    
+
 }
 
 ::-webkit-scrollbar {
