@@ -50,7 +50,7 @@ switch ($cat) {
 	
 }
 //分页
-if ($cat==1||$cat==2||$cat==3) {
+if ($cat==1||$cat==2) {
 	//$i开始显示页数，$show结束显示页数
 	if ($curr_page<=6) {
 		$i = 1;
