@@ -1,3 +1,5 @@
+<?php defined('ACC') || exit('ACC Denied'); ?>
+
 <div class="editor">
     <style>
         .editor li:last-child {

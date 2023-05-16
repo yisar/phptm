@@ -7469,3 +7469,80 @@
 2023-05-15 21:34:14 mysql query: select count(*) from user where email=''
 2023-05-15 21:35:22 mysql query: select uid,type,username,nickname,email,password,regtime,lastlogin from user where email='admin@clicli.us'
 2023-05-15 21:39:50 mysql query: select uid,type,username,nickname,email,password,regtime,lastlogin from user where email='admin@clicli.us'
+2023-05-15 22:41:53 mysql connect error: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+
+2023-05-15 22:42:14 mysql connect error: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+
+2023-05-15 22:42:24 mysql connect error: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+
+2023-05-15 22:42:45 mysql connect error: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+
+2023-05-15 22:44:50 mysql query: select id,cat_name,parent_id from category
+2023-05-15 22:44:50 mysql query: select cat_name,intro from category where id=1
+2023-05-15 22:44:50 mysql query: select count(*) from thread where cat in (1,2,3)
+2023-05-15 22:44:50 mysql query: select * from thread where cat in (1,2,3) order by lastreptime desc limit 0,10
+2023-05-15 22:44:50 mysql query: select * from reply where tid=61 order by rid desc limit 0,5
+2023-05-15 22:44:50 mysql query: select * from reply where tid=57 order by rid desc limit 0,5
+2023-05-15 22:44:50 mysql query: select * from reply where tid=53 order by rid desc limit 0,5
+2023-05-15 22:44:50 mysql query: select * from reply where tid=54 order by rid desc limit 0,5
+2023-05-15 22:44:50 mysql query: select * from reply where tid=52 order by rid desc limit 0,5
+2023-05-15 22:44:50 mysql query: select * from reply where tid=51 order by rid desc limit 0,5
+2023-05-15 22:44:50 mysql query: select * from reply where tid=49 order by rid desc limit 0,5
+2023-05-15 22:44:50 mysql query: select * from reply where tid=48 order by rid desc limit 0,5
+2023-05-15 22:44:50 mysql query: select * from reply where tid=46 order by rid desc limit 0,5
+2023-05-15 22:44:50 mysql query: select * from reply where tid=42 order by rid desc limit 0,5
+2023-05-15 22:44:50 mysql query: select username from user where uid=2
+2023-05-15 22:44:50 mysql query: select count(*) from reply where tid=61
+2023-05-15 22:44:50 mysql query: select username from user where uid=2
+2023-05-15 22:44:50 mysql query: select count(*) from reply where tid=57
+2023-05-15 22:44:50 mysql query: select username from user where uid=2
+2023-05-15 22:44:50 mysql query: select count(*) from reply where tid=53
+2023-05-15 22:44:50 mysql query: select count(*) from reply where tid=54
+2023-05-15 22:44:50 mysql query: select username from user where uid=2
+2023-05-15 22:44:50 mysql query: select count(*) from reply where tid=52
+2023-05-15 22:44:50 mysql query: select username from user where uid=2
+2023-05-15 22:44:50 mysql query: select count(*) from reply where tid=51
+2023-05-15 22:44:50 mysql query: select username from user where uid=2
+2023-05-15 22:44:50 mysql query: select count(*) from reply where tid=49
+2023-05-15 22:44:50 mysql query: select username from user where uid=2
+2023-05-15 22:44:50 mysql query: select count(*) from reply where tid=48
+2023-05-15 22:44:50 mysql query: select username from user where uid=2
+2023-05-15 22:44:50 mysql query: select count(*) from reply where tid=46
+2023-05-15 22:44:50 mysql query: select count(*) from reply where tid=42
+2023-05-15 23:08:53 mysql query: select id,cat_name,parent_id from category
+2023-05-15 23:08:53 mysql query: select cat_name,intro from category where id=1
+2023-05-15 23:08:53 mysql query: select count(*) from thread where cat in (1,2,3)
+2023-05-15 23:08:53 mysql query: select * from thread where cat in (1,2,3) order by lastreptime desc limit 0,10
+2023-05-15 23:08:53 mysql query: select * from reply where tid=61 order by rid desc limit 0,5
+2023-05-15 23:08:53 mysql query: select * from reply where tid=57 order by rid desc limit 0,5
+2023-05-15 23:08:53 mysql query: select * from reply where tid=53 order by rid desc limit 0,5
+2023-05-15 23:08:53 mysql query: select * from reply where tid=54 order by rid desc limit 0,5
+2023-05-15 23:08:53 mysql query: select * from reply where tid=52 order by rid desc limit 0,5
+2023-05-15 23:08:53 mysql query: select * from reply where tid=51 order by rid desc limit 0,5
+2023-05-15 23:08:53 mysql query: select * from reply where tid=49 order by rid desc limit 0,5
+2023-05-15 23:08:53 mysql query: select * from reply where tid=48 order by rid desc limit 0,5
+2023-05-15 23:08:53 mysql query: select * from reply where tid=46 order by rid desc limit 0,5
+2023-05-15 23:08:53 mysql query: select * from reply where tid=42 order by rid desc limit 0,5
+2023-05-15 23:08:53 mysql query: select username from user where uid=2
+2023-05-15 23:08:53 mysql query: select count(*) from reply where tid=61
+2023-05-15 23:08:53 mysql query: select username from user where uid=2
+2023-05-15 23:08:53 mysql query: select count(*) from reply where tid=57
+2023-05-15 23:08:53 mysql query: select username from user where uid=2
+2023-05-15 23:08:53 mysql query: select count(*) from reply where tid=53
+2023-05-15 23:08:53 mysql query: select count(*) from reply where tid=54
+2023-05-15 23:08:53 mysql query: select username from user where uid=2
+2023-05-15 23:08:53 mysql query: select count(*) from reply where tid=52
+2023-05-15 23:08:53 mysql query: select username from user where uid=2
+2023-05-15 23:08:53 mysql query: select count(*) from reply where tid=51
+2023-05-15 23:08:53 mysql query: select username from user where uid=2
+2023-05-15 23:08:53 mysql query: select count(*) from reply where tid=49
+2023-05-15 23:08:53 mysql query: select username from user where uid=2
+2023-05-15 23:08:53 mysql query: select count(*) from reply where tid=48
+2023-05-15 23:08:53 mysql query: select username from user where uid=2
+2023-05-15 23:08:53 mysql query: select count(*) from reply where tid=46
+2023-05-15 23:08:53 mysql query: select count(*) from reply where tid=42
+2023-05-16 14:23:47 mysql connect error: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+
+2023-05-16 14:39:58 mysql connect error: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2023-05-16 15:13:38 mysql connect error: Access denied for user 'root'@'localhost' (using password: YES)
+2023-05-16 15:13:53 mysql connect error: Unknown database 'msg'

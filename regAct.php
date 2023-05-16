@@ -11,6 +11,7 @@ $user_re = '/^[a-zA-Z][\w]{4,15}$/';
 $UM = new userModel();
 
 $email = $_POST['email'];
+$password = $_POST['password'];
 
 if ($UM->exists_email($email)) {
 	showMsg('邮箱已存在！');
