@@ -33,9 +33,11 @@
                                             <?php echo $t['title'] ?>
                                         </h1>
                                     </a>
-                                    <p>
-                                        <?php echo $t['name'] ?>
-                                    </p>
+                                    <a href="./user.php?uid=<?php echo $t['uid'] ?>">
+                                        <p>
+                                            <?php echo $t['name'] ?>
+                                        </p>
+                                    </a>
                                 </div>
                                 <div>
                                     <a href="./post.php?id=<?php echo $t['tid']; ?>">

@@ -4141,3 +4141,45 @@
 2024-03-15 21:17:47 mysql query: select * from reply where tid=65 order by rid desc limit 0,10
 2024-03-15 21:17:47 mysql query: select count(*) from subscription where uid=19 and tid=65
 2024-03-15 21:17:47 mysql query: select count(*) from subscription where uid=19 and tid=65
+2024-03-15 21:20:28 mysql query: select * from thread where tid=39
+2024-03-15 21:20:28 mysql query: select * from reply where tid=39 order by rid desc limit 0,10
+2024-03-15 21:20:28 mysql query: select count(*) from subscription where uid=19 and tid=39
+2024-03-15 21:20:31 mysql query: select id,cat_name,parent_id from category
+2024-03-15 21:20:31 mysql query: select * from thread where cat in (1) order by lastreptime desc limit 0,5
+2024-03-15 21:20:31 mysql query: select * from thread where cat in (2) order by lastreptime desc limit 0,5
+2024-03-15 21:20:31 mysql query: select * from thread where cat in (3) order by lastreptime desc limit 0,5
+2024-03-15 21:20:31 mysql query: select * from thread where cat in (4) order by lastreptime desc limit 0,5
+2024-03-15 21:26:33 mysql query: select * from thread where uid=19 order by tid desc limit 0,5
+2024-03-15 21:27:13 mysql query: update user set nickname='伊撒尔',password='5e953f36fcc8a11df056a6d924c2e689' where uid=19
+2024-03-15 21:28:24 mysql query: select uid,type,username,nickname,email,password,regtime,lastlogin from user where email='伊撒尔'
+2024-03-15 21:28:45 mysql query: select uid,type,username,nickname,email,password,regtime,lastlogin from user where email='1533540012@qq.com'
+2024-03-15 21:28:45 mysql query: update user set lastip='127.0.0.1',lastlogin='1710509325' where uid=19
+2024-03-15 21:28:48 mysql query: select id,cat_name,parent_id from category
+2024-03-15 21:28:48 mysql query: select * from thread where cat in (1) order by lastreptime desc limit 0,5
+2024-03-15 21:28:48 mysql query: select * from thread where cat in (2) order by lastreptime desc limit 0,5
+2024-03-15 21:28:48 mysql query: select * from thread where cat in (3) order by lastreptime desc limit 0,5
+2024-03-15 21:28:48 mysql query: select * from thread where cat in (4) order by lastreptime desc limit 0,5
+2024-03-15 21:28:54 mysql query: select id,cat_name,parent_id from category
+2024-03-15 21:28:54 mysql query: select * from thread where cat in (1) order by lastreptime desc limit 0,5
+2024-03-15 21:28:54 mysql query: select * from thread where cat in (2) order by lastreptime desc limit 0,5
+2024-03-15 21:28:54 mysql query: select * from thread where cat in (3) order by lastreptime desc limit 0,5
+2024-03-15 21:28:54 mysql query: select * from thread where cat in (4) order by lastreptime desc limit 0,5
+2024-03-15 21:29:02 mysql query: select * from thread where tid=65
+2024-03-15 21:29:02 mysql query: select * from reply where tid=65 order by rid desc limit 0,10
+2024-03-15 21:29:16 mysql query: select uid,type,username,nickname,email,password,regtime,lastlogin from user where email='1533540012@qq.com'
+2024-03-15 21:29:16 mysql query: update user set lastip='127.0.0.1',lastlogin='1710509356' where uid=19
+2024-03-15 21:29:20 mysql query: select id,cat_name,parent_id from category
+2024-03-15 21:29:20 mysql query: select * from thread where cat in (1) order by lastreptime desc limit 0,5
+2024-03-15 21:29:20 mysql query: select * from thread where cat in (2) order by lastreptime desc limit 0,5
+2024-03-15 21:29:20 mysql query: select * from thread where cat in (3) order by lastreptime desc limit 0,5
+2024-03-15 21:29:20 mysql query: select * from thread where cat in (4) order by lastreptime desc limit 0,5
+2024-03-15 21:31:17 mysql query: select id,cat_name,parent_id from category
+2024-03-15 21:31:17 mysql query: select * from thread where cat in (1) order by lastreptime desc limit 0,5
+2024-03-15 21:31:17 mysql query: select * from thread where cat in (2) order by lastreptime desc limit 0,5
+2024-03-15 21:31:17 mysql query: select * from thread where cat in (3) order by lastreptime desc limit 0,5
+2024-03-15 21:31:17 mysql query: select * from thread where cat in (4) order by lastreptime desc limit 0,5
+2024-03-15 21:31:21 mysql query: select * from thread where uid=2 order by tid desc limit 0,5
+2024-03-15 21:36:15 mysql query: select username from user where uid=2
+2024-03-15 21:36:15 mysql query: select * from thread where uid=2 order by tid desc limit 0,5
+2024-03-15 21:39:09 mysql query: select * from user where uid=2
+2024-03-15 21:39:09 mysql query: select * from thread where uid=2 order by tid desc limit 0,5

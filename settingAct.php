@@ -23,7 +23,6 @@ if ($_POST['email'] != $_SESSION['email']) {
 if (empty($_POST['password'])) {
 	// $data['password']=$_SESSION['password'];
 } else {
-	var_dump($_POST['password']);
 	$data['password'] = md5('acgzone.clicli' . md5($_POST['password']));
 }
 if (count($data) == 0) {

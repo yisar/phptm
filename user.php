@@ -5,7 +5,7 @@ require('init.php');
 userModel::isLogin() || showMsg('请先登陆!', true, './login.php');
 $uid = empty($_GET['uid']) ? $_SESSION['uid'] : (int) $_GET['uid'];
 $cat = empty($_GET['cat']) ? 1 : (int) $_GET['cat'];
-
+$user = userModel::getUser($uid);
 $self = $uid == $_SESSION['uid'] ;
 switch ($cat) {
 	//我发起的讨论 栏目
