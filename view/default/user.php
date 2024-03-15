@@ -32,9 +32,11 @@
             </p>
         </div>
         <nav>
-            <li <?php echo $cat == 1 ? 'class="active" ' : '' ?>><a href="./user.php?cat=1">讨论</a></li>
-            <li <?php echo $cat == 2 ? 'class="active" ' : '' ?>><a href="./user.php?cat=2">订阅</a></li>
-            <li <?php echo $cat == 3 ? 'class="active" ' : '' ?>><a href="./user.php?cat=3">信息设定</a></li>
+            <li <?php echo $cat == 1 ? 'class="active" ' : '' ?>><a href="./user.php?cat=1">Post</a></li>
+            <?php if ($self) { ?>
+                <li <?php echo $cat == 2 ? 'class="active" ' : '' ?>><a href="./user.php?cat=2">Subscription</a></li>
+                <li <?php echo $cat == 3 ? 'class="active" ' : '' ?>><a href="./user.php?cat=3">Setting</a></li>
+            <?php } ?>
         </nav>
         <div class="list wrap">
             <?php

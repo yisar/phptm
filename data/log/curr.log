@@ -4121,3 +4121,6 @@
 2024-03-15 21:10:12 mysql query: select * from thread where tid in (select tid from subscription where uid=19) order by lastreptime desc limit 0,10
 2024-03-15 21:10:17 mysql query: select * from thread where tid in (select tid from subscription where uid=19) order by lastreptime desc limit 0,10
 2024-03-15 21:10:22 mysql query: select * from thread where uid=19 order by tid desc limit 0,5
+2024-03-15 21:11:50 mysql query: select * from thread where uid=19 order by tid desc limit 0,5
+2024-03-15 21:12:10 mysql query: select * from thread where uid=2 order by tid desc limit 0,5
+2024-03-15 21:13:24 mysql query: select * from thread where uid=2 order by tid desc limit 0,5
