@@ -46,28 +46,26 @@
                 <?php foreach ($replies[$k] as $key => $value) {
                     ?>
                     <div class="item" floor="<?php echo $value['floor'], '>#', $value['floor']; ?>">
-                        <div class="indent">
-                            <span></span>
-                            <span>
-                                <?php echo $value['name']; ?>
-                            </span>
-                            <span>
-                                <?php echo date('Y-m-d H:i:s', $value['reptime']); ?>
-                            </span>
-                            <span>ID:
-                                <?php echo $ID; ?>
-                            </span>
-                            <?php echo $value['uid'] == $t['uid'] ? '<span class="text-po">(PO主)</span>' : ''; ?>
-                            <span>[<a
-                                    href="post.php?id=<?php echo $t['tid']; ?>&reply=%3e%3e<?php echo $t['tid'], '%3e', $value['floor']; ?>#reply">回应</a>]</span>
-                            <article class="content" content="<?php echo $value['content']; ?>"></article>
+                        <div class="info">
+                            <div class="user">
+                                <span>
+                                    <?php echo $value['name']; ?>
+                                </span>
+                                <time>
+                                    <?php echo date('Y-m-d H:i', $value['reptime']); ?>
+                                </time>
+                            </div>
+                            <?php require(ROOT . 'view/default/comp/action.php') ?>
                         </div>
+                        <article>
+                            <pre><?php echo $value['content'] ?></pre>
+                        </article>
                     </div>
                 <?php } ?>
             <?php } ?>
+            <?php require(ROOT . 'view/default/comp/editor.php') ?>
             </div>
         </ul>
-        <?php require(ROOT . 'view/default/comp/editor.php') ?>
     </main>
     <?php require(ROOT . 'view/default/footer.php') ?>
 </body>

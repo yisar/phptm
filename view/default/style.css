@@ -29,7 +29,7 @@ a:hover {
 }
 
 header {
-    height: 45px;
+    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -38,9 +38,15 @@ header {
     box-shadow: 0 1px 3px rgb(18 18 18 / 10%);
 }
 
+header .wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 header .logo {
     background: url(https://cdn-us.imgs.moe/2023/05/17/6464ee8220a64.png) no-repeat;
-    height: 35px;
+    height: 40px;
     width: 80px;
     background-size: contain;
     margin: 10px;
@@ -99,10 +105,13 @@ section .list .item div {
 }
 
 main {
+    margin-top: 15px !important;
+}
+
+.thread {
     border-radius: 4px;
     background: #fff;
     padding: 15px;
-    margin-top: 20px !important;
 }
 
 .thread h1 {
@@ -114,6 +123,7 @@ main {
     display: flex;
     justify-content: space-between;
     font-size: 14px;
+    align-items: baseline;
 }
 
 .thread time {
@@ -123,6 +133,10 @@ main {
 
 .thread .user {
     padding: 10px 0;
+}
+
+.thread .item {
+    border-bottom: 1px dashed #ddd;
 }
 
 footer {
@@ -139,7 +153,7 @@ li {
 
 }
 
-footer li {
+footer li, header li {
     display: inline-block;
 }
 
@@ -155,16 +169,14 @@ footer li {
     justify-content: end;
 }
 
-
-
 .editor li textarea {
-    width: 960px;
+    width: 970px;
     height: 150px;
     border: 1px solid #ddd;
-    border-radius: 4px;
     padding: 10px;
     font-size: 16px;
     margin: 10px 0;
+    box-sizing: border-box;
 }
 
 .editor button {
