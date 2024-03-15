@@ -4034,3 +4034,90 @@
 2024-03-15 20:45:13 mysql query: select * from reply where tid=59 order by rid desc limit 0,5
 2024-03-15 20:45:17 mysql query: select count(*) from subscription where uid=19
 2024-03-15 20:45:17 mysql query: select * from thread where tid in (select tid from subscription where uid=19) order by lastreptime desc limit 0,10
+2024-03-15 20:46:31 mysql query: select count(*) from subscription where uid=19
+2024-03-15 20:46:31 mysql query: select * from thread where tid in (select tid from subscription where uid=19) order by lastreptime desc limit 0,10
+2024-03-15 20:46:46 mysql query: select count(*) from thread where uid=19
+2024-03-15 20:46:46 mysql query: select * from thread where uid=19 order by tid desc limit 0,5
+2024-03-15 20:46:46 mysql query: select * from reply where tid=67 order by rid desc limit 0,5
+2024-03-15 20:46:46 mysql query: select * from reply where tid=59 order by rid desc limit 0,5
+2024-03-15 20:46:50 mysql query: select count(*) from subscription where uid=19
+2024-03-15 20:46:50 mysql query: select * from thread where tid in (select tid from subscription where uid=19) order by lastreptime desc limit 0,10
+2024-03-15 20:46:56 mysql query: select count(*) from subscription where uid=19
+2024-03-15 20:46:56 mysql query: select * from thread where tid in (select tid from subscription where uid=19) order by lastreptime desc limit 0,10
+2024-03-15 20:47:03 mysql query: select count(*) from thread where uid=19
+2024-03-15 20:47:03 mysql query: select * from thread where uid=19 order by tid desc limit 0,5
+2024-03-15 20:47:03 mysql query: select * from reply where tid=67 order by rid desc limit 0,5
+2024-03-15 20:47:03 mysql query: select * from reply where tid=59 order by rid desc limit 0,5
+2024-03-15 20:47:49 mysql query: select count(*) from thread where uid=19
+2024-03-15 20:47:49 mysql query: select * from thread where uid=19 order by tid desc limit 0,5
+2024-03-15 20:47:49 mysql query: select * from reply where tid=67 order by rid desc limit 0,5
+2024-03-15 20:47:49 mysql query: select * from reply where tid=59 order by rid desc limit 0,5
+2024-03-15 20:50:39 mysql query: select count(*) from thread where uid=19
+2024-03-15 20:50:39 mysql query: select * from thread where uid=19 order by tid desc limit 0,5
+2024-03-15 20:50:39 mysql query: select * from reply where tid=67 order by rid desc limit 0,5
+2024-03-15 20:50:39 mysql query: select * from reply where tid=59 order by rid desc limit 0,5
+2024-03-15 20:51:36 mysql query: select count(*) from thread where uid=19
+2024-03-15 20:51:36 mysql query: select * from thread where uid=19 order by tid desc limit 0,5
+2024-03-15 20:51:36 mysql query: select * from reply where tid=67 order by rid desc limit 0,5
+2024-03-15 20:51:36 mysql query: select * from reply where tid=59 order by rid desc limit 0,5
+2024-03-15 20:51:53 mysql query: select count(*) from thread where uid=19
+2024-03-15 20:51:53 mysql query: select * from thread where uid=19 order by tid desc limit 0,5
+2024-03-15 20:51:53 mysql query: select * from reply where tid=67 order by rid desc limit 0,5
+2024-03-15 20:51:53 mysql query: select * from reply where tid=59 order by rid desc limit 0,5
+2024-03-15 20:52:35 mysql query: select count(*) from thread where uid=19
+2024-03-15 20:52:35 mysql query: select * from thread where uid=19 order by tid desc limit 0,5
+2024-03-15 20:52:35 mysql query: select * from reply where tid=67 order by rid desc limit 0,5
+2024-03-15 20:52:35 mysql query: select * from reply where tid=59 order by rid desc limit 0,5
+2024-03-15 20:52:48 mysql query: select count(*) from thread where uid=19
+2024-03-15 20:52:48 mysql query: select * from thread where uid=19 order by tid desc limit 0,5
+2024-03-15 20:52:48 mysql query: select * from reply where tid=67 order by rid desc limit 0,5
+2024-03-15 20:52:48 mysql query: select * from reply where tid=59 order by rid desc limit 0,5
+2024-03-15 20:52:53 mysql query: select count(*) from subscription where uid=19
+2024-03-15 20:52:53 mysql query: select * from thread where tid in (select tid from subscription where uid=19) order by lastreptime desc limit 0,10
+2024-03-15 20:53:10 mysql query: select count(*) from subscription where uid=19
+2024-03-15 20:53:10 mysql query: select * from thread where tid in (select tid from subscription where uid=19) order by lastreptime desc limit 0,10
+2024-03-15 20:53:15 mysql query: select * from thread where tid=54
+2024-03-15 20:53:15 mysql query: select * from reply where tid=54 order by rid desc limit 0,10
+2024-03-15 20:53:15 mysql query: select count(*) from subscription where uid=19 and tid=54
+2024-03-15 20:53:15 mysql query: select count(*) from subscription where uid=19 and tid=54
+2024-03-15 20:53:21 mysql query: select id,cat_name,parent_id from category
+2024-03-15 20:53:21 mysql query: select * from thread where cat in (1) order by lastreptime desc limit 0,5
+2024-03-15 20:53:21 mysql query: select * from thread where cat in (2) order by lastreptime desc limit 0,5
+2024-03-15 20:53:21 mysql query: select * from thread where cat in (3) order by lastreptime desc limit 0,5
+2024-03-15 20:53:21 mysql query: select * from thread where cat in (4) order by lastreptime desc limit 0,5
+2024-03-15 20:53:55 mysql query: select id,cat_name,parent_id from category
+2024-03-15 20:53:55 mysql query: select * from thread where cat in (1) order by lastreptime desc limit 0,5
+2024-03-15 20:53:55 mysql query: select * from thread where cat in (2) order by lastreptime desc limit 0,5
+2024-03-15 20:53:55 mysql query: select * from thread where cat in (3) order by lastreptime desc limit 0,5
+2024-03-15 20:53:55 mysql query: select * from thread where cat in (4) order by lastreptime desc limit 0,5
+2024-03-15 20:55:08 mysql query: select id,cat_name,parent_id from category
+2024-03-15 20:55:08 mysql query: select * from thread where cat in (1) order by lastreptime desc limit 0,5
+2024-03-15 20:55:08 mysql query: select * from thread where cat in (2) order by lastreptime desc limit 0,5
+2024-03-15 20:55:08 mysql query: select * from thread where cat in (3) order by lastreptime desc limit 0,5
+2024-03-15 20:55:08 mysql query: select * from thread where cat in (4) order by lastreptime desc limit 0,5
+2024-03-15 20:55:49 mysql query: select id,cat_name,parent_id from category
+2024-03-15 20:55:49 mysql query: select * from thread where cat in (1) order by lastreptime desc limit 0,5
+2024-03-15 20:55:49 mysql query: select * from thread where cat in (2) order by lastreptime desc limit 0,5
+2024-03-15 20:55:49 mysql query: select * from thread where cat in (3) order by lastreptime desc limit 0,5
+2024-03-15 20:55:49 mysql query: select * from thread where cat in (4) order by lastreptime desc limit 0,5
+2024-03-15 20:55:55 mysql query: select * from thread where tid=65
+2024-03-15 20:55:55 mysql query: select * from reply where tid=65 order by rid desc limit 0,10
+2024-03-15 20:55:55 mysql query: select count(*) from subscription where uid=19 and tid=65
+2024-03-15 20:55:55 mysql query: select count(*) from subscription where uid=19 and tid=65
+2024-03-15 20:56:03 mysql query: select count(*) from thread where uid=19
+2024-03-15 20:56:03 mysql query: select * from thread where uid=19 order by tid desc limit 0,5
+2024-03-15 20:56:03 mysql query: select * from reply where tid=67 order by rid desc limit 0,5
+2024-03-15 20:56:03 mysql query: select * from reply where tid=59 order by rid desc limit 0,5
+2024-03-15 21:03:45 mysql query: select * from thread where uid=19 order by tid desc limit 0,5
+2024-03-15 21:03:53 mysql query: select * from thread where tid in (select tid from subscription where uid=19) order by lastreptime desc limit 0,10
+2024-03-15 21:04:35 mysql query: select * from thread where tid in (select tid from subscription where uid=19) order by lastreptime desc limit 0,10
+2024-03-15 21:04:47 mysql query: select * from thread where tid in (select tid from subscription where uid=19) order by lastreptime desc limit 0,10
+2024-03-15 21:05:28 mysql query: select * from thread where tid in (select tid from subscription where uid=19) order by lastreptime desc limit 0,10
+2024-03-15 21:05:54 mysql query: select * from thread where tid in (select tid from subscription where uid=19) order by lastreptime desc limit 0,10
+2024-03-15 21:06:01 mysql query: select * from thread where uid=19 order by tid desc limit 0,5
+2024-03-15 21:06:13 mysql query: select * from thread where uid=2 order by tid desc limit 0,5
+2024-03-15 21:08:50 mysql query: select * from thread where uid=2 order by tid desc limit 0,5
+2024-03-15 21:10:08 mysql query: select * from thread where tid in (select tid from subscription where uid=19) order by lastreptime desc limit 0,10
+2024-03-15 21:10:12 mysql query: select * from thread where tid in (select tid from subscription where uid=19) order by lastreptime desc limit 0,10
+2024-03-15 21:10:17 mysql query: select * from thread where tid in (select tid from subscription where uid=19) order by lastreptime desc limit 0,10
+2024-03-15 21:10:22 mysql query: select * from thread where uid=19 order by tid desc limit 0,5

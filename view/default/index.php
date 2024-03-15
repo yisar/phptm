@@ -28,9 +28,11 @@
                         <?php foreach ($threads[$_cat['id']] as $i => $t) { ?>
                             <div class="item">
                                 <div>
-                                    <h1>
-                                        <?php echo $t['title'] ?>
-                                    </h1>
+                                    <a href="./post.php?id=<?php echo $t['tid']; ?>">
+                                        <h1>
+                                            <?php echo $t['title'] ?>
+                                        </h1>
+                                    </a>
                                     <p>
                                         <?php echo $t['name'] ?>
                                     </p>
@@ -40,7 +42,6 @@
                                         <p>
                                             <?php echo $t['content'] ?>
                                         </p>
-
                                     </a>
                                     <span>
                                         <?php echo date('m-d H:i', $t['pubtime']); ?>

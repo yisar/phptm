@@ -28,9 +28,11 @@
                 <?php foreach ($threads as $k => $t) { ?>
                     <div class="item">
                         <div>
-                            <h1>
-                                <?php echo $t['title'] ?>
-                            </h1>
+                            <a href="./post.php?id=<?php echo $t['tid']; ?>">
+                                <h1>
+                                    <?php echo $t['title'] ?>
+                                </h1>
+                            </a>
                             <p>
                                 <?php echo $t['name'] ?>
                             </p>

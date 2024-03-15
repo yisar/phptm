@@ -9,6 +9,11 @@
         <?php echo $_SESSION['username'] ?> 的用户中心
     </title>
     <link rel="stylesheet" href="view/default/style.css">
+    <style>
+        body {
+            background: #F1F4F7 !important;
+        }
+    </style>
 </head>
 
 <body>
@@ -27,13 +32,13 @@
             </p>
         </div>
         <nav>
-            <li <?php echo $cat == 1 ? 'class="active" ' : '' ?>><a href="./ucenter.php?cat=1">讨论</a></li>
-            <li <?php echo $cat == 2 ? 'class="active" ' : '' ?>><a href="./ucenter.php?cat=2">订阅</a></li>
-            <li <?php echo $cat == 3 ? 'class="active" ' : '' ?>><a href="./ucenter.php?cat=3">信息设定</a></li>
+            <li <?php echo $cat == 1 ? 'class="active" ' : '' ?>><a href="./user.php?cat=1">讨论</a></li>
+            <li <?php echo $cat == 2 ? 'class="active" ' : '' ?>><a href="./user.php?cat=2">订阅</a></li>
+            <li <?php echo $cat == 3 ? 'class="active" ' : '' ?>><a href="./user.php?cat=3">信息设定</a></li>
         </nav>
         <div class="list wrap">
             <?php
-            $arr = array('thread', 'thread', 'user_setting');
+            $arr = $self ? array('thread', 'thread', 'user_setting') : array('thread');
             require(ROOT . 'view/default/' . $arr[$cat - 1] . '.php');
             ?>
         </div>
