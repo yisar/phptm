@@ -9,13 +9,13 @@
     <title>
         <?php echo $curr_cat['cat_name'], ' - ', SITENAME; ?>
     </title>
-    <link rel="stylesheet" href="view/default/style.css">
+    <link rel="stylesheet" href="view/style.css">
     <link rel="stylesheet" href="https://at.alicdn.com/t/c/font_4066894_lfnqwuus5os.css">
 </head>
 
 <body>
     <?php if ($pathname == 'thread') { ?>
-        <?php require(ROOT . 'view/default/header.php'); ?>
+        <?php require(ROOT . 'view/header.php'); ?>
     <?php } ?>
     <main class="wrap">
         <style>
@@ -53,16 +53,16 @@
 
                     </div>
                 <?php } ?>
-                <?php require(ROOT . 'view/default/pagination.php') ?>
+                <?php require(ROOT . 'view/pagination.php') ?>
                 <?php if ($pathname == 'thread') { ?>
-                    <?php require(ROOT . 'view/default/comp/editor.php') ?>
+                    <?php require(ROOT . 'view/comp/editor.php') ?>
                 <?php } ?>
         </section>
         </ul>
         </div>
 
     </main>
-    <?php require(ROOT . 'view/default/footer.php') ?>
+    <?php require(ROOT . 'view/footer.php') ?>
 </body>
 
 </html>

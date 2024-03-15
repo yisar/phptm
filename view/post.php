@@ -9,7 +9,7 @@
     <title>
         <?php echo $threads[0]['title'], ' - ', SITENAME; ?>
     </title>
-    <link rel="stylesheet" href="view/default/style.css">
+    <link rel="stylesheet" href="view/style.css">
     <link rel="stylesheet" href="https://at.alicdn.com/t/c/font_4066894_lfnqwuus5os.css">
     <style>
         body {
@@ -19,7 +19,7 @@
 </head>
 
 <body>
-    <?php require(ROOT . 'view/default/header.php'); ?>
+    <?php require(ROOT . 'view/header.php'); ?>
     <main class="wrap">
         <ul class="thread pd">
             <?php foreach ($threads as $k => $t) { ?>
@@ -37,7 +37,7 @@
                                 <?php echo date('Y-m-d H:i', $t['pubtime']); ?>
                             </time>
                         </div>
-                        <?php require(ROOT . 'view/default/comp/action.php') ?>
+                        <?php require(ROOT . 'view/comp/action.php') ?>
                     </div>
                     <article>
                         <pre><?php echo $t['content'] ?></pre>
@@ -56,7 +56,7 @@
                                     <?php echo date('Y-m-d H:i', $value['reptime']); ?>
                                 </time>
                             </div>
-                            <?php require(ROOT . 'view/default/comp/action.php') ?>
+                            <?php require(ROOT . 'view/comp/action.php') ?>
                         </div>
                         <article>
                             <pre><?php echo $value['content'] ?></pre>
@@ -64,12 +64,12 @@
                     </div>
                 <?php } ?>
             <?php } ?>
-            <?php require(ROOT . 'view/default/pagination.php') ?>
-            <?php require(ROOT . 'view/default/comp/editor.php') ?>
+            <?php require(ROOT . 'view/pagination.php') ?>
+            <?php require(ROOT . 'view/comp/editor.php') ?>
             </div>
         </ul>
     </main>
-    <?php require(ROOT . 'view/default/footer.php') ?>
+    <?php require(ROOT . 'view/footer.php') ?>
 </body>
 
 </html>

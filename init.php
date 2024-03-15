@@ -32,7 +32,7 @@ define('SITENAME', $conf->site_name);
 define('CD',$conf->post_cd);
 
 //获取模板路径
-$template_dir = isset($_SESSION['template'])?$_SESSION['template']:'default';
+$template_dir = isset($_SESSION['template'])?$_SESSION['template']:'';
 
 //加载函数库
 require(ROOT . '/include/lib/lib.base.php');

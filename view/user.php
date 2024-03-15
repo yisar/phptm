@@ -8,7 +8,7 @@
     <title>
         <?php echo $user['username'] ?> 的用户中心
     </title>
-    <link rel="stylesheet" href="view/default/style.css">
+    <link rel="stylesheet" href="view/style.css">
     <style>
         body {
             background: #F1F4F7 !important;
@@ -17,7 +17,7 @@
 </head>
 
 <body>
-    <?php require(ROOT . 'view/default/header.php'); ?>
+    <?php require(ROOT . 'view/header.php'); ?>
     <main class="ucenter">
         <div class="info">
             <img src="<?php echo 'https://cdn.sep.cc/avatar/' . md5($user['email']) ?>" alt="">
@@ -41,7 +41,7 @@
         <div class="list wrap">
             <?php
             $arr = $self ? array('thread', 'thread', 'user_setting') : array('thread');
-            require(ROOT . 'view/default/' . $arr[$cat - 1] . '.php');
+            require(ROOT . 'view/' . $arr[$cat - 1] . '.php');
             ?>
         </div>
     </main>
