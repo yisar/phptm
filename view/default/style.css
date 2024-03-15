@@ -9,7 +9,8 @@ body {
     flex-direction: column;
     justify-content: space-between;
     background: #F1F4F7;
-    font-size: 14px;
+    font-size: 16px;
+    transition: 0.3s;
     color: #333;
     --red: #cc1105;
     --red-light: #f5e7de;
@@ -21,6 +22,10 @@ body {
 a {
     color: #626f84;
     text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 header {
@@ -49,6 +54,7 @@ main {
     flex: 1;
     overflow: hidden;
     display: flex;
+    margin: 20px 0;
 }
 
 .logo h1 {
@@ -57,36 +63,45 @@ main {
     padding: 20px;
 }
 
-main .menu ul {
-    flex: 1;
-    overflow-y: scroll;
-}
 
-main .menu ul a {
-    display: block;
-    padding: 5px;
-}
-
-main .menu .active {
-    background: var(--red-light);
-    color: #fff;
-}
-
-.menu a li {
-    padding: 5px;
+section.cat {
+    margin: 20px 0;
+    background: #fff;
     border-radius: 4px;
+    border: 1px solid var(--green);
 }
 
-.menu a div {
+section .title {
+    padding: 8px 10px;
+    background: var(--green-light);
+    border-bottom: dashed 1px var(--green);
+    border-radius: 4px 4px 0 0;
+    font-weight: bold;
+}
+
+section .list {
+    padding: 10px;
+}
+
+section .list h1 {
+    font-size: 16px;
+}
+
+section .list span {
+    font-size: 12px;
+    color: #555;
+}
+
+
+section .list .item {
+    padding: 5px;
+    border-bottom: 1px dashed #bbb;
+}
+
+section .list .item div {
     display: flex;
     justify-content: space-between;
 }
-
-.menu a h1 {
-    font-size: 24px;
-    color: var(--red);
-}
-
 
 main .body {
     flex: 1;
@@ -107,10 +122,11 @@ main .body h1 {
 
 footer {
     display: flex;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
     font-size: 14px;
-    padding: 20px;
+    padding: 10px;
+
 }
 
 li {
@@ -174,52 +190,6 @@ ol li {
     list-style: upper-roman;
     color: var(--oridge);
     padding: 2px;
-}
-
-.list {
-    width: 1000px;
-    padding: 10px;
-    border-top: 1px solid var(--red-bg);
-    margin: 20px auto;
-    justify-content: start !important;
-}
-
-.list .item {
-    padding-top: 10px;
-}
-
-.list .item span {
-    padding: 5px;
-}
-
-.list .item p {
-    padding: 10px;
-    font-size: 16px;
-}
-
-.list .indent {
-    margin: 2px 0 2px 20px;
-    background: var(--red-bg);
-    position: relative;
-    display: inline-block;
-    padding: 2px;
-}
-
-.list .indent::before {
-    content: "...";
-    position: absolute;
-    left: -11px;
-    top: 0px;
-}
-
-.list .item span:nth-child(1) {
-    font-weight: bold;
-    color: var(--red);
-}
-
-.list .item span:nth-child(2) {
-    font-weight: bold;
-    color: var(--green);
 }
 
 .iconfont {

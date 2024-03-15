@@ -1591,3 +1591,408 @@
 2024-03-15 13:18:29 mysql query: select username from user where uid=2
 2024-03-15 13:18:29 mysql query: select count(*) from subscription where uid=19 and tid=43
 2024-03-15 13:18:29 mysql query: select count(*) from reply where tid=43
+2024-03-15 13:22:46 mysql query: select * from thread where tid=39
+2024-03-15 13:22:46 mysql query: select count(*) from reply where tid=39
+2024-03-15 13:22:46 mysql query: select * from reply where tid=39 order by rid desc limit 0,10
+2024-03-15 13:22:46 mysql query: select id,cat_name,parent_id from category
+2024-03-15 13:22:46 mysql query: select cat_name from category where id=0
+2024-03-15 13:22:46 mysql query: select username from user where uid=2
+2024-03-15 13:22:46 mysql query: select count(*) from subscription where uid=19 and tid=39
+2024-03-15 13:22:46 mysql query: select count(*) from reply where tid=39
+2024-03-15 13:23:04 mysql query: select id,cat_name,parent_id from category
+2024-03-15 13:23:04 mysql query: select cat_name,intro from category where id=1
+2024-03-15 13:23:04 mysql query: select count(*) from thread where cat in (1)
+2024-03-15 13:23:04 mysql query: select * from thread where cat in (1) order by lastreptime desc limit 0,10
+2024-03-15 13:23:04 mysql query: select * from reply where tid=59 order by rid desc limit 0,5
+2024-03-15 13:23:04 mysql query: select * from reply where tid=57 order by rid desc limit 0,5
+2024-03-15 13:23:04 mysql query: select * from reply where tid=53 order by rid desc limit 0,5
+2024-03-15 13:23:04 mysql query: select * from reply where tid=54 order by rid desc limit 0,5
+2024-03-15 13:23:04 mysql query: select * from reply where tid=52 order by rid desc limit 0,5
+2024-03-15 13:23:04 mysql query: select * from reply where tid=51 order by rid desc limit 0,5
+2024-03-15 13:23:04 mysql query: select * from reply where tid=49 order by rid desc limit 0,5
+2024-03-15 13:23:04 mysql query: select * from reply where tid=48 order by rid desc limit 0,5
+2024-03-15 13:23:04 mysql query: select * from reply where tid=44 order by rid desc limit 0,5
+2024-03-15 13:23:04 mysql query: select * from reply where tid=43 order by rid desc limit 0,5
+2024-03-15 13:23:04 mysql query: select count(*) from subscription where uid=19 and tid=59
+2024-03-15 13:23:04 mysql query: select count(*) from reply where tid=59
+2024-03-15 13:23:04 mysql query: select count(*) from subscription where uid=19 and tid=57
+2024-03-15 13:23:04 mysql query: select count(*) from reply where tid=57
+2024-03-15 13:23:04 mysql query: select username from user where uid=2
+2024-03-15 13:23:04 mysql query: select count(*) from subscription where uid=19 and tid=53
+2024-03-15 13:23:04 mysql query: select count(*) from reply where tid=53
+2024-03-15 13:23:04 mysql query: select count(*) from subscription where uid=19 and tid=54
+2024-03-15 13:23:04 mysql query: select count(*) from reply where tid=54
+2024-03-15 13:23:04 mysql query: select username from user where uid=2
+2024-03-15 13:23:04 mysql query: select count(*) from subscription where uid=19 and tid=52
+2024-03-15 13:23:04 mysql query: select count(*) from reply where tid=52
+2024-03-15 13:23:04 mysql query: select username from user where uid=2
+2024-03-15 13:23:04 mysql query: select count(*) from subscription where uid=19 and tid=51
+2024-03-15 13:23:04 mysql query: select count(*) from reply where tid=51
+2024-03-15 13:23:04 mysql query: select username from user where uid=2
+2024-03-15 13:23:04 mysql query: select count(*) from subscription where uid=19 and tid=49
+2024-03-15 13:23:04 mysql query: select count(*) from reply where tid=49
+2024-03-15 13:23:04 mysql query: select username from user where uid=2
+2024-03-15 13:23:04 mysql query: select count(*) from subscription where uid=19 and tid=48
+2024-03-15 13:23:04 mysql query: select count(*) from reply where tid=48
+2024-03-15 13:23:04 mysql query: select username from user where uid=2
+2024-03-15 13:23:04 mysql query: select count(*) from subscription where uid=19 and tid=44
+2024-03-15 13:23:04 mysql query: select count(*) from reply where tid=44
+2024-03-15 13:23:04 mysql query: select username from user where uid=2
+2024-03-15 13:23:04 mysql query: select count(*) from subscription where uid=19 and tid=43
+2024-03-15 13:23:04 mysql query: select count(*) from reply where tid=43
+2024-03-15 13:29:43 mysql query: select id,cat_name,parent_id from category
+2024-03-15 13:29:43 mysql query: select cat_name,intro from category where id=1
+2024-03-15 13:29:43 mysql query: select count(*) from thread where cat in (1)
+2024-03-15 13:29:43 mysql query: select * from thread where cat in (1) order by lastreptime desc limit 0,10
+2024-03-15 13:29:43 mysql query: select * from reply where tid=59 order by rid desc limit 0,5
+2024-03-15 13:29:43 mysql query: select * from reply where tid=57 order by rid desc limit 0,5
+2024-03-15 13:29:43 mysql query: select * from reply where tid=53 order by rid desc limit 0,5
+2024-03-15 13:29:43 mysql query: select * from reply where tid=54 order by rid desc limit 0,5
+2024-03-15 13:29:43 mysql query: select * from reply where tid=52 order by rid desc limit 0,5
+2024-03-15 13:29:43 mysql query: select * from reply where tid=51 order by rid desc limit 0,5
+2024-03-15 13:29:43 mysql query: select * from reply where tid=49 order by rid desc limit 0,5
+2024-03-15 13:29:43 mysql query: select * from reply where tid=48 order by rid desc limit 0,5
+2024-03-15 13:29:43 mysql query: select * from reply where tid=44 order by rid desc limit 0,5
+2024-03-15 13:29:43 mysql query: select * from reply where tid=43 order by rid desc limit 0,5
+2024-03-15 13:31:31 mysql query: select id,cat_name,parent_id from category
+2024-03-15 13:31:31 mysql query: select cat_name,intro from category where id=1
+2024-03-15 13:31:31 mysql query: select count(*) from thread where cat in (1)
+2024-03-15 13:31:31 mysql query: select * from thread where cat in (1) order by lastreptime desc limit 0,10
+2024-03-15 13:31:31 mysql query: select * from reply where tid=59 order by rid desc limit 0,5
+2024-03-15 13:31:31 mysql query: select * from reply where tid=57 order by rid desc limit 0,5
+2024-03-15 13:31:31 mysql query: select * from reply where tid=53 order by rid desc limit 0,5
+2024-03-15 13:31:31 mysql query: select * from reply where tid=54 order by rid desc limit 0,5
+2024-03-15 13:31:31 mysql query: select * from reply where tid=52 order by rid desc limit 0,5
+2024-03-15 13:31:31 mysql query: select * from reply where tid=51 order by rid desc limit 0,5
+2024-03-15 13:31:31 mysql query: select * from reply where tid=49 order by rid desc limit 0,5
+2024-03-15 13:31:31 mysql query: select * from reply where tid=48 order by rid desc limit 0,5
+2024-03-15 13:31:31 mysql query: select * from reply where tid=44 order by rid desc limit 0,5
+2024-03-15 13:31:31 mysql query: select * from reply where tid=43 order by rid desc limit 0,5
+2024-03-15 13:31:56 mysql query: select id,cat_name,parent_id from category
+2024-03-15 13:31:56 mysql query: select cat_name,intro from category where id=1
+2024-03-15 13:31:56 mysql query: select count(*) from thread where cat in (1)
+2024-03-15 13:31:56 mysql query: select * from thread where cat in (1) order by lastreptime desc limit 0,10
+2024-03-15 13:31:56 mysql query: select * from reply where tid=59 order by rid desc limit 0,5
+2024-03-15 13:31:56 mysql query: select * from reply where tid=57 order by rid desc limit 0,5
+2024-03-15 13:31:56 mysql query: select * from reply where tid=53 order by rid desc limit 0,5
+2024-03-15 13:31:56 mysql query: select * from reply where tid=54 order by rid desc limit 0,5
+2024-03-15 13:31:56 mysql query: select * from reply where tid=52 order by rid desc limit 0,5
+2024-03-15 13:31:56 mysql query: select * from reply where tid=51 order by rid desc limit 0,5
+2024-03-15 13:31:56 mysql query: select * from reply where tid=49 order by rid desc limit 0,5
+2024-03-15 13:31:56 mysql query: select * from reply where tid=48 order by rid desc limit 0,5
+2024-03-15 13:31:56 mysql query: select * from reply where tid=44 order by rid desc limit 0,5
+2024-03-15 13:31:56 mysql query: select * from reply where tid=43 order by rid desc limit 0,5
+2024-03-15 13:32:18 mysql query: select id,cat_name,parent_id from category
+2024-03-15 13:32:18 mysql query: select cat_name,intro from category where id=1
+2024-03-15 13:32:18 mysql query: select count(*) from thread where cat in (1)
+2024-03-15 13:32:18 mysql query: select * from thread where cat in (1) order by lastreptime desc limit 0,10
+2024-03-15 13:32:18 mysql query: select * from reply where tid=59 order by rid desc limit 0,5
+2024-03-15 13:32:18 mysql query: select * from reply where tid=57 order by rid desc limit 0,5
+2024-03-15 13:32:18 mysql query: select * from reply where tid=53 order by rid desc limit 0,5
+2024-03-15 13:32:18 mysql query: select * from reply where tid=54 order by rid desc limit 0,5
+2024-03-15 13:32:18 mysql query: select * from reply where tid=52 order by rid desc limit 0,5
+2024-03-15 13:32:18 mysql query: select * from reply where tid=51 order by rid desc limit 0,5
+2024-03-15 13:32:18 mysql query: select * from reply where tid=49 order by rid desc limit 0,5
+2024-03-15 13:32:18 mysql query: select * from reply where tid=48 order by rid desc limit 0,5
+2024-03-15 13:32:18 mysql query: select * from reply where tid=44 order by rid desc limit 0,5
+2024-03-15 13:32:18 mysql query: select * from reply where tid=43 order by rid desc limit 0,5
+2024-03-15 13:32:41 mysql query: select id,cat_name,parent_id from category
+2024-03-15 13:32:41 mysql query: select cat_name,intro from category where id=1
+2024-03-15 13:32:41 mysql query: select count(*) from thread where cat in (1)
+2024-03-15 13:32:41 mysql query: select * from thread where cat in (1) order by lastreptime desc limit 0,10
+2024-03-15 13:32:41 mysql query: select * from reply where tid=59 order by rid desc limit 0,5
+2024-03-15 13:32:41 mysql query: select * from reply where tid=57 order by rid desc limit 0,5
+2024-03-15 13:32:41 mysql query: select * from reply where tid=53 order by rid desc limit 0,5
+2024-03-15 13:32:41 mysql query: select * from reply where tid=54 order by rid desc limit 0,5
+2024-03-15 13:32:41 mysql query: select * from reply where tid=52 order by rid desc limit 0,5
+2024-03-15 13:32:41 mysql query: select * from reply where tid=51 order by rid desc limit 0,5
+2024-03-15 13:32:41 mysql query: select * from reply where tid=49 order by rid desc limit 0,5
+2024-03-15 13:32:41 mysql query: select * from reply where tid=48 order by rid desc limit 0,5
+2024-03-15 13:32:41 mysql query: select * from reply where tid=44 order by rid desc limit 0,5
+2024-03-15 13:32:41 mysql query: select * from reply where tid=43 order by rid desc limit 0,5
+2024-03-15 13:35:38 mysql query: select id,cat_name,parent_id from category
+2024-03-15 13:35:38 mysql query: select cat_name,intro from category where id=1
+2024-03-15 13:35:38 mysql query: select count(*) from thread where cat in (1)
+2024-03-15 13:35:38 mysql query: select * from thread where cat in (1) order by lastreptime desc limit 0,10
+2024-03-15 13:35:38 mysql query: select * from reply where tid=59 order by rid desc limit 0,5
+2024-03-15 13:35:38 mysql query: select * from reply where tid=57 order by rid desc limit 0,5
+2024-03-15 13:35:38 mysql query: select * from reply where tid=53 order by rid desc limit 0,5
+2024-03-15 13:35:38 mysql query: select * from reply where tid=54 order by rid desc limit 0,5
+2024-03-15 13:35:38 mysql query: select * from reply where tid=52 order by rid desc limit 0,5
+2024-03-15 13:35:38 mysql query: select * from reply where tid=51 order by rid desc limit 0,5
+2024-03-15 13:35:38 mysql query: select * from reply where tid=49 order by rid desc limit 0,5
+2024-03-15 13:35:38 mysql query: select * from reply where tid=48 order by rid desc limit 0,5
+2024-03-15 13:35:38 mysql query: select * from reply where tid=44 order by rid desc limit 0,5
+2024-03-15 13:35:38 mysql query: select * from reply where tid=43 order by rid desc limit 0,5
+2024-03-15 13:36:07 mysql query: select id,cat_name,parent_id from category
+2024-03-15 13:36:07 mysql query: select cat_name,intro from category where id=1
+2024-03-15 13:36:07 mysql query: select count(*) from thread where cat in (1)
+2024-03-15 13:36:07 mysql query: select * from thread where cat in (1) order by lastreptime desc limit 0,10
+2024-03-15 13:36:07 mysql query: select * from reply where tid=59 order by rid desc limit 0,5
+2024-03-15 13:36:07 mysql query: select * from reply where tid=57 order by rid desc limit 0,5
+2024-03-15 13:36:07 mysql query: select * from reply where tid=53 order by rid desc limit 0,5
+2024-03-15 13:36:07 mysql query: select * from reply where tid=54 order by rid desc limit 0,5
+2024-03-15 13:36:07 mysql query: select * from reply where tid=52 order by rid desc limit 0,5
+2024-03-15 13:36:07 mysql query: select * from reply where tid=51 order by rid desc limit 0,5
+2024-03-15 13:36:07 mysql query: select * from reply where tid=49 order by rid desc limit 0,5
+2024-03-15 13:36:07 mysql query: select * from reply where tid=48 order by rid desc limit 0,5
+2024-03-15 13:36:07 mysql query: select * from reply where tid=44 order by rid desc limit 0,5
+2024-03-15 13:36:07 mysql query: select * from reply where tid=43 order by rid desc limit 0,5
+2024-03-15 13:37:22 mysql query: select id,cat_name,parent_id from category
+2024-03-15 13:37:22 mysql query: select cat_name,intro from category where id=1
+2024-03-15 13:37:22 mysql query: select count(*) from thread where cat in (1)
+2024-03-15 13:37:22 mysql query: select * from thread where cat in (1) order by lastreptime desc limit 0,10
+2024-03-15 13:37:22 mysql query: select * from reply where tid=59 order by rid desc limit 0,5
+2024-03-15 13:37:22 mysql query: select * from reply where tid=57 order by rid desc limit 0,5
+2024-03-15 13:37:22 mysql query: select * from reply where tid=53 order by rid desc limit 0,5
+2024-03-15 13:37:22 mysql query: select * from reply where tid=54 order by rid desc limit 0,5
+2024-03-15 13:37:22 mysql query: select * from reply where tid=52 order by rid desc limit 0,5
+2024-03-15 13:37:22 mysql query: select * from reply where tid=51 order by rid desc limit 0,5
+2024-03-15 13:37:22 mysql query: select * from reply where tid=49 order by rid desc limit 0,5
+2024-03-15 13:37:22 mysql query: select * from reply where tid=48 order by rid desc limit 0,5
+2024-03-15 13:37:22 mysql query: select * from reply where tid=44 order by rid desc limit 0,5
+2024-03-15 13:37:22 mysql query: select * from reply where tid=43 order by rid desc limit 0,5
+2024-03-15 13:38:31 mysql query: select id,cat_name,parent_id from category
+2024-03-15 13:38:31 mysql query: select cat_name,intro from category where id=1
+2024-03-15 13:38:31 mysql query: select count(*) from thread where cat in (1)
+2024-03-15 13:38:31 mysql query: select * from thread where cat in (1) order by lastreptime desc limit 0,10
+2024-03-15 13:38:31 mysql query: select * from reply where tid=59 order by rid desc limit 0,5
+2024-03-15 13:38:31 mysql query: select * from reply where tid=57 order by rid desc limit 0,5
+2024-03-15 13:38:31 mysql query: select * from reply where tid=53 order by rid desc limit 0,5
+2024-03-15 13:38:31 mysql query: select * from reply where tid=54 order by rid desc limit 0,5
+2024-03-15 13:38:31 mysql query: select * from reply where tid=52 order by rid desc limit 0,5
+2024-03-15 13:38:31 mysql query: select * from reply where tid=51 order by rid desc limit 0,5
+2024-03-15 13:38:31 mysql query: select * from reply where tid=49 order by rid desc limit 0,5
+2024-03-15 13:38:31 mysql query: select * from reply where tid=48 order by rid desc limit 0,5
+2024-03-15 13:38:31 mysql query: select * from reply where tid=44 order by rid desc limit 0,5
+2024-03-15 13:38:31 mysql query: select * from reply where tid=43 order by rid desc limit 0,5
+2024-03-15 13:38:50 mysql query: select id,cat_name,parent_id from category
+2024-03-15 13:38:50 mysql query: select cat_name,intro from category where id=1
+2024-03-15 13:38:50 mysql query: select count(*) from thread where cat in (1)
+2024-03-15 13:38:50 mysql query: select * from thread where cat in (1) order by lastreptime desc limit 0,10
+2024-03-15 13:38:50 mysql query: select * from reply where tid=59 order by rid desc limit 0,5
+2024-03-15 13:38:50 mysql query: select * from reply where tid=57 order by rid desc limit 0,5
+2024-03-15 13:38:50 mysql query: select * from reply where tid=53 order by rid desc limit 0,5
+2024-03-15 13:38:50 mysql query: select * from reply where tid=54 order by rid desc limit 0,5
+2024-03-15 13:38:50 mysql query: select * from reply where tid=52 order by rid desc limit 0,5
+2024-03-15 13:38:50 mysql query: select * from reply where tid=51 order by rid desc limit 0,5
+2024-03-15 13:38:50 mysql query: select * from reply where tid=49 order by rid desc limit 0,5
+2024-03-15 13:38:50 mysql query: select * from reply where tid=48 order by rid desc limit 0,5
+2024-03-15 13:38:50 mysql query: select * from reply where tid=44 order by rid desc limit 0,5
+2024-03-15 13:38:50 mysql query: select * from reply where tid=43 order by rid desc limit 0,5
+2024-03-15 13:40:03 mysql query: select id,cat_name,parent_id from category
+2024-03-15 13:40:03 mysql query: select cat_name,intro from category where id=1
+2024-03-15 13:40:03 mysql query: select count(*) from thread where cat in (1)
+2024-03-15 13:40:03 mysql query: select * from thread where cat in (1) order by lastreptime desc limit 0,10
+2024-03-15 13:40:03 mysql query: select * from reply where tid=59 order by rid desc limit 0,5
+2024-03-15 13:40:03 mysql query: select * from reply where tid=57 order by rid desc limit 0,5
+2024-03-15 13:40:03 mysql query: select * from reply where tid=53 order by rid desc limit 0,5
+2024-03-15 13:40:03 mysql query: select * from reply where tid=54 order by rid desc limit 0,5
+2024-03-15 13:40:03 mysql query: select * from reply where tid=52 order by rid desc limit 0,5
+2024-03-15 13:40:03 mysql query: select * from reply where tid=51 order by rid desc limit 0,5
+2024-03-15 13:40:03 mysql query: select * from reply where tid=49 order by rid desc limit 0,5
+2024-03-15 13:40:03 mysql query: select * from reply where tid=48 order by rid desc limit 0,5
+2024-03-15 13:40:03 mysql query: select * from reply where tid=44 order by rid desc limit 0,5
+2024-03-15 13:40:03 mysql query: select * from reply where tid=43 order by rid desc limit 0,5
+2024-03-15 13:41:18 mysql query: select id,cat_name,parent_id from category
+2024-03-15 13:41:18 mysql query: select cat_name,intro from category where id=1
+2024-03-15 13:41:18 mysql query: select count(*) from thread where cat in (1)
+2024-03-15 13:41:18 mysql query: select * from thread where cat in (1) order by lastreptime desc limit 0,10
+2024-03-15 13:41:18 mysql query: select * from reply where tid=59 order by rid desc limit 0,5
+2024-03-15 13:41:18 mysql query: select * from reply where tid=57 order by rid desc limit 0,5
+2024-03-15 13:41:18 mysql query: select * from reply where tid=53 order by rid desc limit 0,5
+2024-03-15 13:41:18 mysql query: select * from reply where tid=54 order by rid desc limit 0,5
+2024-03-15 13:41:18 mysql query: select * from reply where tid=52 order by rid desc limit 0,5
+2024-03-15 13:41:18 mysql query: select * from reply where tid=51 order by rid desc limit 0,5
+2024-03-15 13:41:18 mysql query: select * from reply where tid=49 order by rid desc limit 0,5
+2024-03-15 13:41:18 mysql query: select * from reply where tid=48 order by rid desc limit 0,5
+2024-03-15 13:41:18 mysql query: select * from reply where tid=44 order by rid desc limit 0,5
+2024-03-15 13:41:18 mysql query: select * from reply where tid=43 order by rid desc limit 0,5
+2024-03-15 13:41:32 mysql query: select id,cat_name,parent_id from category
+2024-03-15 13:41:32 mysql query: select cat_name,intro from category where id=1
+2024-03-15 13:41:32 mysql query: select count(*) from thread where cat in (1)
+2024-03-15 13:41:32 mysql query: select * from thread where cat in (1) order by lastreptime desc limit 0,10
+2024-03-15 13:41:32 mysql query: select * from reply where tid=59 order by rid desc limit 0,5
+2024-03-15 13:41:32 mysql query: select * from reply where tid=57 order by rid desc limit 0,5
+2024-03-15 13:41:32 mysql query: select * from reply where tid=53 order by rid desc limit 0,5
+2024-03-15 13:41:32 mysql query: select * from reply where tid=54 order by rid desc limit 0,5
+2024-03-15 13:41:32 mysql query: select * from reply where tid=52 order by rid desc limit 0,5
+2024-03-15 13:41:32 mysql query: select * from reply where tid=51 order by rid desc limit 0,5
+2024-03-15 13:41:32 mysql query: select * from reply where tid=49 order by rid desc limit 0,5
+2024-03-15 13:41:32 mysql query: select * from reply where tid=48 order by rid desc limit 0,5
+2024-03-15 13:41:32 mysql query: select * from reply where tid=44 order by rid desc limit 0,5
+2024-03-15 13:41:32 mysql query: select * from reply where tid=43 order by rid desc limit 0,5
+2024-03-15 13:41:58 mysql query: select id,cat_name,parent_id from category
+2024-03-15 13:41:58 mysql query: select cat_name,intro from category where id=1
+2024-03-15 13:41:58 mysql query: select count(*) from thread where cat in (1)
+2024-03-15 13:41:58 mysql query: select * from thread where cat in (1) order by lastreptime desc limit 0,10
+2024-03-15 13:41:58 mysql query: select * from reply where tid=59 order by rid desc limit 0,5
+2024-03-15 13:41:58 mysql query: select * from reply where tid=57 order by rid desc limit 0,5
+2024-03-15 13:41:58 mysql query: select * from reply where tid=53 order by rid desc limit 0,5
+2024-03-15 13:41:58 mysql query: select * from reply where tid=54 order by rid desc limit 0,5
+2024-03-15 13:41:58 mysql query: select * from reply where tid=52 order by rid desc limit 0,5
+2024-03-15 13:41:58 mysql query: select * from reply where tid=51 order by rid desc limit 0,5
+2024-03-15 13:41:58 mysql query: select * from reply where tid=49 order by rid desc limit 0,5
+2024-03-15 13:41:58 mysql query: select * from reply where tid=48 order by rid desc limit 0,5
+2024-03-15 13:41:58 mysql query: select * from reply where tid=44 order by rid desc limit 0,5
+2024-03-15 13:41:58 mysql query: select * from reply where tid=43 order by rid desc limit 0,5
+2024-03-15 13:44:05 mysql query: select id,cat_name,parent_id from category
+2024-03-15 13:44:05 mysql query: select cat_name,intro from category where id=1
+2024-03-15 13:44:05 mysql query: select count(*) from thread where cat in (1)
+2024-03-15 13:44:05 mysql query: select * from thread where cat in (1) order by lastreptime desc limit 0,10
+2024-03-15 13:44:05 mysql query: select * from reply where tid=59 order by rid desc limit 0,5
+2024-03-15 13:44:05 mysql query: select * from reply where tid=57 order by rid desc limit 0,5
+2024-03-15 13:44:05 mysql query: select * from reply where tid=53 order by rid desc limit 0,5
+2024-03-15 13:44:05 mysql query: select * from reply where tid=54 order by rid desc limit 0,5
+2024-03-15 13:44:05 mysql query: select * from reply where tid=52 order by rid desc limit 0,5
+2024-03-15 13:44:05 mysql query: select * from reply where tid=51 order by rid desc limit 0,5
+2024-03-15 13:44:05 mysql query: select * from reply where tid=49 order by rid desc limit 0,5
+2024-03-15 13:44:05 mysql query: select * from reply where tid=48 order by rid desc limit 0,5
+2024-03-15 13:44:05 mysql query: select * from reply where tid=44 order by rid desc limit 0,5
+2024-03-15 13:44:05 mysql query: select * from reply where tid=43 order by rid desc limit 0,5
+2024-03-15 13:50:00 mysql query: select id,cat_name,parent_id from category
+2024-03-15 13:50:00 mysql query: select * from thread where cat in () order by lastreptime desc limit 0,5
+2024-03-15 13:50:14 mysql query: select id,cat_name,parent_id from category
+2024-03-15 13:50:14 mysql query: select * from thread where cat in () order by lastreptime desc limit 0,5
+2024-03-15 13:50:27 mysql query: select id,cat_name,parent_id from category
+2024-03-15 13:50:27 mysql query: select * from thread where cat in () order by lastreptime desc limit 0,5
+2024-03-15 13:50:49 mysql query: select id,cat_name,parent_id from category
+2024-03-15 13:50:49 mysql query: select * from thread where cat in (1) order by lastreptime desc limit 0,5
+2024-03-15 13:50:49 mysql query: select * from thread where cat in (2) order by lastreptime desc limit 0,5
+2024-03-15 13:50:49 mysql query: select * from thread where cat in (3) order by lastreptime desc limit 0,5
+2024-03-15 13:50:49 mysql query: select * from thread where cat in (4) order by lastreptime desc limit 0,5
+2024-03-15 13:52:32 mysql query: select id,cat_name,parent_id from category
+2024-03-15 13:52:32 mysql query: select * from thread where cat in (1) order by lastreptime desc limit 0,5
+2024-03-15 13:52:32 mysql query: select * from thread where cat in (2) order by lastreptime desc limit 0,5
+2024-03-15 13:52:32 mysql query: select * from thread where cat in (3) order by lastreptime desc limit 0,5
+2024-03-15 13:52:32 mysql query: select * from thread where cat in (4) order by lastreptime desc limit 0,5
+2024-03-15 13:54:29 mysql query: select id,cat_name,parent_id from category
+2024-03-15 13:54:29 mysql query: select * from thread where cat in (1) order by lastreptime desc limit 0,5
+2024-03-15 13:54:29 mysql query: select * from thread where cat in (2) order by lastreptime desc limit 0,5
+2024-03-15 13:54:29 mysql query: select * from thread where cat in (3) order by lastreptime desc limit 0,5
+2024-03-15 13:54:29 mysql query: select * from thread where cat in (4) order by lastreptime desc limit 0,5
+2024-03-15 13:54:45 mysql query: select id,cat_name,parent_id from category
+2024-03-15 13:54:45 mysql query: select * from thread where cat in (1) order by lastreptime desc limit 0,5
+2024-03-15 13:54:45 mysql query: select * from thread where cat in (2) order by lastreptime desc limit 0,5
+2024-03-15 13:54:45 mysql query: select * from thread where cat in (3) order by lastreptime desc limit 0,5
+2024-03-15 13:54:45 mysql query: select * from thread where cat in (4) order by lastreptime desc limit 0,5
+2024-03-15 13:55:07 mysql query: select id,cat_name,parent_id from category
+2024-03-15 13:55:07 mysql query: select * from thread where cat in (1) order by lastreptime desc limit 0,5
+2024-03-15 13:55:07 mysql query: select * from thread where cat in (2) order by lastreptime desc limit 0,5
+2024-03-15 13:55:07 mysql query: select * from thread where cat in (3) order by lastreptime desc limit 0,5
+2024-03-15 13:55:07 mysql query: select * from thread where cat in (4) order by lastreptime desc limit 0,5
+2024-03-15 13:55:31 mysql query: select id,cat_name,parent_id from category
+2024-03-15 13:55:31 mysql query: select * from thread where cat in (1) order by lastreptime desc limit 0,5
+2024-03-15 13:55:31 mysql query: select * from thread where cat in (2) order by lastreptime desc limit 0,5
+2024-03-15 13:55:31 mysql query: select * from thread where cat in (3) order by lastreptime desc limit 0,5
+2024-03-15 13:55:31 mysql query: select * from thread where cat in (4) order by lastreptime desc limit 0,5
+2024-03-15 13:55:59 mysql query: select id,cat_name,parent_id from category
+2024-03-15 13:55:59 mysql query: select * from thread where cat in (1) order by lastreptime desc limit 0,5
+2024-03-15 13:55:59 mysql query: select * from thread where cat in (2) order by lastreptime desc limit 0,5
+2024-03-15 13:55:59 mysql query: select * from thread where cat in (3) order by lastreptime desc limit 0,5
+2024-03-15 13:55:59 mysql query: select * from thread where cat in (4) order by lastreptime desc limit 0,5
+2024-03-15 13:56:22 mysql query: select id,cat_name,parent_id from category
+2024-03-15 13:56:22 mysql query: select * from thread where cat in (1) order by lastreptime desc limit 0,5
+2024-03-15 13:56:22 mysql query: select * from thread where cat in (2) order by lastreptime desc limit 0,5
+2024-03-15 13:56:22 mysql query: select * from thread where cat in (3) order by lastreptime desc limit 0,5
+2024-03-15 13:56:22 mysql query: select * from thread where cat in (4) order by lastreptime desc limit 0,5
+2024-03-15 13:57:17 mysql query: select id,cat_name,parent_id from category
+2024-03-15 13:57:17 mysql query: select * from thread where cat in (1) order by lastreptime desc limit 0,5
+2024-03-15 13:57:17 mysql query: select * from thread where cat in (2) order by lastreptime desc limit 0,5
+2024-03-15 13:57:17 mysql query: select * from thread where cat in (3) order by lastreptime desc limit 0,5
+2024-03-15 13:57:17 mysql query: select * from thread where cat in (4) order by lastreptime desc limit 0,5
+2024-03-15 13:57:42 mysql query: select id,cat_name,parent_id from category
+2024-03-15 13:57:42 mysql query: select * from thread where cat in (1) order by lastreptime desc limit 0,5
+2024-03-15 13:57:42 mysql query: select * from thread where cat in (2) order by lastreptime desc limit 0,5
+2024-03-15 13:57:42 mysql query: select * from thread where cat in (3) order by lastreptime desc limit 0,5
+2024-03-15 13:57:42 mysql query: select * from thread where cat in (4) order by lastreptime desc limit 0,5
+2024-03-15 14:01:06 mysql query: select id,cat_name,parent_id from category
+2024-03-15 14:01:06 mysql query: select * from thread where cat in (1) order by lastreptime desc limit 0,5
+2024-03-15 14:01:06 mysql query: select * from thread where cat in (2) order by lastreptime desc limit 0,5
+2024-03-15 14:01:06 mysql query: select * from thread where cat in (3) order by lastreptime desc limit 0,5
+2024-03-15 14:01:06 mysql query: select * from thread where cat in (4) order by lastreptime desc limit 0,5
+2024-03-15 14:02:06 mysql query: select id,cat_name,parent_id from category
+2024-03-15 14:02:06 mysql query: select * from thread where cat in (1) order by lastreptime desc limit 0,5
+2024-03-15 14:02:06 mysql query: select * from thread where cat in (2) order by lastreptime desc limit 0,5
+2024-03-15 14:02:06 mysql query: select * from thread where cat in (3) order by lastreptime desc limit 0,5
+2024-03-15 14:02:06 mysql query: select * from thread where cat in (4) order by lastreptime desc limit 0,5
+2024-03-15 14:03:46 mysql query: select id,cat_name,parent_id from category
+2024-03-15 14:03:46 mysql query: select * from thread where cat in (1) order by lastreptime desc limit 0,5
+2024-03-15 14:03:46 mysql query: select * from thread where cat in (2) order by lastreptime desc limit 0,5
+2024-03-15 14:03:46 mysql query: select * from thread where cat in (3) order by lastreptime desc limit 0,5
+2024-03-15 14:03:46 mysql query: select * from thread where cat in (4) order by lastreptime desc limit 0,5
+2024-03-15 14:04:21 mysql query: select id,cat_name,parent_id from category
+2024-03-15 14:04:21 mysql query: select * from thread where cat in (1) order by lastreptime desc limit 0,5
+2024-03-15 14:04:21 mysql query: select * from thread where cat in (2) order by lastreptime desc limit 0,5
+2024-03-15 14:04:21 mysql query: select * from thread where cat in (3) order by lastreptime desc limit 0,5
+2024-03-15 14:04:21 mysql query: select * from thread where cat in (4) order by lastreptime desc limit 0,5
+2024-03-15 14:05:00 mysql query: select id,cat_name,parent_id from category
+2024-03-15 14:05:00 mysql query: select * from thread where cat in (1) order by lastreptime desc limit 0,5
+2024-03-15 14:05:00 mysql query: select * from thread where cat in (2) order by lastreptime desc limit 0,5
+2024-03-15 14:05:00 mysql query: select * from thread where cat in (3) order by lastreptime desc limit 0,5
+2024-03-15 14:05:00 mysql query: select * from thread where cat in (4) order by lastreptime desc limit 0,5
+2024-03-15 14:06:20 mysql query: select id,cat_name,parent_id from category
+2024-03-15 14:06:20 mysql query: select * from thread where cat in (1) order by lastreptime desc limit 0,5
+2024-03-15 14:06:20 mysql query: select * from thread where cat in (2) order by lastreptime desc limit 0,5
+2024-03-15 14:06:20 mysql query: select * from thread where cat in (3) order by lastreptime desc limit 0,5
+2024-03-15 14:06:20 mysql query: select * from thread where cat in (4) order by lastreptime desc limit 0,5
+2024-03-15 14:06:48 mysql query: select id,cat_name,parent_id from category
+2024-03-15 14:06:48 mysql query: select * from thread where cat in (1) order by lastreptime desc limit 0,5
+2024-03-15 14:06:48 mysql query: select * from thread where cat in (2) order by lastreptime desc limit 0,5
+2024-03-15 14:06:48 mysql query: select * from thread where cat in (3) order by lastreptime desc limit 0,5
+2024-03-15 14:06:48 mysql query: select * from thread where cat in (4) order by lastreptime desc limit 0,5
+2024-03-15 14:08:34 mysql query: select id,cat_name,parent_id from category
+2024-03-15 14:08:34 mysql query: select * from thread where cat in (1) order by lastreptime desc limit 0,5
+2024-03-15 14:08:34 mysql query: select * from thread where cat in (2) order by lastreptime desc limit 0,5
+2024-03-15 14:08:34 mysql query: select * from thread where cat in (3) order by lastreptime desc limit 0,5
+2024-03-15 14:08:34 mysql query: select * from thread where cat in (4) order by lastreptime desc limit 0,5
+2024-03-15 14:09:11 mysql query: select id,cat_name,parent_id from category
+2024-03-15 14:09:11 mysql query: select * from thread where cat in (1) order by lastreptime desc limit 0,5
+2024-03-15 14:09:11 mysql query: select * from thread where cat in (2) order by lastreptime desc limit 0,5
+2024-03-15 14:09:11 mysql query: select * from thread where cat in (3) order by lastreptime desc limit 0,5
+2024-03-15 14:09:11 mysql query: select * from thread where cat in (4) order by lastreptime desc limit 0,5
+2024-03-15 14:12:03 mysql query: select id,cat_name,parent_id from category
+2024-03-15 14:12:03 mysql query: select * from thread where cat in (1) order by lastreptime desc limit 0,5
+2024-03-15 14:12:03 mysql query: select * from thread where cat in (2) order by lastreptime desc limit 0,5
+2024-03-15 14:12:03 mysql query: select * from thread where cat in (3) order by lastreptime desc limit 0,5
+2024-03-15 14:12:03 mysql query: select * from thread where cat in (4) order by lastreptime desc limit 0,5
+2024-03-15 14:12:31 mysql query: select id,cat_name,parent_id from category
+2024-03-15 14:12:31 mysql query: select * from thread where cat in (1) order by lastreptime desc limit 0,5
+2024-03-15 14:12:31 mysql query: select * from thread where cat in (2) order by lastreptime desc limit 0,5
+2024-03-15 14:12:31 mysql query: select * from thread where cat in (3) order by lastreptime desc limit 0,5
+2024-03-15 14:12:31 mysql query: select * from thread where cat in (4) order by lastreptime desc limit 0,5
+2024-03-15 14:13:41 mysql query: select id,cat_name,parent_id from category
+2024-03-15 14:13:41 mysql query: select * from thread where cat in (1) order by lastreptime desc limit 0,5
+2024-03-15 14:13:41 mysql query: select * from thread where cat in (2) order by lastreptime desc limit 0,5
+2024-03-15 14:13:41 mysql query: select * from thread where cat in (3) order by lastreptime desc limit 0,5
+2024-03-15 14:13:41 mysql query: select * from thread where cat in (4) order by lastreptime desc limit 0,5
+2024-03-15 14:14:30 mysql query: select id,cat_name,parent_id from category
+2024-03-15 14:14:30 mysql query: select * from thread where cat in (1) order by lastreptime desc limit 0,5
+2024-03-15 14:14:30 mysql query: select * from thread where cat in (2) order by lastreptime desc limit 0,5
+2024-03-15 14:14:30 mysql query: select * from thread where cat in (3) order by lastreptime desc limit 0,5
+2024-03-15 14:14:30 mysql query: select * from thread where cat in (4) order by lastreptime desc limit 0,5
+2024-03-15 14:15:13 mysql query: select id,cat_name,parent_id from category
+2024-03-15 14:15:13 mysql query: select * from thread where cat in (1) order by lastreptime desc limit 0,5
+2024-03-15 14:15:13 mysql query: select * from thread where cat in (2) order by lastreptime desc limit 0,5
+2024-03-15 14:15:13 mysql query: select * from thread where cat in (3) order by lastreptime desc limit 0,5
+2024-03-15 14:15:13 mysql query: select * from thread where cat in (4) order by lastreptime desc limit 0,5
+2024-03-15 14:16:20 mysql query: select id,cat_name,parent_id from category
+2024-03-15 14:16:20 mysql query: select * from thread where cat in (1) order by lastreptime desc limit 0,5
+2024-03-15 14:16:20 mysql query: select * from thread where cat in (2) order by lastreptime desc limit 0,5
+2024-03-15 14:16:20 mysql query: select * from thread where cat in (3) order by lastreptime desc limit 0,5
+2024-03-15 14:16:20 mysql query: select * from thread where cat in (4) order by lastreptime desc limit 0,5
+2024-03-15 14:17:07 mysql query: select id,cat_name,parent_id from category
+2024-03-15 14:17:07 mysql query: select * from thread where cat in (1) order by lastreptime desc limit 0,5
+2024-03-15 14:17:07 mysql query: select * from thread where cat in (2) order by lastreptime desc limit 0,5
+2024-03-15 14:17:07 mysql query: select * from thread where cat in (3) order by lastreptime desc limit 0,5
+2024-03-15 14:17:07 mysql query: select * from thread where cat in (4) order by lastreptime desc limit 0,5
+2024-03-15 14:17:58 mysql query: select id,cat_name,parent_id from category
+2024-03-15 14:17:58 mysql query: select * from thread where cat in (1) order by lastreptime desc limit 0,5
+2024-03-15 14:17:58 mysql query: select * from thread where cat in (2) order by lastreptime desc limit 0,5
+2024-03-15 14:17:58 mysql query: select * from thread where cat in (3) order by lastreptime desc limit 0,5
+2024-03-15 14:17:58 mysql query: select * from thread where cat in (4) order by lastreptime desc limit 0,5
+2024-03-15 14:18:10 mysql query: select id,cat_name,parent_id from category
+2024-03-15 14:18:10 mysql query: select * from thread where cat in (1) order by lastreptime desc limit 0,5
+2024-03-15 14:18:10 mysql query: select * from thread where cat in (2) order by lastreptime desc limit 0,5
+2024-03-15 14:18:10 mysql query: select * from thread where cat in (3) order by lastreptime desc limit 0,5
+2024-03-15 14:18:10 mysql query: select * from thread where cat in (4) order by lastreptime desc limit 0,5
