@@ -9,21 +9,32 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background: #ffe;
+    background: #F1F4F7;
     font-size: 14px;
-    color: var(--oridge);
+    color: #333;
     --red: #cc1105;
-    --red-bg: #f0e0d6;
-    --green: #117743;
-    --oridge: #800000;
-    --red-light: #ea8;
+    --red-light: #f5e7de;
+    --red: #ea8;
+    --green: #a4cf8d;
+    --green-light: #dfeed7;
+}
+
+a {
+    color: #626f84;
 }
 
 header {
-    height: 0px;
+    height: 45px;
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    background: url(https://cdn-us.imgs.moe/2023/05/17/6464ee8220a64.png);
+}
+
+.wrap {
+    width: 1000px;
+    margin: 0 auto;
 }
 
 main {
@@ -41,8 +52,7 @@ main .menu {
 
 }
 
-main .menu .logo {
-}
+main .menu .logo {}
 
 .logo h1 {
     font-size: 40px;
