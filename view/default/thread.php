@@ -47,6 +47,7 @@
 
                     </div>
                 <?php } ?>
+                <?php require(ROOT . 'view/default/pagination.php') ?>
                 <?php require(ROOT . 'view/default/comp/editor.php') ?>
         </section>
         </ul>
