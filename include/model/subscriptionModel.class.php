@@ -22,12 +22,7 @@ class subscriptionModel extends model{
 		return $this->db->getOne($sql);
 	}
 	public static function isSubscribed($tid) {
-		$conf = conf::getInstance();
-		if ($conf->use_mysqli) {
-			$db = mysql_::getInstance();
-		} else {
-			$db = mysql::getInstance();
-		}
+		$db = mysql_::getInstance();		
 		$sql = 'select count(*) from subscription where uid='.$_SESSION['uid'].' and tid='.$tid;
 		return $db->getOne($sql)>0;
 	}

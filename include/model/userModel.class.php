@@ -35,12 +35,7 @@ class userModel extends model {
 	}
 
 	public static function getUsername($uid){
-		$conf = conf::getInstance();
-		if ($conf->use_mysqli) {
-			$db = mysql_::getInstance();
-		} else {
-			$db = mysql::getInstance();
-		}
+		$db = mysql_::getInstance();		
 		$sql = 'select username from user where uid='.$uid;
 		return $db->getOne($sql);
 	}

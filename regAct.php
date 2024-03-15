@@ -13,8 +13,6 @@ $UM = new userModel();
 $email = $_POST['email'];
 $password = md5('acgzone.clicli' . md5($_POST['password']));
 
-
-
 if ($UM->exists_email($email)) {
 	showMsg('邮箱已存在！');
 }

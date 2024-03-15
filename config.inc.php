@@ -7,7 +7,6 @@ file config.inc.php
 
 // defined('ACC')||exit('ACC Denied');
 // $_CFG = array();
-// $_CFG['use_mysqli'] = true;		  //是否使用mysqli
 // $_CFG['host'] = 'localhost';	  //数据库地址
 // $_CFG['user'] = 'aa20230415_acgzone';			    //数据库用户名
 // $_CFG['pass'] = 'changhao123';		  //数据库密码
@@ -19,7 +18,6 @@ file config.inc.php
 
 defined('ACC')||exit('ACC Denied');
 $_CFG = array();
-$_CFG['use_mysqli'] = true;		  //是否使用mysqli
 $_CFG['host'] = 'localhost';	  //数据库地址
 $_CFG['user'] = 'root';			    //数据库用户名
 $_CFG['pass'] = 'phpts';		  //数据库密码

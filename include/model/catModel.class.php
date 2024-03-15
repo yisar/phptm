@@ -9,12 +9,7 @@ class CatModel {
 	public static $cats = NULL;
 
 	public static function get() {
-		$conf = conf::getInstance();
-		if ($conf->use_mysqli) {
-			is_null(self::$db)&&self::$db = mysql_::getInstance();
-		} else {
-			is_null(self::$db)&&self::$db = mysql::getInstance();
-		}
+		is_null(self::$db)&&self::$db = mysql_::getInstance();
 		is_null(self::$cats)&&self::$cats=self::$db->getAll('select id,cat_name,parent_id from category');
 	}
 
