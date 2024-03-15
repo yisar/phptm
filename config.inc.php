@@ -25,4 +25,4 @@ $_CFG['db'] = 'msg';			      //数据库名
 $_CFG['charset'] = 'utf8';		  //编码，请使用utf8确保安全性
 $_CFG['report_tid'] = 39;		    //举报串id，默认即可
 $_CFG['post_cd'] = 30;			    //发表内容cd
-$_CFG['site_name'] = '讨论区';	  //网站名
+$_CFG['site_name'] = '甜梦文学城';	  //网站名

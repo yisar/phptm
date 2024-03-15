@@ -49,4 +49,4 @@ $curr_cat_id = $threads[0]['cat'];
 $curr_cat = catModel::getInfo($curr_cat_id, false);
 
 //view
-require(ROOT . "view/$template_dir/view.php");
+require(ROOT . "view/$template_dir/post.php");

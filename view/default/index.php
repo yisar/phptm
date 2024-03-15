@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
-        <?php echo $curr_cat['cat_name'], ' - ', SITENAME; ?>
+        <?php echo SITENAME ?>
     </title>
     <link rel="stylesheet" href="view/default/style.css">
     <link rel="stylesheet" href="https://at.alicdn.com/t/c/font_4066894_lfnqwuus5os.css">
@@ -20,7 +20,7 @@
             <?php foreach ($cats as $_cat) { ?>
                 <section class="cat">
                     <div class="title">
-                        <a href="./?cat=<?php echo $_cat['id']; ?>">
+                        <a href="./thread.php?id=<?php echo $_cat['id']; ?>">
                             <?php echo $_cat['cat_name']; ?>
                         </a>
                     </div>
@@ -36,7 +36,7 @@
                                     </p>
                                 </div>
                                 <div>
-                                    <a href="/">
+                                    <a href="./post.php?id=<?php echo $t['tid']; ?>">
                                         <p>
                                             <?php echo $t['content'] ?>
                                         </p>

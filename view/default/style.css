@@ -35,6 +35,7 @@ header {
     align-items: center;
     width: 100%;
     background: #fff;
+    box-shadow: 0 1px 3px rgb(18 18 18 / 10%);
 }
 
 header .logo {
@@ -89,7 +90,7 @@ section .list h1 {
 
 section .list span {
     font-size: 12px;
-    color: #555;
+    color: #bbb;
 }
 
 
@@ -101,6 +102,7 @@ section .list .item {
 section .list .item div {
     display: flex;
     justify-content: space-between;
+    align-items: baseline;
 }
 
 main .body {
