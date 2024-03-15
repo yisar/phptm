@@ -1,18 +1,54 @@
-<?php defined('ACC')||exit('ACC Denied');?>
-<span class="text-title"><?php echo $t['title'];?></span>
-<span class="text-nickname"><?php echo $t['name'];?></span>
-<span class="text-date"><?php echo date('Y-m-d H:i:s',$t['pubtime']);?></span>
-<?php $ID=$t['type']>0?userModel::getUsername($t['uid']):substr(md5($t['uid'].$t['title'].$t['tid']), -8);?>
-<span<?php echo $t['type']>0?' style="color:red"':'';?>><?php echo 'ID:',$ID;?></span>
-<br class="visible-xs visible-sm"/>
-<?php if(userModel::isLogin()){ ?>
-<span class="text-link-sm">[<a class="link" href="post.php?tid=0&reply=%3e%3e<?php echo $t['tid']?>">举报</a>]</span>
-<span class="text-link-sm">[<a class="link" href="subscribe.php?tid=<?php echo $t['tid']?>"><?php echo subscriptionModel::isSubscribed($t['tid'])?'取消订阅':'订阅';?></a>]</span>
-<?php } ?>
-<?php if(userModel::isLogin()&&$_SESSION['type']>0){ ?>
-<span class="text-link-sm">[<a class="link" target="_blank" href="edit.php?tid=<?php echo $t['tid']?>">编辑</a>]</span>
-<span class="text-link-sm">[<a class="link" onclick="if(!confirm('要<?php echo $t['SAGE']==1?'解除':'';?>SAGE吗?')){return false;};" href="sage.php?tid=<?php echo $t['tid']?>"><?php echo $t['SAGE']==1?'解除':'';?>SAGE</a>]</span>
-<span class="text-link-sm">[<a class="link" onclick="if(!confirm('确实要删除吗?')){return false;};" href="delete.php?tid=<?php echo $t['tid']?>">删除</a>]</span>
-<?php } ?>
-<span class="text-link">[<a class="link" target="_blank" href="post.php?id=<?php echo $t['tid'],'&reply=%3e%3e',$t['tid'];?>#reply">回应</a>]</span>
-<p class="text-content"><?php echo $t['content'];?></p>
+<?php defined('ACC') || exit('ACC Denied'); ?>
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <?php echo $curr_cat['cat_name'], ' - ', SITENAME; ?>
+    </title>
+    <link rel="stylesheet" href="view/default/style.css">
+    <link rel="stylesheet" href="https://at.alicdn.com/t/c/font_4066894_lfnqwuus5os.css">
+    <script src="https://npm.elemecdn.com/snarkdown@2.0.0/dist/snarkdown.umd.js"></script>
+</head>
+
+<body>
+    <?php require(ROOT . 'view/default/header.php'); ?>
+    <main class="wrap">
+        <style>
+            body {
+                background: #75a99b;
+            }
+        </style>
+        <ul class="thread">
+            <?php foreach ($threads as $k => $t) { ?>
+                <div class="item" tid="<?php echo $t['tid']; ?>">
+                    <h1>
+                        <?php echo $t['title']; ?>
+                    </h1>
+                    <div class="info">
+                        <div class="user">
+                            <span>
+                                <?php echo $t['name']; ?>
+                            </span>
+                            <time>
+                                <?php echo date('Y-m-d H:i', $t['pubtime']); ?>
+                            </time>
+                        </div>
+                        <?php require(ROOT . 'view/default/comp/action.php') ?>
+                    </div>
+                    <article>
+                        <pre><?php echo $t['content'] ?></pre>
+                    </article>
+                </div>
+            <?php } ?>
+            <?php require(ROOT . 'view/default/comp/editor.php') ?>
+            </div>
+        </ul>
+    </main>
+    <?php require(ROOT . 'view/default/footer.php') ?>
+</body>
+
+</html>

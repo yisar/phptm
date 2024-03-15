@@ -16,6 +16,5 @@
                 href="delete.php?tid=<?php echo $t['tid'] ?>">删除</a>]</span>
     <?php } ?>
     <span>[<a target="_blank" href="post.php?id=<?php echo $t['tid']; ?>">回应</a>]</span>
-    <article class="content" content="<?php echo $t['content']; ?>"></article>
-    <?php echo $t['SAGE'] == 0 ? '' : '<p><i class="iconfont icon-cai"></i> 本串已经被SAGE（<abbr  title="该串不会因为新回应而被顶到页首">?</abbr>）</p>' ?>
+    <?php echo $t['SAGE'] == 0 ? '' : '<p><i class="iconfont icon-cai"></i> 本串已经被SAGE</p>' ?>
 </div>

@@ -23,4 +23,3 @@ if ($f>0) {
 	require(ROOT . "view/$template_dir/reply.php");
 	exit;
 }
-require(ROOT . "view/$template_dir/thread.php");

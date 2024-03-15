@@ -8,12 +8,10 @@ $msg = new msgModel();
 
 //取得被回复主题tid
 empty($_GET['id']) && showMsg('参数错误!', true, './');
-$tid = (int)$_GET['id'];
+$cid = (int)$_GET['id'];
 
 //取得被回复主题
-($tmp = $msg->getThread($tid)) || showMsg('参数错误!', true, './');
-$threads = array();
-$threads[]=$tmp;
+$threads = $msg->getTopThreads($cid);
 
 //总页数
 $count = $msg->countReplies($tid);
@@ -36,17 +34,9 @@ if ($curr_page<=6) {
 	$show = $all;
 }
 
-//取得每个主题10个以内回复
-$replies = array();
-$get = $msg->getTopReplies($tid, ($curr_page-1)*10, 10);
-$replies[0] = $get?$get:array();
-
 //获取全部分类
 $cats = catModel::getCatTree();
-
-//获取当前分类
-$curr_cat_id = $threads[0]['cat'];
-$curr_cat = catModel::getInfo($curr_cat_id, false);
+$curr_cat = catModel::getInfo($cid, false);
 
 //view
-require(ROOT . "view/$template_dir/post.php");
+require(ROOT . "view/$template_dir/thread.php");

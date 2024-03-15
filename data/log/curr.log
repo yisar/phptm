@@ -2600,3 +2600,136 @@
 2024-03-15 17:45:36 mysql query: select * from thread where tid in (select tid from subscription where uid=19) order by lastreptime desc limit 0,10
 2024-03-15 17:45:36 mysql query: select count(*) from subscription where uid=19 and tid=57
 2024-03-15 17:45:36 mysql query: select count(*) from subscription where uid=19 and tid=54
+2024-03-15 17:46:29 mysql query: select id,cat_name,parent_id from category
+2024-03-15 17:46:29 mysql query: select * from thread where cat in (1) order by lastreptime desc limit 0,5
+2024-03-15 17:46:29 mysql query: select * from thread where cat in (2) order by lastreptime desc limit 0,5
+2024-03-15 17:46:29 mysql query: select * from thread where cat in (3) order by lastreptime desc limit 0,5
+2024-03-15 17:46:29 mysql query: select * from thread where cat in (4) order by lastreptime desc limit 0,5
+2024-03-15 17:46:46 mysql query: select * from thread where tid=57
+2024-03-15 17:46:46 mysql query: select count(*) from reply where tid=57
+2024-03-15 17:46:46 mysql query: select * from reply where tid=57 order by rid desc limit 0,10
+2024-03-15 17:46:46 mysql query: select id,cat_name,parent_id from category
+2024-03-15 17:46:46 mysql query: select cat_name from category where id=1
+2024-03-15 17:46:46 mysql query: select count(*) from subscription where uid=19 and tid=57
+2024-03-15 17:46:46 mysql query: select count(*) from subscription where uid=19 and tid=57
+2024-03-15 17:46:46 mysql query: select count(*) from subscription where uid=19 and tid=57
+2024-03-15 17:46:56 mysql query: select id,cat_name,parent_id from category
+2024-03-15 17:46:56 mysql query: select * from thread where cat in (1) order by lastreptime desc limit 0,5
+2024-03-15 17:46:56 mysql query: select * from thread where cat in (2) order by lastreptime desc limit 0,5
+2024-03-15 17:46:56 mysql query: select * from thread where cat in (3) order by lastreptime desc limit 0,5
+2024-03-15 17:46:56 mysql query: select * from thread where cat in (4) order by lastreptime desc limit 0,5
+2024-03-15 17:46:59 mysql query: select * from thread where tid=1
+2024-03-15 17:47:02 mysql query: select id,cat_name,parent_id from category
+2024-03-15 17:47:02 mysql query: select * from thread where cat in (1) order by lastreptime desc limit 0,5
+2024-03-15 17:47:02 mysql query: select * from thread where cat in (2) order by lastreptime desc limit 0,5
+2024-03-15 17:47:02 mysql query: select * from thread where cat in (3) order by lastreptime desc limit 0,5
+2024-03-15 17:47:02 mysql query: select * from thread where cat in (4) order by lastreptime desc limit 0,5
+2024-03-15 17:52:20 mysql query: select id,cat_name,parent_id from category
+2024-03-15 17:52:20 mysql query: select * from thread where cat in (1) order by lastreptime desc limit 0,5
+2024-03-15 17:52:20 mysql query: select * from thread where cat in (2) order by lastreptime desc limit 0,5
+2024-03-15 17:52:20 mysql query: select * from thread where cat in (3) order by lastreptime desc limit 0,5
+2024-03-15 17:52:20 mysql query: select * from thread where cat in (4) order by lastreptime desc limit 0,5
+2024-03-15 17:52:26 mysql query: select * from thread where tid=1
+2024-03-15 17:52:30 mysql query: select id,cat_name,parent_id from category
+2024-03-15 17:52:30 mysql query: select * from thread where cat in (1) order by lastreptime desc limit 0,5
+2024-03-15 17:52:30 mysql query: select * from thread where cat in (2) order by lastreptime desc limit 0,5
+2024-03-15 17:52:30 mysql query: select * from thread where cat in (3) order by lastreptime desc limit 0,5
+2024-03-15 17:52:30 mysql query: select * from thread where cat in (4) order by lastreptime desc limit 0,5
+2024-03-15 17:56:31 mysql query: select id,cat_name,parent_id from category
+2024-03-15 17:56:31 mysql query: select * from thread where cat in (0,1,2,3,4) order by lastreptime desc limit 1,10
+2024-03-15 17:56:31 mysql query: select count(*) from reply where tid=
+2024-03-15 17:56:31 mysql query: select cat_name from category where id=1
+2024-03-15 17:56:31 mysql query: select count(*) from subscription where uid=19 and tid=
+2024-03-15 18:00:38 mysql query: select id,cat_name,parent_id from category
+2024-03-15 18:00:38 mysql query: select * from thread where cat in (0,1,2,3,4) order by lastreptime desc limit 1,10
+2024-03-15 18:00:38 mysql query: select count(*) from reply where tid=
+2024-03-15 18:00:38 mysql query: select cat_name from category where id=1
+2024-03-15 18:00:38 mysql query: select count(*) from subscription where uid=19 and tid=59
+2024-03-15 18:00:38 mysql query: select count(*) from subscription where uid=19 and tid=53
+2024-03-15 18:00:38 mysql query: select count(*) from subscription where uid=19 and tid=54
+2024-03-15 18:00:38 mysql query: select count(*) from subscription where uid=19 and tid=52
+2024-03-15 18:00:38 mysql query: select count(*) from subscription where uid=19 and tid=51
+2024-03-15 18:00:38 mysql query: select count(*) from subscription where uid=19 and tid=49
+2024-03-15 18:00:38 mysql query: select count(*) from subscription where uid=19 and tid=48
+2024-03-15 18:00:38 mysql query: select count(*) from subscription where uid=19 and tid=46
+2024-03-15 18:00:38 mysql query: select count(*) from subscription where uid=19 and tid=45
+2024-03-15 18:00:38 mysql query: select count(*) from subscription where uid=19 and tid=44
+2024-03-15 18:03:04 mysql query: select id,cat_name,parent_id from category
+2024-03-15 18:03:04 mysql query: select * from thread where cat in (0,1,2,3,4) order by lastreptime desc limit 1,10
+2024-03-15 18:03:04 mysql query: select count(*) from reply where tid=
+2024-03-15 18:03:04 mysql query: select cat_name from category where id=1
+2024-03-15 18:03:04 mysql query: select count(*) from subscription where uid=19 and tid=59
+2024-03-15 18:03:04 mysql query: select count(*) from subscription where uid=19 and tid=53
+2024-03-15 18:03:04 mysql query: select count(*) from subscription where uid=19 and tid=54
+2024-03-15 18:03:04 mysql query: select count(*) from subscription where uid=19 and tid=52
+2024-03-15 18:03:04 mysql query: select count(*) from subscription where uid=19 and tid=51
+2024-03-15 18:03:04 mysql query: select count(*) from subscription where uid=19 and tid=49
+2024-03-15 18:03:04 mysql query: select count(*) from subscription where uid=19 and tid=48
+2024-03-15 18:03:04 mysql query: select count(*) from subscription where uid=19 and tid=46
+2024-03-15 18:03:04 mysql query: select count(*) from subscription where uid=19 and tid=45
+2024-03-15 18:03:04 mysql query: select count(*) from subscription where uid=19 and tid=44
+2024-03-15 18:04:39 mysql query: select id,cat_name,parent_id from category
+2024-03-15 18:04:39 mysql query: select * from thread where cat in (0,1,2,3,4) order by lastreptime desc limit 1,10
+2024-03-15 18:04:39 mysql query: select count(*) from reply where tid=
+2024-03-15 18:04:39 mysql query: select cat_name from category where id=1
+2024-03-15 18:04:39 mysql query: select count(*) from subscription where uid=19 and tid=59
+2024-03-15 18:04:39 mysql query: select count(*) from subscription where uid=19 and tid=53
+2024-03-15 18:04:39 mysql query: select count(*) from subscription where uid=19 and tid=54
+2024-03-15 18:04:39 mysql query: select count(*) from subscription where uid=19 and tid=52
+2024-03-15 18:04:39 mysql query: select count(*) from subscription where uid=19 and tid=51
+2024-03-15 18:04:39 mysql query: select count(*) from subscription where uid=19 and tid=49
+2024-03-15 18:04:39 mysql query: select count(*) from subscription where uid=19 and tid=48
+2024-03-15 18:04:39 mysql query: select count(*) from subscription where uid=19 and tid=46
+2024-03-15 18:04:39 mysql query: select count(*) from subscription where uid=19 and tid=45
+2024-03-15 18:04:39 mysql query: select count(*) from subscription where uid=19 and tid=44
+2024-03-15 18:04:46 mysql query: select id,cat_name,parent_id from category
+2024-03-15 18:04:46 mysql query: select * from thread where cat in (1) order by lastreptime desc limit 0,5
+2024-03-15 18:04:46 mysql query: select * from thread where cat in (2) order by lastreptime desc limit 0,5
+2024-03-15 18:04:46 mysql query: select * from thread where cat in (3) order by lastreptime desc limit 0,5
+2024-03-15 18:04:46 mysql query: select * from thread where cat in (4) order by lastreptime desc limit 0,5
+2024-03-15 18:04:50 mysql query: select * from thread where tid=57
+2024-03-15 18:04:50 mysql query: select count(*) from reply where tid=57
+2024-03-15 18:04:50 mysql query: select * from reply where tid=57 order by rid desc limit 0,10
+2024-03-15 18:04:50 mysql query: select id,cat_name,parent_id from category
+2024-03-15 18:04:50 mysql query: select cat_name from category where id=1
+2024-03-15 18:04:50 mysql query: select count(*) from subscription where uid=19 and tid=57
+2024-03-15 18:04:50 mysql query: select count(*) from subscription where uid=19 and tid=57
+2024-03-15 18:04:50 mysql query: select count(*) from subscription where uid=19 and tid=57
+2024-03-15 18:05:26 mysql query: select id,cat_name,parent_id from category
+2024-03-15 18:05:26 mysql query: select * from thread where cat in (1) order by lastreptime desc limit 0,5
+2024-03-15 18:05:26 mysql query: select * from thread where cat in (2) order by lastreptime desc limit 0,5
+2024-03-15 18:05:26 mysql query: select * from thread where cat in (3) order by lastreptime desc limit 0,5
+2024-03-15 18:05:26 mysql query: select * from thread where cat in (4) order by lastreptime desc limit 0,5
+2024-03-15 18:05:29 mysql query: select id,cat_name,parent_id from category
+2024-03-15 18:05:29 mysql query: select * from thread where cat in (0,1,2,3,4) order by lastreptime desc limit 1,10
+2024-03-15 18:05:29 mysql query: select count(*) from reply where tid=
+2024-03-15 18:05:29 mysql query: select cat_name from category where id=1
+2024-03-15 18:05:29 mysql query: select count(*) from subscription where uid=19 and tid=59
+2024-03-15 18:05:29 mysql query: select count(*) from subscription where uid=19 and tid=53
+2024-03-15 18:05:29 mysql query: select count(*) from subscription where uid=19 and tid=54
+2024-03-15 18:05:29 mysql query: select count(*) from subscription where uid=19 and tid=52
+2024-03-15 18:05:29 mysql query: select count(*) from subscription where uid=19 and tid=51
+2024-03-15 18:05:29 mysql query: select count(*) from subscription where uid=19 and tid=49
+2024-03-15 18:05:29 mysql query: select count(*) from subscription where uid=19 and tid=48
+2024-03-15 18:05:29 mysql query: select count(*) from subscription where uid=19 and tid=46
+2024-03-15 18:05:29 mysql query: select count(*) from subscription where uid=19 and tid=45
+2024-03-15 18:05:29 mysql query: select count(*) from subscription where uid=19 and tid=44
+2024-03-15 18:05:43 mysql query: select id,cat_name,parent_id from category
+2024-03-15 18:05:43 mysql query: select * from thread where cat in (1) order by lastreptime desc limit 0,5
+2024-03-15 18:05:43 mysql query: select * from thread where cat in (2) order by lastreptime desc limit 0,5
+2024-03-15 18:05:43 mysql query: select * from thread where cat in (3) order by lastreptime desc limit 0,5
+2024-03-15 18:05:43 mysql query: select * from thread where cat in (4) order by lastreptime desc limit 0,5
+2024-03-15 18:05:46 mysql query: select id,cat_name,parent_id from category
+2024-03-15 18:05:46 mysql query: select * from thread where cat in (0,1,2,3,4) order by lastreptime desc limit 1,10
+2024-03-15 18:05:46 mysql query: select count(*) from reply where tid=
+2024-03-15 18:05:46 mysql query: select cat_name from category where id=1
+2024-03-15 18:05:46 mysql query: select count(*) from subscription where uid=19 and tid=59
+2024-03-15 18:05:46 mysql query: select count(*) from subscription where uid=19 and tid=53
+2024-03-15 18:05:46 mysql query: select count(*) from subscription where uid=19 and tid=54
+2024-03-15 18:05:46 mysql query: select count(*) from subscription where uid=19 and tid=52
+2024-03-15 18:05:46 mysql query: select count(*) from subscription where uid=19 and tid=51
+2024-03-15 18:05:46 mysql query: select count(*) from subscription where uid=19 and tid=49
+2024-03-15 18:05:46 mysql query: select count(*) from subscription where uid=19 and tid=48
+2024-03-15 18:05:46 mysql query: select count(*) from subscription where uid=19 and tid=46
+2024-03-15 18:05:46 mysql query: select count(*) from subscription where uid=19 and tid=45
+2024-03-15 18:05:46 mysql query: select count(*) from subscription where uid=19 and tid=44
