@@ -51,13 +51,6 @@ header .logo {
     margin: 0 auto;
 }
 
-main {
-    flex: 1;
-    overflow: hidden;
-    display: flex;
-    margin: 20px 0;
-}
-
 .logo h1 {
     font-size: 40px;
     text-align: center;
@@ -105,10 +98,11 @@ section .list .item div {
     align-items: baseline;
 }
 
-.thread {
+main {
     border-radius: 4px;
     background: #fff;
     padding: 15px;
+    margin-top: 20px !important;
 }
 
 .thread h1 {
@@ -116,31 +110,19 @@ section .list .item div {
     font-size: 22px;
 }
 
-.thread .info{
+.thread .info {
     display: flex;
     justify-content: space-between;
     font-size: 14px;
 }
 
-.thread time{
+.thread time {
     font-size: 12px;
     color: #626f84;
 }
 
 .thread .user {
     padding: 10px 0;
-}
-
-main .body .title {
-    text-align: center;
-    border-bottom: 1px solid var(--red-bg);
-    padding: 10px;
-}
-
-main .body h1 {
-    color: var(--oridge);
-    padding: 20px;
-    text-align: center;
 }
 
 footer {
@@ -162,7 +144,7 @@ footer li {
 }
 
 .editor {
-    width: 800px;
+    width: 100%;
     margin: 20px auto;
     display: flex;
     justify-content: center;
@@ -170,44 +152,39 @@ footer li {
 
 .editor li {
     display: flex;
-    /* align-items: center; */
-    margin: 2px;
-    padding: 2px;
+    justify-content: end;
 }
 
-.editor li h2 {
-    width: 100px;
-    background: #ea8;
-    color: var(--red);
-    font-size: 14px;
-    padding: 2px 10px;
-    height: 100%;
-    margin-right: 5px;
-}
 
-.editor li:last-child {
-    height: 100px;
-}
-
-.editor li input {
-    height: 18px;
-    width: 300px;
-}
-
-.editor li button {
-    margin: 0 10px;
-    padding: 1px 10px;
-}
 
 .editor li textarea {
-    width: 400px;
-    height: 100px;
+    width: 960px;
+    height: 150px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 16px;
+    margin: 10px 0;
 }
 
-.bangui {
-    display: flex;
-    justify-content: center;
+.editor button {
+    border: 1px solid #07c;
+    background: linear-gradient(#42a1ec, #0070c9);
+    border-radius: 3px;
+    padding: 4px 10px;
+    color: #fff;
 }
+
+
+.editor select {
+    font-size: 16px;
+    border-radius: 4px;
+    border: 0px;
+    padding: 2px;
+    background: #daecff;
+
+}
+
 
 ol li {
     list-style: upper-roman;

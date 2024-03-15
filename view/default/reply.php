@@ -7,11 +7,11 @@
 <?php echo $reply['uid']==$t['uid']?'<span class="text-po">(PO主)</span>':'';?>
 <br class="visible-xs visible-sm"/>
 <?php if(userModel::isLogin()){ ?>
-<span class="text-link-sm">[<a href="view.php?tid=0&reply=%3e%3e<?php echo $tid,'%3eF',$reply['floor'];?>">举报</a>]</span>
+<span class="text-link-sm">[<a href="post.php?tid=0&reply=%3e%3e<?php echo $tid,'%3eF',$reply['floor'];?>">举报</a>]</span>
 <?php } ?>
 <?php if(userModel::isLogin()&&$_SESSION['type']>0){ ?>
 <span class="text-link-sm">[<a target="_blank" href="edit.php?tid=<?php echo $tid?>&f=<?php echo $reply['floor']?>">编辑</a>]</span>
 <span class="text-link-sm">[<a onclick="if(!confirm('确实要删除吗?')){return false;};" href="delete.php?tid=<?php echo $tid?>&f=<?php echo $reply['floor']?>">删除</a>]</span>
 <?php } ?>
-<span class="text-link-sm">[<a target="_blank" href="view.php?id=<?php echo $tid,'&reply=%3e%3e',$tid,'%3e',$reply['floor'];?>#reply">回复</a>]</span>
+<span class="text-link-sm">[<a target="_blank" href="post.php?id=<?php echo $tid,'&reply=%3e%3e',$tid,'%3e',$reply['floor'];?>#reply">回复</a>]</span>
 <p class="text-content"><?php echo $reply['content'];?></p>

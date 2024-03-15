@@ -14,6 +14,6 @@ $isLogin = userModel::isLogin(); ?>
 			<li><a href="./logout.php">退出登陆</a></li>
 		<?php } ?>
 		<a href="./ucenter.php?cat=2">我的订阅</a>
-		<a href="./view.php?id=<?php echo $report_tid; ?>">违规内容举报</a>
+		<a href="./post.php?id=<?php echo $report_tid; ?>">违规内容举报</a>
 	</ul>
 </footer>

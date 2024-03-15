@@ -22,7 +22,7 @@ if ($f==='') {
 	} else {
 		$message .= '删除tid为'.$tid.'的讨论主题下的所有回应失败！';
 	}
-	if (isset($_SERVER['HTTP_REFERER'])&&stripos($_SERVER['HTTP_REFERER'],'view.php')===false) {
+	if (isset($_SERVER['HTTP_REFERER'])&&stripos($_SERVER['HTTP_REFERER'],'post.php')===false) {
 		showMsg($message, true);
 	} else {
 		showMsg($message, true, './');

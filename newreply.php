@@ -17,7 +17,7 @@ $data['type'] = $_SESSION['type'];
 $data['floor'] = $msg->getNextFloor($data['tid']);
 if ($msg->addreply($data)) {
 	$_SESSION['cd'] = time();
-	showMsg('发出回应成功！', true, './view.php?id='.$data['tid']);
+	showMsg('发出回应成功！', true, './post.php?id='.$data['tid']);
 } else {
 	showMsg('发起讨论失败！');
 }

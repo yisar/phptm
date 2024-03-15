@@ -16,13 +16,13 @@
 
 <body>
     <?php require(ROOT . 'view/default/header.php'); ?>
-    <main>
+    <main class="wrap">
         <style>
             body {
-                background: radial-gradient(#591803, #fff6df);
+                background: #75a99b;
             }
         </style>
-        <ul class="thread wrap">
+        <ul class="thread">
             <?php foreach ($threads as $k => $t) { ?>
                 <div class="item" tid="<?php echo $t['tid']; ?>">
                     <h1>
@@ -39,7 +39,9 @@
                         </div>
                         <?php require(ROOT . 'view/default/comp/action.php') ?>
                     </div>
-
+                    <article>
+                        <pre><?php echo $t['content'] ?></pre>
+                    </article>
                 </div>
                 <?php foreach ($replies[$k] as $key => $value) {
                     ?>
@@ -57,18 +59,16 @@
                             </span>
                             <?php echo $value['uid'] == $t['uid'] ? '<span class="text-po">(PO主)</span>' : ''; ?>
                             <span>[<a
-                                    href="view.php?id=<?php echo $t['tid']; ?>&reply=%3e%3e<?php echo $t['tid'], '%3e', $value['floor']; ?>#reply">回应</a>]</span>
+                                    href="post.php?id=<?php echo $t['tid']; ?>&reply=%3e%3e<?php echo $t['tid'], '%3e', $value['floor']; ?>#reply">回应</a>]</span>
                             <article class="content" content="<?php echo $value['content']; ?>"></article>
                         </div>
                     </div>
                 <?php } ?>
             <?php } ?>
             </div>
-
         </ul>
-
+        <?php require(ROOT . 'view/default/comp/editor.php') ?>
     </main>
-    <?php require(ROOT . 'view/default/comp/editor.php') ?>
     <?php require(ROOT . 'view/default/footer.php') ?>
 </body>
 
