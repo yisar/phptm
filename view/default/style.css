@@ -230,11 +230,8 @@ header li {
 
 }
 
-
-ol li {
-    list-style: upper-roman;
-    color: var(--oridge);
-    padding: 2px;
+.list .item:last-child {
+    border: 0px;
 }
 
 .iconfont {

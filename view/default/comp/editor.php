@@ -12,7 +12,8 @@
         </li>';
         } ?>
         <li>
-            <textarea id="content" placeholder="正文内容" name="content"></textarea>
+            <textarea id="content" placeholder="正文内容"
+                name="content"><?php echo isset($_GET['reply']) ? strip_tags($_GET['reply']) : ''; ?></textarea>
         </li>
         <li>
             <button>发送</button>
