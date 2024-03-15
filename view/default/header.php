@@ -4,7 +4,8 @@ $isLogin = userModel::isLogin(); ?>
 <header>
 	<div class="wrap">
 		<a href="/">
-			<div class="logo"></div>
+			<h1>甜梦文学城</h1>
+			<!-- <div class="logo"></div> -->
 		</a>
 		<ul>
 			<?php if (!$isLogin) { ?>
