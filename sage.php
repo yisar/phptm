@@ -7,6 +7,7 @@ $_SESSION['type']>0||showMsg('权限不足！', true, './');
 empty($_GET['tid'])&&showMsg('参数错误！', true, './');
 $tid = (int)$_GET['tid'];
 $msg = new msgModel();
+
 if ($msg->isSAGE($tid)) {
 	if ($msg->UNSAGE($tid)) {
 		$message = 'tid为'.$tid.'的主题已经解除SAGE！';
