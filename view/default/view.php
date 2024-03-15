@@ -12,26 +12,11 @@
     <link rel="stylesheet" href="view/default/style.css">
     <link rel="stylesheet" href="https://at.alicdn.com/t/c/font_4066894_lfnqwuus5os.css">
     <script src="https://npm.elemecdn.com/snarkdown@2.0.0/dist/snarkdown.umd.js"></script>
-    <script>
-        setTimeout(() => {
-            document.querySelectorAll('.content').forEach(item => {
-                console.log(item)
-                const c = item.getAttribute('content')
-                item.innerHTML = snarkdown(c);
-            })
-        }, 20)
-    </script>
 </head>
 
 <body>
-    <header>
-        <!-- <h1>头部</h1> -->
-    </header>
+    <?php require(ROOT . 'view/default/header.php'); ?>
     <main>
-        <div class="menu">
-            <?php require(ROOT . 'view/default/header.php'); ?>
-            <?php require(ROOT . 'view/default/menu.php'); ?>
-        </div>
         <div class="body">
 
             <div class="list">
@@ -56,13 +41,17 @@
                         <?php if (userModel::isLogin()) { ?>
                             <span>[<a target="_blank"
                                     href="view.php?id=<?php echo $report_tid; ?>&reply=%3e%3e<?php echo $t['tid'] ?>">举报</a>]</span>
-                            <span>[<a target="_blank" href="subscribe.php?tid=<?php echo $t['tid'] ?>"><?php echo subscriptionModel::isSubscribed($t['tid']) ? '取消订阅' : '订阅'; ?></a>]</span>
+                            <span>[<a target="_blank" href="subscribe.php?tid=<?php echo $t['tid'] ?>">
+                                    <?php echo subscriptionModel::isSubscribed($t['tid']) ? '取消订阅' : '订阅'; ?>
+                                </a>]</span>
                         <?php } ?>
                         <?php if (userModel::isLogin() && $_SESSION['type'] > 0) { ?>
                             <span>[<a target="_blank" href="edit.php?tid=<?php echo $t['tid'] ?>">编辑</a>]</span>
                             <span>[<a
                                     onclick="if(!confirm('要<?php echo $t['SAGE'] == 1 ? '解除' : ''; ?>SAGE吗?')){return false;};"
-                                    href="sage.php?tid=<?php echo $t['tid'] ?>"><?php echo $t['SAGE'] == 1 ? '解除' : ''; ?>SAGE</a>]</span>
+                                    href="sage.php?tid=<?php echo $t['tid'] ?>">
+                                    <?php echo $t['SAGE'] == 1 ? '解除' : ''; ?>SAGE
+                                </a>]</span>
                             <span>[<a onclick="if(!confirm('确实要删除吗?')){return false;};"
                                     href="delete.php?tid=<?php echo $t['tid'] ?>">删除</a>]</span>
                         <?php } ?>

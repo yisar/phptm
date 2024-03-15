@@ -1,6 +1,6 @@
 <?php defined('ACC') || exit('ACC Denied');
 $isLogin = userModel::isLogin(); ?>
-<footer>
+<footer class="wrap">
 	<ul>
 		<a href="./">首页</a>
 		<?php if (!$isLogin) { ?>
