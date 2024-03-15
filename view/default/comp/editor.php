@@ -1,6 +1,6 @@
 <div class="editor">
     <form action="<?php
-    echo $pathname === 'thread' ? 'newpost.php' : 'newreply.php'
+    echo $pathname === 'thread' ? 'act/newpost.php' : 'act/newreply.php'
         ?>" method="POST">
         <li>
             <?php include(ROOT . 'view/default/textface.html'); ?>

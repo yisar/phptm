@@ -83,7 +83,7 @@
             <div id="register" class="tab_content">
                 <h1>注册</h1>
                 <div class="editor">
-                    <form action="regAct.php" method="POST">
+                    <form action="act/register.php" method="POST">
                         <li>
                             <input type="text" name="email" maxlength="30" placeholder="如 admin@clicli.us">
                         </li>
@@ -105,7 +105,7 @@
             <div id="login" class="tab_content">
                 <h1>登录</h1>
                 <div class="editor">
-                    <form action="loginAct.php" method="POST">
+                    <form action="act/login.php" method="POST">
                         <li>
                             <input type="text" name="email" maxlength="30" placeholder="如 admin@clicli.us">
                         </li>

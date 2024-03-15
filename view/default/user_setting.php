@@ -1,7 +1,7 @@
 <?php defined('ACC') || exit('ACC Denied'); ?>
 
 <div class="editor">
-    <form action="settingAct.php" method="POST">
+    <form action="act/setting.php" method="POST">
         <li>
             <input type="text" name="email" maxlength="30" value="<?php echo $_SESSION['email']; ?>">
         </li>
