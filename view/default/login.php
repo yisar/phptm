@@ -5,16 +5,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>登陆</title>
+    <title>登陆/注册</title>
     <link rel="stylesheet" href="view/default/style.css">
 </head>
 
 <body>
     <style>
+        h1{
+            font-weight: normal;
+            color: var(--red);
+            font-size: 22px;
+            text-align: center;
+        }
         .tabmenu {
             position: absolute;
             top: 0;
             margin: 0;
+            left: 50%;
+            transform: translate(-50%, 0);
         }
 
         .tabmenu li {
@@ -40,13 +48,13 @@
         .tab_content {
             position: absolute;
             top: 50px;
-            width: 600px;
             height: 300px;
             padding: 10px;
-            background: #ffe;
+            background: #f1f4f7;
+            left: 50%;
+            transform: translate(-50%, 0);
         }
 
-        /*使用css3(:target属性实现)，z-index控制元素层级*/
         #register:target,
         #login:target {
             z-index: 1;
@@ -77,18 +85,18 @@
                 <div class="editor">
                     <form action="regAct.php" method="POST">
                         <li>
-                            <h2>邮箱:</h2>
                             <input type="text" name="email" maxlength="30" placeholder="如 admin@clicli.us">
                         </li>
                         <li>
-                            <h2>昵称:</h2>
                             <input name="nickname" disabled placeholder="初始为无名氏">
                             <input type="hidden" name="nickname" value="无名氏">
                         </li>
                         <li>
-                            <h2>密码:</h2>
                             <input type="password" name="password" maxlength="30" placeholder="">
+                        </li>
+                        <li>
                             <button>注册</button>
+
                         </li>
                     </form>
 
@@ -99,13 +107,14 @@
                 <div class="editor">
                     <form action="loginAct.php" method="POST">
                         <li>
-                            <h2>邮箱:</h2>
                             <input type="text" name="email" maxlength="30" placeholder="如 admin@clicli.us">
                         </li>
                         <li>
-                            <h2>密码:</h2>
                             <input type="password" name="password" maxlength="30" placeholder="">
+                        </li>
+                        <li>
                             <button>登陆</button>
+
                         </li>
                     </form>
 
