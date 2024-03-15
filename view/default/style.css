@@ -259,17 +259,17 @@ ol li {
     cursor: pointer;
 }
 
-.pagination li:nth-child(3) {
+.pagination a:nth-child(3) li {
     border-radius: 0 10px 20px 0;
 }
 
 
-.pagination li:nth-child(2) {
+.pagination a:nth-child(2) li {
     background: #dae6ef;
     color: #626f84;
 }
 
-.pagination li:nth-child(1) {
+.pagination a:nth-child(1) li {
     border-radius: 20px 0 0 10px;
 }
 

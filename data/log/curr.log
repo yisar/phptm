@@ -3518,3 +3518,33 @@
 2024-03-15 19:35:43 mysql query: select id,cat_name,parent_id from category
 2024-03-15 19:35:43 mysql query: select * from thread where cat in (1) order by lastreptime desc limit 0,10
 2024-03-15 19:35:43 mysql query: select cat_name from category where id=1
+2024-03-15 19:39:50 mysql query: select id,cat_name,parent_id from category
+2024-03-15 19:39:50 mysql query: select * from thread where cat in (1) order by lastreptime desc limit 0,10
+2024-03-15 19:39:50 mysql query: select cat_name from category where id=1
+2024-03-15 19:40:29 mysql query: select id,cat_name,parent_id from category
+2024-03-15 19:40:29 mysql query: select * from thread where cat in (1) order by lastreptime desc limit 0,10
+2024-03-15 19:40:29 mysql query: select cat_name from category where id=1
+2024-03-15 19:40:52 mysql query: select id,cat_name,parent_id from category
+2024-03-15 19:40:52 mysql query: select * from thread where cat in (1) order by lastreptime desc limit 0,10
+2024-03-15 19:40:52 mysql query: select cat_name from category where id=1
+2024-03-15 19:41:13 mysql query: select id,cat_name,parent_id from category
+2024-03-15 19:41:13 mysql query: select * from thread where cat in (1) order by lastreptime desc limit 0,10
+2024-03-15 19:41:13 mysql query: select cat_name from category where id=1
+2024-03-15 19:42:42 mysql query: select id,cat_name,parent_id from category
+2024-03-15 19:42:42 mysql query: select * from thread where cat in (1) order by lastreptime desc limit 0,10
+2024-03-15 19:42:42 mysql query: select cat_name from category where id=1
+2024-03-15 19:42:46 mysql query: select id,cat_name,parent_id from category
+2024-03-15 19:42:46 mysql query: select * from thread where cat in (1) order by lastreptime desc limit 10,10
+2024-03-15 19:42:46 mysql query: select cat_name from category where id=1
+2024-03-15 19:43:04 mysql query: select id,cat_name,parent_id from category
+2024-03-15 19:43:04 mysql query: select * from thread where cat in (1) order by lastreptime desc limit 0,10
+2024-03-15 19:43:04 mysql query: select cat_name from category where id=1
+2024-03-15 19:43:10 mysql query: select id,cat_name,parent_id from category
+2024-03-15 19:43:10 mysql query: select * from thread where cat in (1) order by lastreptime desc limit 10,10
+2024-03-15 19:43:10 mysql query: select cat_name from category where id=1
+2024-03-15 19:43:14 mysql query: select id,cat_name,parent_id from category
+2024-03-15 19:43:14 mysql query: select * from thread where cat in (1) order by lastreptime desc limit 20,10
+2024-03-15 19:43:14 mysql query: select cat_name from category where id=1
+2024-03-15 19:43:19 mysql query: select id,cat_name,parent_id from category
+2024-03-15 19:43:19 mysql query: select * from thread where cat in (1) order by lastreptime desc limit 30,10
+2024-03-15 19:43:19 mysql query: select cat_name from category where id=1
