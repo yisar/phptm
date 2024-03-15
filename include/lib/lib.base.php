@@ -10,15 +10,9 @@ function _addslashes($arr)
 	return $arr;
 }
 
-/**
- * 显示系统信息
- *
- * @param string $msg 信息
- * @param string $url 返回地址
- * @param boolean $isAutoGo 是否自动返回 true false
- */
 function showMsg($msg, $isAutoGo = false, $url = '')
 {
+	$icon = $isAutoGo ? ':)' : ':(';
 	if ($url == '') {
 		$url = isset($_SERVER['HTTP_REFERER']) ? $_SERVER['HTTP_REFERER'] : 'javascript:history.back(-1);';
 	}
@@ -34,6 +28,7 @@ EOT;
 	if ($isAutoGo) {
 		echo "<meta http-equiv=\"refresh\" content=\"1.25;url=$url\" />";
 	}
+
 	echo <<<EOT
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -56,7 +51,7 @@ EOT;
         main {padding: 20px;}
     </style>
     <main>
-        <h1>:(</h1>
+        <h1>$icon</h1>
 		<p>$msg</p>
 EOT;
 	if (!$isAutoGo) {
