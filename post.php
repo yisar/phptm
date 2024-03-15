@@ -3,6 +3,8 @@
 define('ACC',true);
 require('init.php');
 
+$pathname = 'post';
+
 //实例化留言板操作类
 $msg = new msgModel();
 

@@ -40,7 +40,7 @@ EOT;
     <style>
         * {margin: 0;padding: 0;}
 
-        body {color: #ea8;background: #ffe;}
+        body {color: #ea8;background: #F1F4F7;}
 
         h1 {font-size: 100px;}
 

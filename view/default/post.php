@@ -22,7 +22,7 @@
                 background: #75a99b;
             }
         </style>
-        <ul class="thread">
+        <ul class="thread pd">
             <?php foreach ($threads as $k => $t) { ?>
                 <div class="item" tid="<?php echo $t['tid']; ?>">
                     <h1>

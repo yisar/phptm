@@ -5,7 +5,7 @@ $isLogin = userModel::isLogin(); ?>
 	<div class="wrap">
 		<nav>
 			<a href="/">
-				<h1></h1>
+				甜梦文学城
 			</a>
 			<ul>
 				<?php if (!$isLogin) { ?>

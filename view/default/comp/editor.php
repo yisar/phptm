@@ -1,16 +1,23 @@
 <div class="editor">
-    <form action="newreply.php" method="POST">
+    <form action="<?php
+    echo $pathname === 'thread' ? 'newpost.php' : 'newreply.php'
+        ?>" method="POST">
         <li>
             <?php include(ROOT . 'view/default/textface.html'); ?>
         </li>
+        <?php
+        if ($pathname === 'thread') {
+            echo '<li>
+            <input placeholder="标题" name="title"></input>
+        </li>';
+        } ?>
         <li>
-            <textarea id="content" placeholder="支持markdown语法"
-                name="content"><?php echo isset($_GET['reply']) ? strip_tags($_GET['reply']) : ''; ?></textarea>
+            <textarea id="content" placeholder="正文内容" name="content"></textarea>
         </li>
         <li>
             <button>发送</button>
         </li>
-        <input type="hidden" name="tid" value="<?php echo $tid; ?>">
+        <input type="hidden" name="id" value="<?php echo $pathname === 'thread' ? $cid : $tid; ?>">
     </form>
 
 </div>

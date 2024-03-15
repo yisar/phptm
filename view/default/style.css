@@ -39,7 +39,7 @@ header h1 {
     font-size: 28px;
 }
 
-header nav{
+header nav {
     height: 30px;
     background: rgba(0, 0, 0, 0.5);
     color: #fff;
@@ -50,7 +50,7 @@ header nav{
     padding: 0 15px;
 }
 
-header nav a{
+header nav a {
     color: #fff;
 }
 
@@ -131,7 +131,7 @@ main {
 .thread {
     border-radius: 4px;
     background: #fff;
-    padding: 15px;
+    padding: 5px;
 }
 
 .thread h1 {
@@ -157,6 +157,10 @@ main {
 
 .thread .item {
     border-bottom: 1px dashed #ddd;
+}
+
+.pd {
+    padding: 10px;
 }
 
 footer {
@@ -187,7 +191,7 @@ header li {
 
 .editor li {
     display: flex;
-    justify-content: end;
+    justify-content: start;
 }
 
 .editor li input {

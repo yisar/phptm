@@ -11,7 +11,6 @@
     </title>
     <link rel="stylesheet" href="view/default/style.css">
     <link rel="stylesheet" href="https://at.alicdn.com/t/c/font_4066894_lfnqwuus5os.css">
-    <script src="https://npm.elemecdn.com/snarkdown@2.0.0/dist/snarkdown.umd.js"></script>
 </head>
 
 <body>
@@ -22,31 +21,37 @@
                 background: #75a99b;
             }
         </style>
-        <ul class="thread">
-            <?php foreach ($threads as $k => $t) { ?>
-                <div class="item" tid="<?php echo $t['tid']; ?>">
-                    <h1>
-                        <?php echo $t['title']; ?>
-                    </h1>
-                    <div class="info">
-                        <div class="user">
-                            <span>
-                                <?php echo $t['name']; ?>
-                            </span>
-                            <time>
-                                <?php echo date('Y-m-d H:i', $t['pubtime']); ?>
-                            </time>
+        <section class="thread">
+            <ul class="list">
+                <?php foreach ($threads as $k => $t) { ?>
+                    <div class="item">
+                        <div>
+                            <h1>
+                                <?php echo $t['title'] ?>
+                            </h1>
+                            <p>
+                                <?php echo $t['name'] ?>
+                            </p>
                         </div>
-                        <?php require(ROOT . 'view/default/comp/action.php') ?>
+                        <div>
+                            <a href="./post.php?id=<?php echo $t['tid']; ?>">
+                                <p>
+                                    <?php echo $t['content'] ?>
+                                </p>
+
+                            </a>
+                            <span>
+                                <?php echo date('m-d H:i', $t['pubtime']); ?>
+                            </span>
+                        </div>
+
                     </div>
-                    <article>
-                        <pre><?php echo $t['content'] ?></pre>
-                    </article>
-                </div>
-            <?php } ?>
-            <?php require(ROOT . 'view/default/comp/editor.php') ?>
-            </div>
+                <?php } ?>
+                <?php require(ROOT . 'view/default/comp/editor.php') ?>
+        </section>
         </ul>
+        </div>
+
     </main>
     <?php require(ROOT . 'view/default/footer.php') ?>
 </body>
