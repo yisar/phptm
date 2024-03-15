@@ -38,13 +38,6 @@ class userModel extends model
 		return $this->db->getOne($sql) != 0;
 	}
 
-	public static function getUsername($uid)
-	{
-		$db = mysql_::getInstance();
-		$sql = 'select username from user where uid=' . $uid;
-		return $db->getOne($sql);
-	}
-
 	public static function getUser($uid)
 	{
 		$db = mysql_::getInstance();
