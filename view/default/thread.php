@@ -14,7 +14,9 @@
 </head>
 
 <body>
-    <?php require(ROOT . 'view/default/header.php'); ?>
+    <?php if ($pathname == 'thread') { ?>
+        <?php require(ROOT . 'view/default/header.php'); ?>
+    <?php } ?>
     <main class="wrap">
         <style>
             body {
@@ -48,7 +50,9 @@
                     </div>
                 <?php } ?>
                 <?php require(ROOT . 'view/default/pagination.php') ?>
-                <?php require(ROOT . 'view/default/comp/editor.php') ?>
+                <?php if ($pathname == 'thread') { ?>
+                    <?php require(ROOT . 'view/default/comp/editor.php') ?>
+                <?php } ?>
         </section>
         </ul>
         </div>

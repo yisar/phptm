@@ -27,18 +27,17 @@
             </p>
         </div>
         <nav>
-            <li <?php echo $cat == 1 ? 'class="active" ' : '' ?>><a href="./ucenter.php?cat=1">讨论串</a></li>
-            <li <?php echo $cat == 2 ? 'class="active" ' : '' ?>><a href="./ucenter.php?cat=2">订阅串</a></li>
+            <li <?php echo $cat == 1 ? 'class="active" ' : '' ?>><a href="./ucenter.php?cat=1">讨论</a></li>
+            <li <?php echo $cat == 2 ? 'class="active" ' : '' ?>><a href="./ucenter.php?cat=2">订阅</a></li>
             <li <?php echo $cat == 3 ? 'class="active" ' : '' ?>><a href="./ucenter.php?cat=3">信息设定</a></li>
         </nav>
         <div class="list wrap">
             <?php
-            $arr = array('threads', 'order', 'setting');
-            require(ROOT . 'view/default/ucenter_' . $arr[$cat - 1] . '.php');
+            $arr = array('thread', 'thread', 'user_setting');
+            require(ROOT . 'view/default/' . $arr[$cat - 1] . '.php');
             ?>
         </div>
     </main>
-    <?php require(ROOT . 'view/default/footer.php'); ?>
 </body>
 
 </html>

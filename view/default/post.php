@@ -11,17 +11,16 @@
     </title>
     <link rel="stylesheet" href="view/default/style.css">
     <link rel="stylesheet" href="https://at.alicdn.com/t/c/font_4066894_lfnqwuus5os.css">
-    <script src="https://npm.elemecdn.com/snarkdown@2.0.0/dist/snarkdown.umd.js"></script>
+    <style>
+        body {
+            background: #75a99b;
+        }
+    </style>
 </head>
 
 <body>
     <?php require(ROOT . 'view/default/header.php'); ?>
     <main class="wrap">
-        <style>
-            body {
-                background: #75a99b;
-            }
-        </style>
         <ul class="thread pd">
             <?php foreach ($threads as $k => $t) { ?>
                 <div class="item" tid="<?php echo $t['tid']; ?>">
@@ -34,6 +33,7 @@
                                 <?php echo $t['name']; ?>
                             </span>
                             <time>
+                                发表于
                                 <?php echo date('Y-m-d H:i', $t['pubtime']); ?>
                             </time>
                         </div>
@@ -52,6 +52,7 @@
                                     <?php echo $value['name']; ?>
                                 </span>
                                 <time>
+                                    发表于
                                     <?php echo date('Y-m-d H:i', $value['reptime']); ?>
                                 </time>
                             </div>

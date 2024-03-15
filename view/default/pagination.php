@@ -13,7 +13,7 @@ $url = $url . '?' . $query;
 ?>
 <ul class="pagination">
 	<a href="<?php echo $url . 'page=' . ($curr_page - 1) ?>">
-		<li>Previous Page</li>
+		<li>Prev</li>
 	</a>
 	<a href="">
 		<li>
@@ -21,6 +21,6 @@ $url = $url . '?' . $query;
 		</li>
 	</a>
 	<a href="<?php echo $url . 'page=' . ($curr_page + 1) ?>">
-		<li>Next Page</li>
+		<li>Next</li>
 	</a>
 </ul>

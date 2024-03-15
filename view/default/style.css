@@ -128,10 +128,12 @@ main {
     margin-top: 15px !important;
 }
 
-.thread {
+.thread,.ucenter {
     border-radius: 4px;
     background: #fff;
     padding: 5px;
+    box-shadow: 0 0 3px rgb(18 18 18 / 10%);
+    box-sizing: border-box;
 }
 
 .thread h1 {
@@ -169,7 +171,7 @@ footer {
     align-items: center;
     font-size: 14px;
     padding: 10px;
-
+    color: var(--green);
 }
 
 li {
@@ -199,6 +201,7 @@ header li {
     margin: 10px 0;
     border: 1px solid #ddd;
     width: 250px;
+    border-radius: 4px;
 }
 
 .editor li textarea {
@@ -209,13 +212,14 @@ header li {
     font-size: 16px;
     margin: 10px 0;
     box-sizing: border-box;
+    border-radius: 4px;
 }
 
 .editor button {
     border: 1px solid #07c;
     background: linear-gradient(#42a1ec, #0070c9);
     border-radius: 3px;
-    padding: 4px 10px;
+    padding: 4px 20px;
     color: #fff;
 }
 
@@ -225,9 +229,22 @@ header li {
     border-radius: 4px;
     border: 0px;
     padding: 2px;
-    background: #dae6ef;
+    background: #e8edf2;
     color: #626f84;
 
+}
+
+button {
+    cursor: pointer;
+}
+
+.action span {
+    font-size: 12px;
+    color: #626f84;
+}
+
+.action a {
+    color: #626f84;
 }
 
 .list .item:last-child {
@@ -271,7 +288,6 @@ header li {
 }
 
 .ucenter {
-    width: 1000px;
     margin: 20px auto;
     display: block !important;
 }

@@ -23,11 +23,6 @@ $curr_page = empty($_GET['page']) ? 1 : (int) $_GET['page'];
 $replies = array();
 $get = $msg->getTopReplies($tid, ($curr_page-1)*10, 10);
 $replies[0] = $get?$get:array();
-//获取全部分类
-$allCats = catModel::getCatTree();
-//获取当前分类
-$curr_cat_id = $threads[0]['cat'];
-$curr_cat = catModel::getInfo($curr_cat_id, false);
 
 //view
 require(ROOT . "view/$template_dir/post.php");
