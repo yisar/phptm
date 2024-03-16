@@ -3,7 +3,6 @@
 file init.php
 框架初始化
  */
-
 defined('ACC')||exit('ACC Denied');
 header('Content-type: text/html; charset=utf-8');
 session_start();
@@ -16,7 +15,6 @@ function autoload ($class) {
 		require(ROOT . 'lib/' . $class . '.php');
 	}
 }
-
 
 spl_autoload_register( 'autoload' );
 
@@ -35,7 +33,7 @@ define('CD',$conf->post_cd);
 $template_dir = isset($_SESSION['template'])?$_SESSION['template']:'';
 
 //加载函数库
-require(ROOT . '/lib/base.php');
+require(ROOT . 'util.php');
 
 //类自动加载
 

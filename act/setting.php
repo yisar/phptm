@@ -1,9 +1,9 @@
 <?php
 
 define('ACC', true);
-require('init.php');
+require ('../init.php');
 userModel::isLogin() || exit;
-if (empty($_POST['nickname']) || empty($_POST['email'])) {
+if (empty ($_POST['nickname']) || empty ($_POST['email'])) {
 	exit;
 }
 $data = array();
@@ -20,18 +20,18 @@ if ($_POST['email'] != $_SESSION['email']) {
 	}
 	$data['email'] = $_POST['email'];
 }
-if (empty($_POST['password'])) {
+if (empty ($_POST['password'])) {
 	// $data['password']=$_SESSION['password'];
 } else {
 	$data['password'] = md5('acgzone.clicli' . md5($_POST['password']));
 }
 if (count($data) == 0) {
-	showMsg('success',true);
+	showMsg('success', true, true);
 } else {
 	$UM = new userModel();
 	if ($UM->update($_SESSION['uid'], $data)) {
 		$_SESSION['email'] = $_POST['email'];
 		$_SESSION['nickname'] = htmlspecialchars($_POST['nickname']);
-		showMsg('更新成功',false);
+		showMsg('更新成功', true, false);
 	}
 }

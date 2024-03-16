@@ -1,6 +1,6 @@
 <?php
 
-defined('ACC') || exit('ACC Denied');
+defined('ACC') || exit ('ACC Denied');
 //递归转义数组
 function _addslashes($arr)
 {
@@ -10,11 +10,11 @@ function _addslashes($arr)
 	return $arr;
 }
 
-function showMsg($msg, $isAutoGo = false, $url = '')
+function showMsg($msg, $flag = true, $isAutoGo = false, $url = '', )
 {
-	$icon = $isAutoGo ? ':)' : ':(';
+	$icon = $flag ? ':)' : ':(';
 	if ($url == '') {
-		$url = isset($_SERVER['HTTP_REFERER']) ? $_SERVER['HTTP_REFERER'] : 'javascript:history.back(-1);';
+		$url = isset ($_SERVER['HTTP_REFERER']) ? $_SERVER['HTTP_REFERER'] : 'javascript:history.back(-1);';
 	}
 	if ($msg == '404') {
 		header("HTTP/1.1 404 Not Found");

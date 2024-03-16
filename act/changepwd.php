@@ -1,7 +1,7 @@
 <?php
 
 define('ACC', true);
-require('init.php');
+require('../init.php');
 userModel::isLogin()||exit;
 if (empty($_POST['oldpass'])||empty($_POST['newpass'])) {
 	exit;

@@ -1,5 +1,5 @@
 <?php
-
+ini_set('display_errors', 'On');
 define('ACC', true);
 require('init.php');
 

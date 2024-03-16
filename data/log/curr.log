@@ -4306,3 +4306,18 @@
 2024-03-16 18:11:25 mysql query: select id,cat_name,parent_id from category
 2024-03-16 18:11:25 mysql query: select * from thread where cat in (1) order by lastreptime desc limit 0,10
 2024-03-16 18:11:25 mysql query: select cat_name from category where id=1
+2024-03-16 18:15:28 mysql query: select id,cat_name,parent_id from category
+2024-03-16 18:15:28 mysql query: select * from thread where cat in (1) order by lastreptime desc limit 0,10
+2024-03-16 18:15:28 mysql query: select cat_name from category where id=1
+2024-03-16 18:15:31 mysql query: select id,cat_name,parent_id from category
+2024-03-16 18:15:31 mysql query: select * from thread where cat in (1) order by lastreptime desc limit 0,5
+2024-03-16 18:15:31 mysql query: select * from thread where cat in (2) order by lastreptime desc limit 0,5
+2024-03-16 18:15:31 mysql query: select * from thread where cat in (3) order by lastreptime desc limit 0,5
+2024-03-16 18:15:31 mysql query: select * from thread where cat in (4) order by lastreptime desc limit 0,5
+2024-03-16 18:20:48 mysql query: select id,cat_name,parent_id from category
+2024-03-16 18:20:48 mysql query: select * from thread where cat in (1) order by lastreptime desc limit 0,5
+2024-03-16 18:20:48 mysql query: select * from thread where cat in (2) order by lastreptime desc limit 0,5
+2024-03-16 18:20:48 mysql query: select * from thread where cat in (3) order by lastreptime desc limit 0,5
+2024-03-16 18:20:48 mysql query: select * from thread where cat in (4) order by lastreptime desc limit 0,5
+2024-03-16 18:32:50 mysql query: select uid,type,username,nickname,email,password,regtime,lastlogin from user where email='1533540012@qq.com'
+2024-03-16 18:32:50 mysql query: update user set lastip='127.0.0.1',lastlogin='1710585170' where uid=19
