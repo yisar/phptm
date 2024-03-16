@@ -11,9 +11,9 @@ date_default_timezone_set('PRC');
 
 function autoload ($class) {
 	if (strtolower(substr($class, -5)) == 'model') {
-		require(ROOT . 'db/' . $class . '.class.php');
+		require(ROOT . 'db/' . $class . '.php');
 	} else {
-		require(ROOT . 'lib/' . $class . '.class.php');
+		require(ROOT . 'lib/' . $class . '.php');
 	}
 }
 
