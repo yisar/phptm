@@ -4298,3 +4298,11 @@
 2024-03-15 23:47:24 mysql query: select * from thread where cat in (2) order by lastreptime desc limit 0,5
 2024-03-15 23:47:24 mysql query: select * from thread where cat in (3) order by lastreptime desc limit 0,5
 2024-03-15 23:47:24 mysql query: select * from thread where cat in (4) order by lastreptime desc limit 0,5
+2024-03-16 18:11:19 mysql query: select id,cat_name,parent_id from category
+2024-03-16 18:11:19 mysql query: select * from thread where cat in (1) order by lastreptime desc limit 0,5
+2024-03-16 18:11:19 mysql query: select * from thread where cat in (2) order by lastreptime desc limit 0,5
+2024-03-16 18:11:19 mysql query: select * from thread where cat in (3) order by lastreptime desc limit 0,5
+2024-03-16 18:11:19 mysql query: select * from thread where cat in (4) order by lastreptime desc limit 0,5
+2024-03-16 18:11:25 mysql query: select id,cat_name,parent_id from category
+2024-03-16 18:11:25 mysql query: select * from thread where cat in (1) order by lastreptime desc limit 0,10
+2024-03-16 18:11:25 mysql query: select cat_name from category where id=1

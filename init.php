@@ -11,9 +11,9 @@ date_default_timezone_set('PRC');
 
 function autoload ($class) {
 	if (strtolower(substr($class, -5)) == 'model') {
-		require(ROOT . 'include/model/' . $class . '.class.php');
+		require(ROOT . 'db/' . $class . '.class.php');
 	} else {
-		require(ROOT . 'include/lib/' . $class . '.class.php');
+		require(ROOT . 'lib/' . $class . '.class.php');
 	}
 }
 
@@ -35,7 +35,7 @@ define('CD',$conf->post_cd);
 $template_dir = isset($_SESSION['template'])?$_SESSION['template']:'';
 
 //加载函数库
-require(ROOT . '/include/lib/lib.base.php');
+require(ROOT . '/lib/base.php');
 
 //类自动加载
 
