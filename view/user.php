@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width" />
     <title>
-        <?php echo $user['username'] ?> 的用户中心
+        <?php echo $user['nickname'] ?> 的用户中心
     </title>
     <link rel="stylesheet" href="view/style.css">
     <style>
@@ -22,7 +22,7 @@
         <div class="info">
             <img src="<?php echo 'https://cdn.sep.cc/avatar/' . md5($user['email']) ?>" alt="">
             <h1>
-                <?php echo $uname ?>
+                <?php echo $user['nickname'] ?>
             </h1>
             <p>注册日期：
                 <?php echo date('Y-m-d', $user['regtime']); ?>
