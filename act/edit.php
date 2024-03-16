@@ -2,8 +2,8 @@
 define('ACC', true);
 require ('../init.php');
 userModel::isLogin() || showMsg('没有登陆！', false, true, '../');
-$_SESSION['type'] > 0 || showMsg('权限不足！', false, true, '../');
 empty ($_GET['tid']) && showMsg('参数错误！', false, true, '../');
+
 $tid = (int) $_GET['tid'];
 $f = isset ($_GET['f']) ? (int) $_GET['f'] : '';
 $msg = new msgModel();
@@ -31,6 +31,10 @@ if ($f === '') {
 		}
 	}
 	$info = $msg->getReply($tid, $f);
+}
+
+if ($_SESSION['type'] > 0 && $info['uid'] != $_SESSION['uid']) {
+	showMsg('权限不足！', false, true, '../');
 }
 ?>
 <!DOCTYPE html>

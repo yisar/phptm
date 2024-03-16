@@ -10,7 +10,7 @@ function _addslashes($arr)
 	return $arr;
 }
 
-function showMsg($msg, $flag = true, $isAutoGo = false, $url = '', )
+function showMsg($msg, $flag = true, $isAutoGo = false, $url = '' )
 {
 	$icon = $flag ? ':)' : ':(';
 	if ($url == '') {

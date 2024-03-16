@@ -161,7 +161,7 @@ main {
     border-bottom: 1px dashed #ddd;
 }
 
-.item a h1{
+.item a h1 {
     color: #333;
 }
 
@@ -312,7 +312,7 @@ button {
     padding: 5px;
 }
 
-.ucenter .info h1{
+.ucenter .info h1 {
     font-size: 24px;
     padding: 10px;
     font-weight: normal;
@@ -325,8 +325,12 @@ button {
 }
 
 article {
-    line-height: 2;
     font-size: 16px;
+    padding: 10px 0;
+}
+
+article pre {
+    white-space: pre-wrap;
 }
 
 article img {
@@ -334,7 +338,7 @@ article img {
     max-height: 900px;
 }
 
-.info p{
+.info p {
     font-size: 12px;
 }
 
