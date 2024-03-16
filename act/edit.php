@@ -33,7 +33,7 @@ if ($f === '') {
 	$info = $msg->getReply($tid, $f);
 }
 
-if ($_SESSION['type'] > 0 && $info['uid'] != $_SESSION['uid']) {
+if ($_SESSION['type'] == 0 && $info['uid'] != $_SESSION['uid']) {
 	showMsg('权限不足！', false, true, '../');
 }
 ?>
