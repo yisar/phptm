@@ -11,9 +11,6 @@ class mysql_ extends db{
 		$conf = conf::getInstance();
 		$this->mysqli = new mysqli($conf->host, $conf->user, $conf->pass, $conf->db);
 		if ($this->mysqli->connect_error) {
-			if (SAVELOG){
-				log::write(date('Y-m-d H:i:s', time()) . ' mysql connect error: ' . $this->mysqli->connect_error);
-			}
 			showMsg('数据库连接失败！');
 		}
 		$this->mysqli->set_charset($conf->charset);
@@ -43,9 +40,6 @@ class mysql_ extends db{
 	return mixed bool/resource
 	*/
 	public function query($sql) {
-		if (SAVELOG){
-			log::write(date('Y-m-d H:i:s', time()) . ' mysql query: ' . $sql);
-		}
 		return $this->mysqli->query($sql);
 	}
 
