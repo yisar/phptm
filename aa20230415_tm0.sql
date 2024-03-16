@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- 主机： localhost
--- 生成日期： 2024-03-16 10:50:11
+-- 生成日期： 2024-03-16 11:12:33
 -- 服务器版本： 10.6.12-MariaDB
 -- PHP 版本： 8.1.17
 
@@ -41,8 +41,9 @@ CREATE TABLE `category` (
 INSERT INTO `category` (`id`, `cat_name`, `intro`, `parent_id`) VALUES
 (1, 'Original Novel', '包含该栏目及所有子栏目下内容', 0),
 (2, 'Fan fiction', '', 0),
-(3, 'Chat', '', 0),
-(4, 'Admin', '', 0);
+(5, 'Archived Novel', '', 0),
+(4, 'Admin', '', 0),
+(3, 'Chat', 'emmm', 0);
 
 -- --------------------------------------------------------
 
@@ -157,7 +158,8 @@ INSERT INTO `thread` (`tid`, `uid`, `type`, `cat`, `name`, `title`, `content`, `
 (61, 2, 1, 1, '红名', '无标题', '这是一个测试帖( ´ー`)', 1710499522, 1710499522, 0),
 (59, 19, 0, 4, '无名氏', '嘿嘿嘿', '我来啦我来啦(´ﾟДﾟ`)', 1710473232, 1710475317, 0),
 (63, 2, 1, 1, '红名', '测试标题', '( ´ー`)aaa', 1710499850, 1710504795, 0),
-(65, 2, 1, 1, '红名', '试试看', '嘿嘿', 1710500021, 1710504996, 0);
+(65, 2, 1, 1, '红名', '试试看', '嘿嘿', 1710500021, 1710504996, 0),
+(68, 19, 0, 5, '无名氏', '大家好', '大家好，我是 132，火速写了这个论坛', 1710587375, 1710587375, 0);
 
 -- --------------------------------------------------------
 
@@ -186,7 +188,8 @@ INSERT INTO `user` (`uid`, `type`, `username`, `nickname`, `email`, `password`, 
 (1, 0, 'testa', '匿名', 'aa@aa.aa', '123456', 1474975269, '::1', 1476022900, '::1'),
 (2, 1, 'admin', '红名', 'admin@tm0.net', '5e953f36fcc8a11df056a6d924c2e689', 1474975269, '', 1710498725, '127.0.0.1'),
 (19, 0, 'yisar', '无名氏', '1533540012@qq.com', '5e953f36fcc8a11df056a6d924c2e689', 1710472818, '127.0.0.1', 1710582694, '2408:8214:3b1d:de10:7c60:b191:650f:ba43'),
-(20, 0, '', '无名氏', '111@222', '37c09a6a7620a4b397ae1893d7508cc9', 1710514461, '2408:8214:3b1d:de10:e88d:e146:6006:715b', 1710514461, '2408:8214:3b1d:de10:e88d:e146:6006:715b');
+(20, 0, '', '无名氏', '111@222', '37c09a6a7620a4b397ae1893d7508cc9', 1710514461, '2408:8214:3b1d:de10:e88d:e146:6006:715b', 1710514461, '2408:8214:3b1d:de10:e88d:e146:6006:715b'),
+(21, 0, '', '无名氏', 'qinky94@163.com', '3fefae4ce254648e9dff33608059a9dd', 1710586223, '2408:821b:2412:dc50:eda7:2ab2:c1b3:d548', 1710586223, '2408:821b:2412:dc50:eda7:2ab2:c1b3:d548');
 
 --
 -- 转储表的索引
@@ -230,7 +233,7 @@ ALTER TABLE `user`
 -- 使用表AUTO_INCREMENT `category`
 --
 ALTER TABLE `category`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- 使用表AUTO_INCREMENT `reply`
@@ -248,13 +251,13 @@ ALTER TABLE `subscription`
 -- 使用表AUTO_INCREMENT `thread`
 --
 ALTER TABLE `thread`
-  MODIFY `tid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=68;
+  MODIFY `tid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=69;
 
 --
 -- 使用表AUTO_INCREMENT `user`
 --
 ALTER TABLE `user`
-  MODIFY `uid` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+  MODIFY `uid` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
