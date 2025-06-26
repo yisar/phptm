@@ -9,7 +9,7 @@
     <title>
         <?php echo SITENAME ?>
     </title>
-    <link rel="stylesheet" href="view/style.css">
+    <link rel="stylesheet" href="<?php echo 'view/style.css?t=' . time() ; ?>">
     <link rel="stylesheet" href="https://at.alicdn.com/t/c/font_4066894_lfnqwuus5os.css">
 </head>
 
@@ -21,7 +21,7 @@
                 <section class="cat">
                     <div class="title">
                         <a href="./thread.php?id=<?php echo $_cat['id']; ?>">
-                            <?php echo $_cat['cat_name']; ?>
+                            <?php echo $_cat['name']; ?>
                         </a>
                     </div>
                     <div class="list">
@@ -42,7 +42,7 @@
                                 <div>
                                     <a href="./post.php?id=<?php echo $t['tid']; ?>">
                                         <p>
-                                            <?php echo $t['content'] ?>
+                                            <?php echo mb_substr($t['content'], 0, 20) . '...' ?>
                                         </p>
                                     </a>
                                     <span>

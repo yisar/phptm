@@ -2,7 +2,7 @@
 define('ACC', true);
 require ('../init.php');
 
-userModel::isLogin() || showMsg('请先登陆!', true, '../login.php');
+userModel::isLogin() || showMsg('请先登录!', true, '../login.php');
 $lastSendTime = empty ($_SESSION['cd']) ? 0 : $_SESSION['cd'];
 time() - $lastSendTime < CD && showMsg('发言CD中…先施法吧！', false);
 empty ($_POST['id']) && showMsg('请从正常页面发起回应！', true, true, '../');

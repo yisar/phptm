@@ -2,7 +2,7 @@
 define('ACC', true);
 require ('../init.php');
 
-userModel::isLogin() || showMsg('请先登陆！', false, true, '../');
+userModel::isLogin() || showMsg('请先登录！', false, true, '../');
 $_SESSION['type'] > 0 || showMsg('权限不足！', false, true, '../');
 empty ($_GET['tid']) && showMsg('参数错误！', false, true, '../');
 $tid = (int) $_GET['tid'];

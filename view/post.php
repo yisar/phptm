@@ -11,11 +11,6 @@
     </title>
     <link rel="stylesheet" href="view/style.css">
     <link rel="stylesheet" href="https://at.alicdn.com/t/c/font_4066894_lfnqwuus5os.css">
-    <style>
-        body {
-            background: #75a99b;
-        }
-    </style>
 </head>
 
 <body>
