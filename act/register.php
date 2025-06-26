@@ -5,7 +5,7 @@ require ('../init.php');
 if (empty ($_POST['email']) || empty ($_POST['password']) || empty ($_POST['nickname'])) {
 	exit ('ACC Denied');
 }
-userModel::isLogin() && showMsg('请先退出登陆！', true, true, './');
+userModel::isLogin() && showMsg('请先退出登录！', true, true, './');
 $user_re = '/^[a-zA-Z][\w]{4,15}$/';
 //$email_re = '/^[\\w-]+(\\.\\w+)*@[\\w-]+((\\.\\w{2,3}){1,3})$/';
 $UM = new userModel();

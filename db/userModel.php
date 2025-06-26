@@ -78,7 +78,7 @@ class userModel extends model
 
 	public static function logout()
 	{
-		$temp = isset($_SESSION['template']) ? $_SESSION['template'] : 'default';
+		$temp = isset($_SESSION['template']) ? $_SESSION['template'] : '';
 		$_SESSION = array();
 		$_SESSION['template'] = $temp;
 	}

@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
-        <?php echo $curr_cat['cat_name'], ' - ', SITENAME; ?>
+        <?php echo $curr_cat['name'], ' - ', SITENAME; ?>
     </title>
     <link rel="stylesheet" href="view/style.css">
     <link rel="stylesheet" href="https://at.alicdn.com/t/c/font_4066894_lfnqwuus5os.css">
@@ -18,11 +18,6 @@
         <?php require(ROOT . 'view/header.php'); ?>
     <?php } ?>
     <main class="wrap">
-        <style>
-            body {
-                background: #75a99b;
-            }
-        </style>
         <section class="thread">
             <ul class="list">
                 <?php foreach ($threads as $k => $t) { ?>
@@ -42,7 +37,7 @@
                         <div>
                             <a href="./post.php?id=<?php echo $t['tid']; ?>">
                                 <p>
-                                    <?php echo $t['content'] ?>
+                                    <?php echo mb_substr($t['content'], 0, 20) . '...' ?>
                                 </p>
 
                             </a>

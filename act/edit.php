@@ -1,7 +1,7 @@
 <?php
 define('ACC', true);
 require ('../init.php');
-userModel::isLogin() || showMsg('没有登陆！', false, true, '../');
+userModel::isLogin() || showMsg('没有登录！', false, true, '../');
 empty ($_GET['tid']) && showMsg('参数错误！', false, true, '../');
 
 $tid = (int) $_GET['tid'];
@@ -19,7 +19,6 @@ if ($f === '') {
 			showMsg('修改失败！', false);
 		}
 	}
-	$cats = catModel::getCatTree();
 	$info = $msg->getThread($tid);
 } else {
 	if (isset ($_POST['content'])) {
@@ -59,7 +58,7 @@ if ($_SESSION['type'] == 0 && $info['uid'] != $_SESSION['uid']) {
 				<select name="cat">
 					<?php foreach ($cats as $k => $v) { ?>
 						<option value="<?php echo $v['id']; ?>" <?php echo $info['cat'] == $v['id'] ? ' selected' : '' ?>>
-							<?php echo str_repeat('&nbsp;&nbsp;', $v['lev']), $v['cat_name']; ?>
+							<?php echo $v['name']; ?>
 						</option>
 					<?php } ?>
 				</select>

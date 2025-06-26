@@ -55,7 +55,7 @@ class msgModel extends model {
 		return array
 	 */
 	public function getTopThreads($start, $cat_id=0, $num=10) {
-		$sql = 'select * from thread where cat in ('.implode(',', catModel::getCatTreeId($cat_id)).') order by lastreptime desc limit '.$start.','.$num;
+		$sql = 'select * from thread where cat = '. $cat_id .' order by lastreptime desc limit '.$start.','.$num;
 		return $this->db->getAll($sql);
 	}
 
@@ -149,7 +149,6 @@ class msgModel extends model {
 		return int
 	 */
 	public function countThreads($cat) {
-		$cat = catModel::getCatTreeId($cat);
 		$sql = 'select count(*) from thread where cat in ('.implode(',', $cat).')';
 		return $this->db->getOne($sql);
 	}

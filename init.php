@@ -31,14 +31,35 @@ define('CD',$conf->post_cd);
 
 //获取模板路径
 $template_dir = isset($_SESSION['template'])?$_SESSION['template']:'';
+$cats = [
+    0 => [
+        'id' => 1,
+		'name' => 'Original Novel'
+        
+    ],
+    1 => [
+        'id' => 2,
+        'name' => 'Fan Fiction'
+    ],
+	2 => [
+        'id' => 3,
+        'name' => 'Scaned Novel'
+    ],
+	3 => [
+        'id' => 4,
+        'name' => 'Chat'
+    ],
+	4 => [
+        'id' => 5,
+        'name' => 'Admin'
+    ],
+];
 
 //加载函数库
 require(ROOT . 'util.php');
 
-//类自动加载
-
-//设置报错级别
-DEBUG ? error_reporting(E_ALL) : error_reporting(0);
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
 
 // //递归过滤参数
 // if (!get_magic_quotes_gpc()){

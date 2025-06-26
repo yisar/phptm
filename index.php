@@ -4,7 +4,7 @@ define('ACC', true);
 require('init.php');
 
 $msg = new msgModel();
-$cats = catModel::getCatTree();
+
 
 $threads = array();
 

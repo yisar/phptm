@@ -16,8 +16,7 @@ $curr_page = empty($_GET['page']) ? 1 : (int) $_GET['page'];
 //取得被回复主题
 $threads = $msg->getTopThreads(($curr_page - 1) * 10, $cid, 10);
 //获取全部分类
-$cats = catModel::getCatTree();
-$curr_cat = catModel::getInfo($cid, false);
+$curr_cat = $cats[$cid];
 
 //view
 require(ROOT . "view/$template_dir/thread.php");
